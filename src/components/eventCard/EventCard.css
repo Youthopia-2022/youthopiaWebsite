@@ -1,0 +1,17 @@
+.EventCard {
+	border: 1px solid;
+	height: 20rem;
+	width: 15rem;
+	padding: 0.25rem;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 1rem;
+	flex-direction: column;
+}
+
+.EventCard > img {
+	width: 5rem;
+	height: 5rem;
+}

@@ -1,0 +1,93 @@
+.footer {
+    background: url('../../images/footer-assets/bg-dit-university\ 1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: rotate(-0.19deg);
+    position:relative;
+    max-width: 100vw;
+    height: 402px;
+    top: 3711px;
+    background-color: #000;
+    padding-top: 7.5%;
+    padding-left: 10%;
+    padding-bottom: 3%;
+    display: flex;
+    font-family: 'IBM Plex Sans';
+}
+
+
+
+ .footer-content-left {
+    color: #1BBEE9;
+    
+}
+ .footer-content-left>div {
+    display: flex;
+}
+
+.footer-content-left >.location-content>a> h5 {
+    
+    font-style: normal;
+    font-size: 28px;
+}
+
+
+
+.footer-content-left>.location-content>a>h2 {
+    
+    font-style: normal;
+}
+
+.footer-content-left>.location-content>a:hover{
+    text-decoration: underline;
+}
+i{
+    color: #FC0160;
+}
+
+.footer-content-left>.location-content>.location-icon{
+    
+    margin-right: 10%;
+    margin-top: 4%;
+}
+.footer-content-left>.call-content>.call-icon{
+    
+    margin-right: 8%;
+    margin-top: 2%;
+}
+
+.footer-content-left>.call-content>a:hover{
+    text-decoration: underline;
+}
+
+.call-content{
+    margin-top: 20%;
+}
+
+.footer-content-right{
+    color: #1BBEE9;
+    margin-left: 35vw;
+}
+
+.footer-content-right>.download-app>a:hover{
+    text-decoration: underline;
+}
+.footer-content-right>.download-app{
+    display: flex;
+}
+
+.footer-content-right>.download-app>img{
+    margin-top: -3%;
+    margin-left: 5vw;
+}
+
+.footer-content-right>.social-icons{
+    display: flex;
+    margin-top: 30%;
+    margin-left: -10%;
+}
+
+.footer-content-right>.social-icons>a{
+    margin-left: 10%;
+}

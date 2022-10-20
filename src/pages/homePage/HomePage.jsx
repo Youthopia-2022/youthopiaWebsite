@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import Sponsers from "../../components/Sponsers";
+
 const homePage = () => {
 	return (
 		<div>
@@ -12,6 +14,8 @@ const homePage = () => {
 			<Link to="/events">
 				<button> Explore events button</button>
 			</Link>
+			<Sponsers />
+
 		</div>
 	);
 };

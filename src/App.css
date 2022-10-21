@@ -1,0 +1,85 @@
+
+html{
+    background: rgb(58,58,92);
+background: linear-gradient(90deg, rgba(58,58,92,1) 0%, rgba(10,10,27,1) 100%);
+}
+.bgu{
+    background-color: #2C0022;
+}
+.bd{
+    border:2px solid #FC0160;
+    border-radius: 0%;
+}
+.bgu1{
+    background-color: white;
+}
+.text{
+    color: #FC0160;
+}
+.bgimgg{
+    background-image: url("./images/image5.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    width: 100%;
+}
+.butcss{
+    background-color: transparent;
+}
+.widthhund{
+   background-color: black;
+}
+.fbm{
+    display: flex;
+
+}
+.color{
+    color: #1BBEE9;
+}
+.more{
+    color: #FC0160;
+    text-align: center;
+    font-size: 3vh;
+    position: absolute;
+    bottom: 100px;
+    width: 100vw;
+}
+.EventCard{
+    display: flex;
+    flex-direction: column;
+    height: 53vh;
+    width: 18vw;
+    background: white url("./images/image5.png") bottom no-repeat;
+    /* background-repeat: no-repeat; */
+    margin-top: 50px;
+}
+.conevent{
+    justify-content: space-between;
+}
+.r1{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    background: #FC0160;
+    color: white;
+    font-family: 'IBM Plex Sans';
+
+}
+.r2{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    color: #00495C;
+    font-family: 'IBM Plex Sans';
+}
+.r3{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: right;
+    text-align: right;
+    color: #FC0160;
+    font-family: 'IBM Plex Sans';
+
+}

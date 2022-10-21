@@ -1,3 +1,15 @@
 .allEvents {
-	display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 5px;
+  margin: auto;
+  width: 77vw;
+}
+@media only screen and (max-width: 600px) {
+  .allEvents {
+    justify-content: center;
+    align-items: center;
+  }
 }

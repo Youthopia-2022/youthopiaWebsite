@@ -21,8 +21,10 @@ const LandingContainer = () => {
           <p>17th-19th</p>
           <p>November</p>
         </div>
-        <Link to="/events" style={{ zIndex: 1 }}>
-          <div className="registerButton mb-5">Registrations Starting Soon</div>
+        <Link to="/" style={{ zIndex: 1 }}>
+          <div className="registerButton mb-5 z-10">
+            Registrations Starting Soon
+          </div>
         </Link>
       </div>
 

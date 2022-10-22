@@ -1,0 +1,21 @@
+.EventCard > img {
+	width: 5rem;
+	height: 5rem;
+}
+
+.bgimgg {
+	background-image: url("../../images/image5.png");
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: contain;
+	width: 100%;
+}
+
+.bgu {
+	background-color: #2C0022;
+}
+
+.bd {
+	border: 2px solid #FC0160;
+	border-radius: 0%;
+}

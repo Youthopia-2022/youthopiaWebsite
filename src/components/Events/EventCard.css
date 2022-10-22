@@ -81,7 +81,7 @@ html {
     flex-direction: column;
     /* padding: 2px; */
   }
-  .name,
+  .namee,
   .button {
     margin-top: 5px;
   }
@@ -127,7 +127,7 @@ html {
 .r3 {
   margin-top: 2px;
 }
-.name {
+.namee {
   font-weight: 700;
 }
 .location,
@@ -137,7 +137,7 @@ html {
 .buttonn {
   color: white;
 }
-.button {
+.buttonn {
   padding: 8px;
   font-family: "IBM Plex Sans";
   letter-spacing: 0.1em;

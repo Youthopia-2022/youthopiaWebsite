@@ -82,7 +82,7 @@ html {
     /* padding: 2px; */
   }
   .namee,
-  .button {
+  .buttonn {
     margin-top: 5px;
   }
 }
@@ -130,10 +130,10 @@ html {
 .namee {
   font-weight: 700;
 }
-.location,
+.locationn,
 .timee,
 .pricee,
-.name📧,
+.namee,
 .buttonn {
   color: white;
 }

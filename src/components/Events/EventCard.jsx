@@ -7,11 +7,11 @@ const EventCard = (props) => {
         <img src={props.image} alt="" />
       </div>
       <div className="r1">
-        <div className="location">{props.location}</div>
+        <div className="locationn">{props.location}</div>
         <div className="datee">{props.date}</div>
       </div>
       <div className="r2">
-        <div className="price">{props.price}</div>
+        <div className="pricee">{props.price}</div>
         <div className="timee">{props.time}</div>
       </div>
       <div className="r3">

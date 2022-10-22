@@ -1,0 +1,100 @@
+.LandingContainer {
+	height: var(--vh);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	background-image: url("../../images/homeBackground.png");
+	overflow: hidden;
+}
+
+.LandingContainer::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: radial-gradient(
+			80.21% 80.21% at 33.31% 95.58%,
+			#3a3a5c 0%,
+			#0a0a1b 92.5%
+		)
+		/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+	opacity: 0.8;
+}
+
+.LandingContainer > .ditLogo {
+	position: absolute;
+	top: 4rem;
+	z-index: 10;
+}
+
+.youthopiaLogo {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	width: 100vw;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	transform: translateY(-3rem);
+}
+
+.youthopiaLogo > img {
+	min-width: 800px;
+}
+
+.youthopiaLogo > img {
+	align-self: center;
+}
+
+.youthopiaLogo > div {
+	transform: translateY(-2.5rem);
+	color: #1bbee9;
+}
+
+.youthopiaLogo > div > p:nth-child(1) {
+	font-size: 1.2rem;
+}
+
+.youthopiaLogo > div > p:nth-child(2) {
+	font-size: 0.9rem;
+	text-align: center;
+}
+
+.registerButton {
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 3rem;
+	background: #2c0022;
+	border: 1px solid #fc0160;
+	padding: 0 1rem;
+}
+
+@media only screen and (max-width: 975px) {
+	.youthopiaLogo > div {
+		transform: translateY(0);
+	}
+	.registerButton {
+		margin-top: 1rem;
+	}
+	.youthopiaLogo {
+		position: absolute;
+		height: 100vh;
+		width: 100vw;
+		top: 0;
+		left: 0;
+	}
+}
+
+@media only screen and (max-width: 840px) {
+	.googlePlay > img {
+		width: 6rem;
+		margin-bottom: 0.5rem;
+	}
+}

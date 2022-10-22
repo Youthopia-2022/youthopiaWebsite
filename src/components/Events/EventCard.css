@@ -1,21 +1,146 @@
-.EventCard > img {
-	width: 5rem;
-	height: 5rem;
-}
+html {
+  font-family: "IBM Plex Sans";
+  background: hsla(240, 23%, 29%, 1);
 
-.bgimgg {
-	background-image: url("../../images/image5.png");
-	background-repeat: no-repeat;
-	background-position: bottom;
-	background-size: contain;
-	width: 100%;
-}
+  background: radial-gradient(
+    circle,
+    hsla(240, 23%, 29%, 1) 0%,
+    hsla(240, 46%, 7%, 1) 100%
+  );
 
-.bgu {
-	background-color: #2C0022;
-}
+  background: -moz-radial-gradient(
+    circle,
+    hsla(240, 23%, 29%, 1) 0%,
+    hsla(240, 46%, 7%, 1) 100%
+  );
 
-.bd {
-	border: 2px solid #FC0160;
-	border-radius: 0%;
+  background: -webkit-radial-gradient(
+    circle,
+    hsla(240, 23%, 29%, 1) 0%,
+    hsla(240, 46%, 7%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#3A3A5C", endColorstr="#0A0A1B", GradientType=1 );
+}
+.EventCard {
+  display: flex;
+  background: linear-gradient(
+    89.62deg,
+    rgba(41, 18, 78, 0.8) 35.41%,
+    rgba(183, 44, 161, 0.4) 99.72%
+  );
+  backdrop-filter: blur(1.85096px);
+  backdrop-filter: blur(1.85096px);
+  padding: 16.6586px 9.25478px;
+  flex-direction: column;
+  width: 20vw;
+  height: 49vh;
+  border-radius: 11px;
+  /* padding: 10px; */
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+@media only screen and (max-width: 1290px) {
+  .EventCard {
+    width: 23vw;
+    margin: 10px;
+    height: 40vh;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .EventCard {
+    width: 35vw;
+    margin: 5px;
+    height: 50vh;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .EventCard {
+    width: 50vw;
+    margin: 5px;
+    height: 50vh;
+  }
+}
+@media only screen and (max-width: 515px) {
+  .EventCard {
+    width: 80vw;
+    margin: 5px;
+    height: 50vh;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .EventCard {
+    width: 90vw;
+    margin: 5px;
+    height: 50vh;
+  }
+}
+@media only screen and (max-width: 358px) {
+  .r3 {
+    flex-direction: column;
+    /* padding: 2px; */
+  }
+  .name,
+  .button {
+    margin-top: 5px;
+  }
+}
+.EventCard .image {
+  /* width: %; */
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.EventCard img {
+  width: 100%;
+  /* object-fit: contain; */
+  text-align: center;
+  margin: auto;
+  /* object-fit: contain; */
+}
+.r1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px;
+  color: #fc0160;
+  flex-wrap: wrap;
+}
+.r2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px;
+  flex-wrap: wrap;
+}
+.r3 {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px;
+  align-items: center;
+  flex-wrap: wrap;
+
+  /* margin-top: 4px; */
+}
+.r1,
+.r2,
+.r3 {
+  margin-top: 2px;
+}
+.name {
+  font-weight: 700;
+}
+.location,
+.timee,
+.pricee,
+.name📧,
+.buttonn {
+  color: white;
+}
+.button {
+  padding: 8px;
+  font-family: "IBM Plex Sans";
+  letter-spacing: 0.1em;
+
+  background: #2c0022;
 }

@@ -1,0 +1,54 @@
+.navbar{
+    background-color: #000;
+    color: #fff;
+    /* padding-left: 20rem; */
+}
+
+.lap-navbar{
+    position: relative;
+    margin-right: 0%;
+    padding-right: 0;
+}
+
+.nav-item>.social-icons{
+    display: flex;
+    position: absolute;
+    right: 1rem;
+}
+
+
+.nav-item>.active {
+    color: #FC0160 !important;
+    font-weight: 500 !important;
+}
+.mob-nav-item>.active {
+    color: #FC0160 !important;
+    font-weight: 500 !important;
+}
+
+@media (min-width: 640px)
+{
+.sm\:ml-6 {
+    margin-left: 3.5rem;
+}
+}
+
+@media only screen and (max-width: 1180px)
+{
+    .nav-item>.social-icons{
+        font-size: small;
+        right: 0rem;
+    }
+}
+@media only screen and (max-width: 1030px)
+{
+    .nav-item>.social-icons{
+        display: none;
+    }
+}
+@media only screen and (max-width: 830px)
+{
+    .inner-nav{
+        margin-left: 0;
+    }
+}

@@ -1,32 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 html{
-    background: rgb(58,58,92);
-background: linear-gradient(90deg, rgba(58,58,92,1) 0%, rgba(10,10,27,1) 100%);
-}
-.bgu{
-    background-color: #2C0022;
-}
-.bd{
-    border:2px solid #FC0160;
-    border-radius: 0%;
-}
-.bgu1{
-    background-color: white;
-}
-.text{
-    color: #FC0160;
-}
-.bgimgg{
-    background-image: url("./images/image5.png");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: contain;
-    width: 100%;
-}
-.butcss{
-    background-color: transparent;
+    background: linear-gradient(90deg, rgba(58,58,92,1) 0%, rgba(10,10,27,1) 100%);
 }
 .widthhund{
    background-color: black;

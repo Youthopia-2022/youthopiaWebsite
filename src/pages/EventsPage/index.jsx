@@ -1,7 +1,6 @@
 import { useState } from "react";
 import EventCard from "../../components/Events/EventCard";
 import dummyData from "./dummyData.json";
-// import "@fontsource/ibm-plex-sans";
 import "./EventsPage.css";
 
 const EventsPage = () => {

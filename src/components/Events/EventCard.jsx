@@ -1,5 +1,4 @@
 import "./EventCard.css";
-import "@fontsource/ibm-plex-sans";
 const EventCard = (props) => {
   return (
     <div className="EventCard">

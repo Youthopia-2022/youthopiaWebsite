@@ -1,13 +1,13 @@
 import LandingContainer from "../../containers/landingContainer/LandingContainer";
 import Sponsers from "../../components/Sponsers";
-import Events from "../../components/Events";
-
+import DjNight from "../../components/EventsRoot/DjNight";
 const HomePage = () => {
   return (
     <>
       <LandingContainer />
       <Sponsers />
-      <Events />
+      <DjNight />
+      {/* <Events /> */}
     </>
   );
 };

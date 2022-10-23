@@ -70,7 +70,6 @@ const EventsPage = () => {
   return (
     <div>
       <div>
-        <div className="mainheader">This is main header</div>
         <div className="eventheader">
           <button
             className={isActiveal ? "active" : ""}

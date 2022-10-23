@@ -48,6 +48,72 @@ html {
     height: 40vh;
   }
 }
+@media only screen and (max-height: 890px) {
+  .EventCard {
+    height: 44vh;
+  }
+}
+@media only screen and (max-height: 891px) {
+  .EventCard {
+    height: 45vh;
+  }
+}
+@media only screen and (max-height: 800px) {
+  .EventCard {
+    height: 48vh;
+  }
+}
+@media only screen and (max-height: 742px) {
+  .EventCard {
+    height: 50vh;
+  }
+}
+@media only screen and (max-height: 712px) {
+  .EventCard {
+    height: 54vh;
+  }
+}
+@media only screen and (max-height: 660px) {
+  .EventCard {
+    height: 58vh;
+  }
+}
+@media only screen and (max-height: 614px) {
+  .EventCard {
+    height: 62vh;
+  }
+}
+@media only screen and (max-height: 575px) {
+  .EventCard {
+    height: 68vh;
+  }
+}
+@media only screen and (max-height: 524px) {
+  .EventCard {
+    height: 72vh;
+  }
+}
+@media only screen and (max-height: 495px) {
+  .EventCard {
+    height: 75vh;
+  }
+}
+@media only screen and (max-height: 475px) {
+  .EventCard {
+    height: 78vh;
+  }
+}
+@media only screen and (max-height: 457px) {
+  .EventCard {
+    height: 81vh;
+  }
+}
+@media only screen and (max-height: 440px) {
+  .EventCard {
+    height: 90vh;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .EventCard {
     width: 35vw;

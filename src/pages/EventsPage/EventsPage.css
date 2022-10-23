@@ -1,3 +1,43 @@
+/* Events landing page */
 .allEvents {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 5px;
+  margin: auto;
+  width: 77vw;
+}
+@media only screen and (max-width: 600px) {
+  .allEvents {
+    justify-content: center;
+    align-items: center;
+  }
+}
+/* Events Header */
+.mainheader {
+  background-color: black;
+  width: 100vw;
+  height: 70px;
+  align-items: center;
+  text-align: center;
+  color: wheat;
+}
+.eventheader {
+  width: 70vw;
+  margin: auto;
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-family: "ibm-plex-sans";
+  font-weight: 500;
+  color: #1bbee9;
+  font-size: 1.3rem;
+  flex-wrap: wrap;
+}
+.active {
+  border-bottom: 2px solid #fc0160;
 }

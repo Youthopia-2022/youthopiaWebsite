@@ -1,0 +1,35 @@
+.eventResgisterButton {
+	background: linear-gradient(
+		89.62deg,
+		rgba(41, 18, 78, 0.8) 35.41%,
+		rgba(183, 44, 161, 0.4) 99.72%
+	);
+}
+
+@media only screen and (max-width: 880px) {
+	.eventImage > img {
+		width: 250px;
+		min-width: 100px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.EventContainerChild {
+		flex-direction: column;
+	}
+	.eventImage {
+		width: 100%;
+	}
+	.eventDetails {
+		width: 100%;
+	}
+	.eventTitle {
+		font-size: 3rem;
+	}
+}
+
+@media only screen and (max-width: 880px) {
+	.EventContainerChild {
+		padding: 0.5rem;
+	}
+}

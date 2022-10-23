@@ -38,10 +38,10 @@ const Gallery = () =>{
         <div  class="bg-[#3A3B5C]">
     
             
-                <div class="items-centre ">
-                <img className="object pr-7 pt-5 pb-5 h-84 ml-5 mr-5" src={imageA} alt=""/>
+                <div class="items-center ">
+                <img className="object-none object-center pr-7 pt-5 pb-5 h-84 ml-5 mr-5" src={imageA} alt=""/>
                 </div>
-            <div class="flex flex-row ml-5 mr-39 "  >
+            <div class="flex flex-row ml-5  justify-center"  >
                 <div class="flex flex-col space-y-1">
                     <h3 style={myStyle}>A NIGHT</h3>
                     <h3 style={myStyle}>TO</h3>
@@ -50,16 +50,16 @@ const Gallery = () =>{
                     <h3 style={myStyle2}>ENTIRE LIFE</h3>
                     <img className="object h-96 w-96" src={imageB}/>
                 </div>
-                <div class ="flex flex-col h-84  ml-10 object-fit-contain">
+                <div class ="flex flex-col h-84  ml-5 pr-10 object-fit-contain">
                     <img className="object h-96 w-96 pb-5 " src={imageA}/>
                     <img className="object h-96 w-96 " src={imageC}/>
                 </div>
                 
             </div>
             <div className="object w-full h-72">
-                <img className=" object w-full h-72 pr-96 pt-5 " src={imageD} alt=""/>
+                <img className=" object w-full h-72 pr-5 pl-5 pt-5 " src={imageD} alt=""/>
             </div>
-            <div class="space-x-4 ml-2">
+            <div class="space-x-4 ml-5">
             <h2 style={myStyle3}><b>DO JOIN US FOR  THE GRAND EVENT</b></h2>
             </div>
             <div class="flex flex-row object-fit-contain w-36 ml-5 space-x-4">
@@ -68,7 +68,7 @@ const Gallery = () =>{
                 <img className="object w-30 h-30" src={image8}/>
             </div>
             <div class="">
-                <img className="object-center w-full pr-15 h-72 ml-5 pr-36 pt-5 " src={image9}/>
+                <img className="object-center w-full pr-10 h-72 ml-5  pt-5 " src={image9}/>
             </div>
             <div class="flex flex-row ">
                 <div class="grow">
@@ -82,10 +82,10 @@ const Gallery = () =>{
                 </div>
             </div>
             <div>
-                <img className="object-center w-full pr-15 h-72 ml-5 pr-36 pt-5 " src={image11}/>
+                <img className="object-center w-full pr-10 h-72 ml-5  pt-5 " src={image11}/>
             </div>
             <div>
-                <img className="object-center w-full pr-15 h-72 ml-5 pr-36 pt-5 " src={image12}/>
+                <img className="object-center w-full pr-10 h-72 ml-5  pt-5 " src={image12}/>
             </div>
             
             <Link to="/"> </Link>

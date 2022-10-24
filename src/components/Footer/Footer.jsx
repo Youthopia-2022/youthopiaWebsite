@@ -36,38 +36,42 @@ const Footer = () => {
           />
         </div>
         <div className="social-icons absolute bottom-[9rem] right-[1rem]">
-          <a
-            className="px-4"
-            href="https://www.linkedin.com/school/dit-university/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fa-brands fa-xl fa-linkedin-in"></i>
-          </a>
-          <a
-            className="px-4"
-            href="https://www.instagram.com/dituniversity/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fa-brands fa-xl fa-instagram"></i>
-          </a>
-          <a
-            className="px-4"
-            href="https://www.facebook.com/DITUniversity.edu"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fa-brands fa-xl fa-facebook"></i>
-          </a>
-          <a
-            className="px-4"
-            href="https://www.youtube.com/channel/UCUibKytzSf4QnOCZfcZW3fw/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fa-brands fa-xl fa-youtube"></i>
-          </a>
+          <div className="first-two-icon">
+            <a
+              className="px-4"
+              href="https://www.linkedin.com/school/dit-university/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-brands fa-xl fa-linkedin-in"></i>
+            </a>
+            <a
+              className="px-4"
+              href="https://www.instagram.com/dituniversity/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-brands fa-xl fa-instagram"></i>
+            </a>
+          </div>
+          <div className="next-two-icons">
+            <a
+              className="px-4"
+              href="https://www.facebook.com/DITUniversity.edu"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-brands fa-xl fa-facebook"></i>
+            </a>
+            <a
+              className="px-4"
+              href="https://www.youtube.com/channel/UCUibKytzSf4QnOCZfcZW3fw/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-brands fa-xl fa-youtube"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>

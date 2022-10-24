@@ -62,10 +62,10 @@ const Gallery = () => {
           <b>DO JOIN US FOR THE GRAND EVENT</b>
         </h2>
       </div>
-      <div class="flex flex-row object-fit-contain w-36 ml-5 space-x-4">
-        <img className="object w-30 h-30" src={image6} alt="" />
-        <img className="object w-30 h-30" src={image7} alt="" />
-        <img className="object w-30 h-30" src={image8} alt="" />
+      <div class="flex flex-row object-fit-contain mx-5 space-x-4">
+        <img className="object w-1/3 h-30" src={image6} alt="" />
+        <img className="object w-1/3 h-30" src={image7} alt="" />
+        <img className="object w-1/3 h-30" src={image8} alt="" />
       </div>
       <div class="">
         <img

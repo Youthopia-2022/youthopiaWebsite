@@ -14,12 +14,10 @@
     font-family: 'IBM Plex Sans';
 }
 
-
-
  .footer-content-left {
     color: #1BBEE9;
-    
 }
+
  .footer-content-left>div {
     display: flex;
 }
@@ -28,8 +26,6 @@
     
     font-style: normal;
 }
-
-
 
 .footer-content-left>.location-content>a>h2 {
     
@@ -40,6 +36,7 @@
 .footer-content-left>.location-content>a:hover{
     text-decoration: underline;
 }
+
 i{
     color: #FC0160;
 }
@@ -48,6 +45,7 @@ i{
     margin-right: 10%;
     margin-top: 4%;
 }
+
 .footer-content-left>.call-content>.call-icon{
     
     margin-right: 8%;
@@ -94,5 +92,46 @@ i{
     }
     .footer-content-right>.social-icons{
         right: 1rem;
+    }
+}
+@media only screen and (max-width: 490px){
+    .footer-content-right>.social-icons>div>.px-4{
+        font-size: smaller;
+        padding: 0 0.75rem;
+    }
+    .footer-content-right>.download-app>img{
+        scale: 0.8;
+    }
+}
+@media only screen and (max-width: 430px){
+    .footer-content-right>.social-icons{
+        display: inline-block;
+    }
+    .footer-content-right>.social-icons>div{
+        margin-top: 0.5rem ;
+    } 
+    .footer-content-right>.download-app{
+        right: 0rem;
+        top: 2rem;
+    }
+    .footer-content-right>.social-icons{
+        right: 1rem;
+        bottom: 12rem;
+    }
+    .footer-content-right>.download-app>img{
+        scale: 0.8;
+    }
+}
+@media only screen and (max-width: 330px){
+    .footer-content-right>.download-app{
+        right: 0rem;
+        top: 1.5rem;
+    }
+    .footer-content-right>.social-icons{
+        right: 1rem;
+        bottom: 14rem;
+    }
+    .footer-content-right>.download-app>img{
+        scale: 0.7;
     }
 }

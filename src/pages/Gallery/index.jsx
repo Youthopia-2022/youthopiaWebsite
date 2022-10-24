@@ -15,81 +15,101 @@ import image11 from "../../images/image11.jpg";
 import ellipse1 from "../../images/ellipse1.png";
 import ellipse2 from "../../images/ellipse2.png";
 
-
-
-
-const Gallery = () =>{
-    const myStyle={
-        color:"white",
-        fontFamily:"Franklin Gothic Heavy",
-        fontSize: 32,
-    }
-    const myStyle2={
-        color:"#120043",
-        fontFamily:"Franklin Gothic Heavy",
-        fontSize: 38,
-    }
-    const myStyle3={
-        color:"#DC1436",
-        fontFamily:"Arial Black",
-        fontSize: 38,
-    }
-    return(
-        <div  class="bg-[#3A3B5C]">
-    
-            
-                <div class="items-centre ">
-                <img className="object pr-7 pt-5 pb-5 h-84 ml-5 mr-5" src={imageA} alt=""/>
-                </div>
-            <div class="flex flex-row ml-5 mr-39 "  >
-                <div class="flex flex-col space-y-1">
-                    <h3 style={myStyle}>A NIGHT</h3>
-                    <h3 style={myStyle}>TO</h3>
-                    <h3 style={myStyle}>REMEMBER</h3>
-                    <h3 style={myStyle2}>YOUR</h3>
-                    <h3 style={myStyle2}>ENTIRE LIFE</h3>
-                    <img className="object h-96 w-96" src={imageB}/>
-                </div>
-                <div class ="flex flex-col h-84  ml-10 object-fit-contain">
-                    <img className="object h-96 w-96 pb-5 " src={imageA}/>
-                    <img className="object h-96 w-96 " src={imageC}/>
-                </div>
-                
-            </div>
-            <div className="object w-full h-72">
-                <img className=" object w-full h-72 pr-96 pt-5 " src={imageD} alt=""/>
-            </div>
-            <div class="space-x-4 ml-2">
-            <h2 style={myStyle3}><b>DO JOIN US FOR  THE GRAND EVENT</b></h2>
-            </div>
-            <div class="flex flex-row object-fit-contain w-36 ml-5 space-x-4">
-                <img className="object w-30 h-30" src={image6}/>
-                <img className="object w-30 h-30" src={image7}/>
-                <img className="object w-30 h-30" src={image8}/>
-            </div>
-            <div class="">
-                <img className="object-center w-full pr-15 h-72 ml-5 pr-36 pt-5 " src={image9}/>
-            </div>
-            <div class="flex flex-row ">
-                <div class="grow">
-                    <img className="object w-3/4 h-60 ml-5 mr-10 pt-5 h-48" src={image10}/>
-                </div>
-                <div class="flex-none">
-                <div class="flex flex-col mr-36">
-                    <img  className="object w-12 h-12  mb-5 mt-5 " src={ellipse1}/>
-                    <img className=" w-12 h-12  " src={ellipse2}/>
-                </div>
-                </div>
-            </div>
-            <div>
-                <img className="object-center w-full pr-15 h-72 ml-5 pr-36 pt-5 " src={image11}/>
-            </div>
-            <div>
-                <img className="object-center w-full pr-15 h-72 ml-5 pr-36 pt-5 " src={image12}/>
-            </div>
-            
-            <Link to="/"> </Link>
+const Gallery = () => {
+  const myStyle = {
+    color: "white",
+    fontFamily: "Franklin Gothic Heavy",
+    fontSize: 32,
+  };
+  const myStyle2 = {
+    color: "#120043",
+    fontFamily: "Franklin Gothic Heavy",
+    fontSize: 38,
+  };
+  const myStyle3 = {
+    color: "#DC1436",
+    fontFamily: "Arial Black",
+    fontSize: 38,
+  };
+  return (
+    <div class="bg-[#3A3B5C]">
+      <div class="items-centre ">
+        <img
+          className="object pr-7 pt-5 pb-5 h-84 ml-5 mr-5"
+          src={imageA}
+          alt=""
+        />
+      </div>
+      <div class="flex flex-row ml-5 mr-39 ">
+        <div class="flex flex-col space-y-1">
+          <h3 style={myStyle}>A NIGHT</h3>
+          <h3 style={myStyle}>TO</h3>
+          <h3 style={myStyle}>REMEMBER</h3>
+          <h3 style={myStyle2}>YOUR</h3>
+          <h3 style={myStyle2}>ENTIRE LIFE</h3>
+          <img className="object h-96 w-96" src={imageB} alt="" />
         </div>
-    )
-}
+        <div class="flex flex-col h-84  ml-10 object-fit-contain">
+          <img className="object h-96 w-96 pb-5 " src={imageA} alt="" />
+          <img className="object h-96 w-96 " src={imageC} alt="" />
+        </div>
+      </div>
+      <div className="object w-full h-72">
+        <img className=" object w-full h-72 pr-96 pt-5 " src={imageD} alt="" />
+      </div>
+      <div class="space-x-4 ml-2">
+        <h2 style={myStyle3}>
+          <b>DO JOIN US FOR THE GRAND EVENT</b>
+        </h2>
+      </div>
+      <div class="flex flex-row object-fit-contain w-36 ml-5 space-x-4">
+        <img className="object w-30 h-30" src={image6} alt="" />
+        <img className="object w-30 h-30" src={image7} alt="" />
+        <img className="object w-30 h-30" src={image8} alt="" />
+      </div>
+      <div class="">
+        <img
+          className="object-center w-full pr-15 h-72 ml-5 pr-36 pt-5 "
+          src={image9}
+          alt=""
+        />
+      </div>
+      <div class="flex flex-row ">
+        <div class="grow">
+          <img
+            className="object w-3/4 h-60 ml-5 mr-10 pt-5 h-48"
+            src={image10}
+            alt=""
+          />
+        </div>
+        <div class="flex-none">
+          <div class="flex flex-col mr-36">
+            <img
+              className="object w-12 h-12  mb-5 mt-5 "
+              src={ellipse1}
+              alt=""
+            />
+            <img className=" w-12 h-12  " src={ellipse2} alt="" />
+          </div>
+        </div>
+      </div>
+      <div>
+        <img
+          className="object-center w-full pr-15 h-72 ml-5 pr-36 pt-5 "
+          src={image11}
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          className="object-center w-full pr-15 h-72 ml-5 pr-36 pt-5 "
+          src={image12}
+          alt=""
+        />
+      </div>
+
+      <Link to="/"> </Link>
+    </div>
+  );
+};
 export default Gallery;

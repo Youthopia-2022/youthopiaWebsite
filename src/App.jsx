@@ -9,6 +9,7 @@ import EventDetailsDebate from "./pages/EventsDetails/EventDetailsDebate";
 import EventDetailsInformal from "./pages/EventsDetails/EventDetailsInformal";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
+import Aboutus from "./pages/Aboutus/Aboutus";
 
 const App = () => {
   return (
@@ -21,7 +22,8 @@ const App = () => {
         <Route path="/events/evc" element={<EventDetailsCultural />} />;
         <Route path="/events/evd" element={<EventDetailsDebate />} />;
         <Route path="/events/evi" element={<EventDetailsInformal />} />;
-         <Route path="/gallery" element={<Gallery />} />;
+        <Route path="/gallery" element={<Gallery />} />;
+        <Route path="/aboutus" element={<Aboutus />} />;
       </Routes>
       <Footer />
     </>

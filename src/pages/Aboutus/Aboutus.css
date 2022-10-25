@@ -1,0 +1,34 @@
+.maincontainer{
+    width:100vw;
+}
+.absimage{
+    position: absolute;
+        left: 68.77%;
+        right: 2.18%;
+        width:30%
+        
+    
+        
+}
+.logo{
+    
+    width: 1370.43px;
+        height: 619px;
+        width:50%;
+        
+}
+.cont1{
+    width: 15%;
+}
+.cont2 {
+    width: 15%;
+}
+.cont3 {
+    width: 25%;
+}
+.cont4 {
+    width: 20%;
+}
+.cont5 {
+    width: 20%;
+}

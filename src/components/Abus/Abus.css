@@ -1,0 +1,29 @@
+.heading{
+    font-family: 'IBM Plex Sans';
+    width: 323px;
+        height: 31px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 31px;
+        background-image: linear-gradient(90deg, #F7797D 0%, #C471ED 52.08%, #12C2E9 100%);
+        background-clip: text;
+        color: transparent;
+}
+
+.base{
+    font-family: 'IBM Plex Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 120%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: white;
+
+}
+.base2{
+    color:gray;
+    font-size:14px
+}

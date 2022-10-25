@@ -62,10 +62,10 @@ const Gallery = () =>{
             <div class="space-x-4 ml-5">
             <h2 style={myStyle3}><b>DO JOIN US FOR  THE GRAND EVENT</b></h2>
             </div>
-            <div class="flex flex-row object-fit-contain w-36 ml-5 space-x-4">
-                <img className="object w-30 h-30" src={image6} alt="img not avilable"/>
-                <img className="object w-30 h-30" src={image7} alt="img not avilable"/>
-                <img className="object w-30 h-30" src={image8} alt="img not avilable"/>
+            <div class="photo 1 flex flex-row  mx-5 mr-5 space-x-4">
+                <img className="object w-1/3 h-30" src={image6} alt="img not avilable"/>
+                <img className="object w-1/3 h-30" src={image7} alt="img not avilable"/>
+                <img className="object w-1/3 h-30" src={image8} alt="img not avilable"/>
             </div>
             <div >
                 <img className="object-center w-full pr-10 h-72 ml-5  pt-5 " src={image9} alt="img not avilable"/>
@@ -92,4 +92,4 @@ const Gallery = () =>{
         </div>
     )
 }
-export default Gallery;
+export default Gallery;

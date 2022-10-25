@@ -44,10 +44,8 @@
 }
 
 .youthopiaLogo > img {
-	min-width: 800px;
-}
-
-.youthopiaLogo > img {
+	width: 100vw;
+	width: 100vw;
 	align-self: center;
 }
 

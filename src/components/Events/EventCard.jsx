@@ -10,7 +10,7 @@ const EventCard = ({ data }) => {
           alt="content"
         />
         <div className="px-6 pb-8">
-          <h2 className="text-lg text-gray-900 font-medium title-font mb-4 cl">
+          <h2 className="text-lg font-medium title-font mb-4 cl">
             {data.title}
           </h2>
           <p className="leading-relaxed text-base dsf" >{data.desc}</p>

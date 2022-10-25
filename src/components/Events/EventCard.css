@@ -1,4 +1,4 @@
-.EventCard>img {
+.EventCard > img {
   width: 5rem;
   height: 5rem;
 }
@@ -12,10 +12,10 @@
 }
 
 .bgu {
-  background-color: #2C0022;
+  background-color: #2c0022;
 }
 
 .bd {
-  border: 2px solid #FC0160;
+  border: 2px solid #fc0160;
   border-radius: 0%;
 }

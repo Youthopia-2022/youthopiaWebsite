@@ -1,5 +1,6 @@
 import "./EventCard.css";
 import "@fontsource/ibm-plex-sans";
+import { Link } from "react-router-dom";
 const EventCard = (props) => {
   return (
     <div className="EventCardd">
@@ -16,7 +17,9 @@ const EventCard = (props) => {
       </div>
       <div className="r3">
         <div className="namee">{props.name}</div>
-        <div className="buttonn">Register Now</div>
+        <Link to={props.Link}>
+          <div className="buttonn">Register Now</div>
+        </Link>
       </div>
     </div>
   );

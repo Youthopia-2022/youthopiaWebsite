@@ -5,11 +5,42 @@ import googlePlay from "../../images/googlePlay.png";
 import scrollDownIcon from "../../images/scrollDownIcon.png";
 import "./LandingContainer.css";
 import { useEffect } from "react";
+import { Fade, Zoom } from "react-reveal";
+import ScrollReveal from "scrollreveal";
+
+const sr = ScrollReveal({
+	distance: "60px",
+	reset: false,
+	duration: 1200,
+	delay: 200,
+});
 
 const LandingContainer = () => {
 	useEffect(() => {
 		let vh = window.innerHeight;
 		document.documentElement.style.setProperty("--vh", `${vh - 64}px`); //-64 because status bar is not positioned fiex and taking its own space
+		sr.reveal(".landingPageDitLogo", {
+			origin: "top",
+			duration: 2000,
+		});
+		sr.reveal(".youthopiaDetails", {
+			origin: "bottom",
+			duration: 1500,
+			delay: 1000,
+			distance: "50px",
+		});
+		sr.reveal(".registerButton", {
+			origin: "bottom",
+			duration: 1500,
+			delay: 1200,
+			distance: "50px",
+		});
+		sr.reveal(".googlePlay, .scrollDownButton", {
+			origin: "bottom",
+			duration: 1500,
+			delay: 1400,
+			distance: "50px",
+		});
 	}, []);
 
 	return (
@@ -20,12 +51,17 @@ const LandingContainer = () => {
 				rel="noopener noreferrer"
 				className="ditLogo"
 			>
-				<img src={ditLogo} alt="" />
+				<img src={ditLogo} className="landingPageDitLogo" alt="" />
 			</a>
 
 			<div className="youthopiaLogo">
-				<img src={hands} alt="" />
-				<div>
+				<Fade>
+					<Zoom>
+						<img src={hands} alt="" />
+					</Zoom>
+				</Fade>
+
+				<div className="youthopiaDetails">
 					<p>17th-19th</p>
 					<p>November</p>
 				</div>
@@ -38,7 +74,7 @@ const LandingContainer = () => {
 
 			<img
 				src={scrollDownIcon}
-				className="absolute bottom-[1rem] w-[3rem] h-[3rem]"
+				className="scrollDownButton absolute bottom-[1rem] w-[3rem] h-[3rem]"
 				alt=""
 			/>
 			<div className="googlePlay absolute bottom-[1rem] right-[1rem]">

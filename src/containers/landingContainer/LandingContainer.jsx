@@ -9,7 +9,7 @@ import { useEffect } from "react";
 const LandingContainer = () => {
 	useEffect(() => {
 		let vh = window.innerHeight;
-		document.documentElement.style.setProperty("--vh", `${vh}px`);
+		document.documentElement.style.setProperty("--vh", `${vh - 64}px`); //-64 because status bar is not positioned fiex and taking its own space
 	}, []);
 
 	return (

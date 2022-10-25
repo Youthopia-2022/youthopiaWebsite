@@ -1,5 +1,6 @@
 import EventsWrapper from "./EventsWrapper";
 import "./EventCard.css";
+import { Link } from "react-router-dom";
 
 const Events = () => {
   return (
@@ -15,7 +16,9 @@ const Events = () => {
         </button>
       </div>
       <EventsWrapper />
+      <Link to="/events">
       <div className="more">Explore More Events</div>
+      </Link>
     </div>
   );
 };

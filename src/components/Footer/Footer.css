@@ -14,13 +14,11 @@
     font-family: 'IBM Plex Sans';
 }
 
-
-
-.footer-content-left {
+ .footer-content-left {
     color: #1BBEE9;
-    
 }
-.footer-content-left>div {
+
+ .footer-content-left>div {
     display: flex;
 }
 
@@ -28,8 +26,6 @@
     
     font-style: normal;
 }
-
-
 
 .footer-content-left>.location-content>a>h2 {
     
@@ -40,6 +36,7 @@
 .footer-content-left>.location-content>a:hover{
     text-decoration: underline;
 }
+
 i{
     color: #FC0160;
 }
@@ -48,6 +45,7 @@ i{
     margin-right: 10%;
     margin-top: 4%;
 }
+
 .footer-content-left>.call-content>.call-icon{
     
     margin-right: 8%;
@@ -72,6 +70,9 @@ i{
 }
 .footer-content-right>.download-app{
     display: flex;
+    position: absolute;
+    top: 6rem;
+    right: 5rem;
 }
 
 .footer-content-right>.download-app>img{
@@ -80,19 +81,61 @@ i{
 
 .footer-content-right>.social-icons{
     display: flex;
+    position: absolute;
+    bottom: 9rem;
+    right: 4rem;
 }
 
-@media only screen and (max-width: 550px){
-    .footer-content-right>.download-app{
+
+@media only screen and (max-width: 630px){
+    .footer{
         display: inline-block;
+        width: 100vw;
+        padding: 0;
+        align-items: center;
+        position:relative;
     }
-    .footer-content-right>.download-app{
-        right: 1rem;
+    .footer>.footer-content-left{
+        width: 100vw;
+        align-items: center;
+        margin-top: 10%;
+        padding-left: 7.5%;
     }
-    .footer-content-right>.download-app>img{
-        margin-top: 5vw;
+    .footer>.footer-content-left>.call-content{
+        margin-top: 5%;
+    }
+    .footer-content-left >.location-content>a> h5 {
+    
+        font-size: 2rem;
+    }
+    .footer-content-left>.location-content>a>h2 {
+    
+        max-width: 80vw;
+    }
+    .footer-content-left>.location-content>.location-icon{
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 4%;
+    }
+    .footer>.footer-content-left>.call-content{
+        font-size: 1.3rem;
+    }
+    
+    .footer-content-left>.call-content>.call-icon{
+        
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 2%;
+    }
+    .footer>.footer-content-right>.download-app{
+        left: 20%;
+        right: 0;
+        top: 70%;
+        margin-right: 5rem;
     }
     .footer-content-right>.social-icons{
-        right: 1rem;
+        left: 20%;
+        right: 0;
+        top: 88%;
     }
 }

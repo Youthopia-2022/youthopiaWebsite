@@ -10,8 +10,45 @@ const Navbar = () => {
   };
   return (
     <nav className="navbar ">
+      <div className="social-icons absolute py-4 right-[1rem] ">
+                  <a
+                    className="px-4"
+                    href="https://www.linkedin.com/school/dit-university/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fa-brands fa-xl fa-linkedin-in"></i>
+                  </a>
+                  <a
+                    className="px-4"
+                    href="https://www.instagram.com/dituniversity/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fa-brands fa-xl fa-instagram"></i>
+                  </a>
+                  <a
+                    className="px-4"
+                    href="https://www.facebook.com/DITUniversity.edu"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fa-brands fa-xl fa-facebook"></i>
+                  </a>
+                  <a
+                    className="px-4"
+                    href="https://www.youtube.com/channel/UCUibKytzSf4QnOCZfcZW3fw/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fa-brands fa-xl fa-youtube"></i>
+                  </a>
+                </div>
       <div className=" lap-navbar mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <div className="relative flex h-16 items-center justify-between">
+        <div className="inner-nav relative flex h-16 items-center justify-between ">
+        <div className="flex flex-shrink-0 items-center">
+              <Link to="/"><img className="navicon"src={require("../../images/navbar-logo.png")} alt="" /></Link>
+            </div>
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* <!-- Mobile menu button--> */}
             <button
@@ -30,7 +67,7 @@ const Navbar = () => {
             Menu open: "hidden", Menu closed: "block"
           --> */}
               <svg
-                className="block h-6 w-6"
+                className="block h-6 w-6 "
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -52,7 +89,7 @@ const Navbar = () => {
             Menu open: "block", Menu closed: "hidden"
           --> */}
               <svg
-                className="hidden h-6 w-6"
+                className="hidden h-6 w-6 "
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -68,11 +105,9 @@ const Navbar = () => {
               </svg>
             </button>
           </div>
-          <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-            <div className="flex flex-shrink-0 items-center">
-              <img src={require("../../images/navbar-logo.png")} alt="" />
-            </div>
-            <div className=" inner-nav hidden sm:ml-6 sm:block">
+          <div className="flex flex-1 items-center justify-center sm:items-stretch  ">
+            
+            <div className=" inner-navbar hidden sm:block">
               <div className="nav-item flex space-x-4">
                 <Link
                   to="/"
@@ -117,43 +152,10 @@ const Navbar = () => {
                     location.pathname === "/contact" ? "active" : ""
                   }`}
                 >
-                  Contact Us
+                  About Us
                 </Link>
 
-                <div className="social-icons absolute py-2  ">
-                  <a
-                    className="px-4"
-                    href="https://www.linkedin.com/school/dit-university/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fa-brands fa-xl fa-linkedin-in"></i>
-                  </a>
-                  <a
-                    className="px-4"
-                    href="https://www.instagram.com/dituniversity/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fa-brands fa-xl fa-instagram"></i>
-                  </a>
-                  <a
-                    className="px-4"
-                    href="https://www.facebook.com/DITUniversity.edu"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fa-brands fa-xl fa-facebook"></i>
-                  </a>
-                  <a
-                    className="px-4"
-                    href="https://www.youtube.com/channel/UCUibKytzSf4QnOCZfcZW3fw/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fa-brands fa-xl fa-youtube"></i>
-                  </a>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -209,7 +211,7 @@ const Navbar = () => {
                   location.pathname === "/contact" ? "active" : ""
                 }`}
               >
-                Contact Us
+                About Us
               </Link>
             </>
           ) : (

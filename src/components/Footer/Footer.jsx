@@ -26,7 +26,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-content-right">
-        <div className="download-app absolute top-[6rem] right-[2rem]">
+        <div className="download-app ">
           <a href="/#">
             <h3>Download Our App:</h3>
           </a>
@@ -35,39 +35,43 @@ const Footer = () => {
             alt=""
           />
         </div>
-        <div className="social-icons absolute bottom-[9rem] right-[1rem]">
-          <a
-            className="px-4"
-            href="https://www.linkedin.com/school/dit-university/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fa-brands fa-xl fa-linkedin-in"></i>
-          </a>
-          <a
-            className="px-4"
-            href="https://www.instagram.com/dituniversity/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fa-brands fa-xl fa-instagram"></i>
-          </a>
-          <a
-            className="px-4"
-            href="https://www.facebook.com/DITUniversity.edu"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fa-brands fa-xl fa-facebook"></i>
-          </a>
-          <a
-            className="px-4"
-            href="https://www.youtube.com/channel/UCUibKytzSf4QnOCZfcZW3fw/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fa-brands fa-xl fa-youtube"></i>
-          </a>
+        <div className="social-icons">
+          <div className="first-two-icon">
+            <a
+              className="px-4"
+              href="https://www.linkedin.com/school/dit-university/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-brands fa-xl fa-linkedin-in"></i>
+            </a>
+            <a
+              className="px-4"
+              href="https://www.instagram.com/dituniversity/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-brands fa-xl fa-instagram"></i>
+            </a>
+          </div>
+          <div className="next-two-icons">
+            <a
+              className="px-4"
+              href="https://www.facebook.com/DITUniversity.edu"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-brands fa-xl fa-facebook"></i>
+            </a>
+            <a
+              className="px-4"
+              href="https://www.youtube.com/channel/UCUibKytzSf4QnOCZfcZW3fw/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-brands fa-xl fa-youtube"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>

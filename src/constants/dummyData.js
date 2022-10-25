@@ -18,7 +18,7 @@ export const events = [
   },
   {
     id: 3,
-    title: "Gaming Events",
+    title: "Informal Events",
     desc: "Fingerstache flexitarian street art 8-bit waistcoat.  Distillery hexagon disrupt edison bulbche.",
     thumbnail: image3,
   },

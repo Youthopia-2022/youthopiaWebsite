@@ -42,35 +42,35 @@ html {
   margin: 20px;
 }
 @media only screen and (max-width: 1290px) {
-  .EventCard {
+  .EventCardd {
     width: 23vw;
     margin: 10px;
     height: 40vh;
   }
 }
 @media only screen and (max-width: 768px) {
-  .EventCard {
+  .EventCardd {
     width: 35vw;
     margin: 5px;
     height: 50vh;
   }
 }
 @media only screen and (max-width: 600px) {
-  .EventCard {
+  .EventCardd {
     width: 50vw;
     margin: 5px;
     height: 50vh;
   }
 }
 @media only screen and (max-width: 515px) {
-  .EventCard {
+  .EventCardd {
     width: 80vw;
     margin: 5px;
     height: 50vh;
   }
 }
 @media only screen and (max-width: 480px) {
-  .EventCard {
+  .EventCardd {
     width: 90vw;
     margin: 5px;
     height: 50vh;
@@ -86,14 +86,14 @@ html {
     margin-top: 5px;
   }
 }
-.EventCard .image {
+.EventCardd .image {
   /* width: %; */
   display: flex;
   align-self: center;
   align-items: center;
   flex-wrap: wrap;
 }
-.EventCard img {
+.EventCardd img {
   width: 100%;
   /* object-fit: contain; */
   text-align: center;

@@ -28,7 +28,7 @@
 .absimage {
 	position: absolute;
 	bottom: 0;
-	right: 2rem;
+	right: 1rem;
 	width: 20rem;
 }
 .logo {
@@ -39,12 +39,52 @@
 	width: 25rem;
 }
 
-.teamsHolder > div {
-	width: 10rem;
+.teamsHolder {
+	padding: 1rem;
+	width: 100vw;
+	display: grid;
+	row-gap: 3rem;
+	grid-template-columns: repeat(4, calc(24vw - 2rem));
+	grid-template-rows: auto;
+	justify-content: center;
 }
 
-@media only screen and (max-width: 672px) {
+.teamsHolder > div {
+	width: 100%;
+	padding: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+@media only screen and (max-width: 871px) {
 	.teamsHolder {
-		justify-content: center;
+		grid-template-columns: repeat(3, calc(33.3vw - 4rem));
+	}
+}
+
+@media only screen and (max-width: 771px) {
+	.teamsHolder {
+		grid-template-columns: repeat(2, 15rem);
+	}
+}
+@media only screen and (max-width: 517px) {
+	.teamsHolder {
+		grid-template-columns: repeat(1, auto);
+		padding: 0;
+	}
+	.teamsHolder > div {
+		width: max-content;
+		padding: 0;
+	}
+}
+@media only screen and (max-width: 672px) {
+	.logo {
+		bottom: 20rem;
+		width: 15rem;
+	}
+	.absimage {
+		width: 15rem;
 	}
 }

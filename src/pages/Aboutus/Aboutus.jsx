@@ -14,17 +14,23 @@ const Aboutus = () => {
 		{ membername: "abc", branchyear: "branch" },
 		{ membername: "abc", branchyear: "branch" },
 	];
+	const DesignTeam = [
+		{ membername: "abc", branchyear: "branch" },
+		{ membername: "abc", branchyear: "branch" },
+		{ membername: "abc", branchyear: "branch" },
+		{ membername: "abc", branchyear: "branch" },
+	];
 
 	return (
 		<div className=" maincontainerAboutUs bg-[#3A3B5C]">
 			<div className="aboutUsContent">
 				<h1 style={myStyle7}>Meet Our Team</h1>
 				<br></br>
-				<div className="teamsHolder flex flex-row justify-start p-[2rem] gap-y-[2rem] gap-x-[4rem] flex-wrap">
+				<div className="teamsHolder">
 					<Abus title="Conveners" members={Conveners} />
-					<Abus title="Designer team" members={Conveners} />
-					<Abus title="Designer team" members={Conveners} />
-					<Abus title="Designer team" members={Conveners} />
+					<Abus title="Designer team" members={DesignTeam} />
+					<Abus title="Designer Team members" members={Conveners} />
+					<Abus title="Development Team" members={Conveners} />
 					<Abus title="Development Team members" members={Conveners} />
 				</div>
 			</div>

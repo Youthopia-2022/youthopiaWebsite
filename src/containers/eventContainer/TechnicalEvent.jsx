@@ -1,9 +1,25 @@
+import { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 import "./EventContainer.css";
 import background from "../../images/technicalEventBackground.png";
 import image from "../../images/image01.png";
 import "./EventContainer.css";
 
 const TechnicalEvent = (props) => {
+	useEffect(() => {
+		const sr = ScrollReveal({
+			distance: "60px",
+			reset: false,
+			duration: 1200,
+			delay: 500,
+			origin: "bottom",
+		});
+		sr.reveal(`.eventImage`, { origin: "left" });
+		sr.reveal(`.eventTitle`, { origin: "right", delay: 800 });
+		sr.reveal(`.afterEventTitle`, { origin: "bottom", delay: 1100 });
+		sr.reveal(`.eventDescription`, { origin: "bottom", delay: 1400 });
+		sr.reveal(`.eventResgisterButton`, { origin: "bottom", delay: 1700 });
+	}, []);
 	return (
 		<div
 			className="bg-center bg-no-repeat bg-cover py-[2rem] flex justify-center items-center min-h-[80vh]"
@@ -20,7 +36,7 @@ const TechnicalEvent = (props) => {
 						<div className="eventTitle font-bold text-[3.5rem]">
 							Technical Event
 						</div>
-						<div className="flex justify-between items-center w-[100%] mt-[1rem] text-[1.2rem] font-[500]">
+						<div className="afterEventTitle flex justify-between items-center w-[100%] mt-[1rem] text-[1.2rem] font-[500]">
 							<p>Vedanta Hall </p>{" "}
 							<div className="w-[10px] h-[10px] rounded-[50%] bg-white"></div>
 							<p className="text-[#fc0160]">21/21/2022</p>

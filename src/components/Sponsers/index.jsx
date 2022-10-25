@@ -8,14 +8,14 @@ import mcd from "../../images/macd.png";
 import ScrollReveal from "scrollreveal";
 
 const Sponsers = () => {
-	const sr = ScrollReveal({
-		distance: "60px",
-		reset: false,
-		duration: 1200,
-		delay: 50,
-		origin: "bottom",
-	});
 	useEffect(() => {
+		const sr = ScrollReveal({
+			distance: "60px",
+			reset: false,
+			duration: 1200,
+			delay: 50,
+			origin: "bottom",
+		});
 		sr.reveal(`.sponser1`, {});
 		sr.reveal(`.sponser2`, { delay: 90 });
 		sr.reveal(`.sponser3`, { delay: 130 });

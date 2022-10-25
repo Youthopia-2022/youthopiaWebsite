@@ -1,5 +1,6 @@
 .LandingContainer {
-	height: var(--vh);
+	/* height: var(--vh); */
+	min-height: 100vh;
 	background-size: cover;
 	background-position: center;
 	display: flex;

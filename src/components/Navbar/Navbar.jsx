@@ -134,15 +134,6 @@ const Navbar = () => {
                 </Link>
 
                 <Link
-                  to="/socialmedia"
-                  className={` text-white px-9 py-2 rounded-md text-sm font-medium ${
-                    location.pathname === "/socialmedia" ? "active" : ""
-                  }`}
-                >
-                  Social Media
-                </Link>
-
-                <Link
                   to="/gallery"
                   className={` text-white px-9 py-2 rounded-md text-sm font-medium ${
                     location.pathname === "/gallery" ? "active" : ""
@@ -188,15 +179,6 @@ const Navbar = () => {
                 }`}
               >
                 Events
-              </Link>
-
-              <Link
-                to="/socialmedia"
-                className={` text-white block px-3 py-2 rounded-md text-sm font-medium ${
-                  location.pathname === "/socialmedia" ? "active" : ""
-                }`}
-              >
-                Social Media
               </Link>
 
               <Link

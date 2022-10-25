@@ -1,34 +1,90 @@
-.maincontainer{
-    width:100vw;
+.maincontainerAboutUs {
+	width: 100vw;
+	height: calc(100vh - 64px);
+	max-height: calc(100vh - 64px);
+	overflow: hidden;
+	position: relative;
+	background: radial-gradient(
+				80.21% 80.21% at 33.31% 95.58%,
+				#3a3a5c 0%,
+				#0a0a1b 100%
+			)
+			/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+		#0b0a1b;
 }
-.absimage{
-    position: absolute;
-        left: 68.77%;
-        right: 2.18%;
-        width:30%
-        
-    
-        
+.aboutUsContent {
+	height: 100%;
+	width: 100%;
+	background: none;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	z-index: 10;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 2rem;
 }
-.logo{
-    
-    width: 1370.43px;
-        height: 619px;
-        width:50%;
-        
+
+.absimage {
+	position: absolute;
+	bottom: 0;
+	right: 1rem;
+	width: 20rem;
 }
-.cont1{
-    width: 15%;
+.logo {
+	position: absolute;
+	transform: rotate(358deg);
+	bottom: -8rem;
+	left: 0;
+	width: 25rem;
 }
-.cont2 {
-    width: 15%;
+
+.teamsHolder {
+	padding: 1rem;
+	width: 100vw;
+	display: grid;
+	row-gap: 3rem;
+	grid-template-columns: repeat(4, calc(24vw - 2rem));
+	grid-template-rows: auto;
+	justify-content: center;
 }
-.cont3 {
-    width: 25%;
+
+.teamsHolder > div {
+	width: 100%;
+	padding: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
 }
-.cont4 {
-    width: 20%;
+
+@media only screen and (max-width: 871px) {
+	.teamsHolder {
+		grid-template-columns: repeat(3, calc(33.3vw - 4rem));
+	}
 }
-.cont5 {
-    width: 20%;
+
+@media only screen and (max-width: 771px) {
+	.teamsHolder {
+		grid-template-columns: repeat(2, 15rem);
+	}
+}
+@media only screen and (max-width: 517px) {
+	.teamsHolder {
+		grid-template-columns: repeat(1, auto);
+		padding: 0;
+	}
+	.teamsHolder > div {
+		width: max-content;
+		padding: 0;
+	}
+}
+@media only screen and (max-width: 672px) {
+	.logo {
+		bottom: 20rem;
+		width: 15rem;
+	}
+	.absimage {
+		width: 15rem;
+	}
 }

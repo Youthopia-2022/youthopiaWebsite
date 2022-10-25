@@ -2,7 +2,7 @@ import "./EventCard.css";
 import "@fontsource/ibm-plex-sans";
 const EventCard = (props) => {
   return (
-    <div className="EventCard">
+    <div className="EventCardd">
       <div className="imagee">
         <img src={props.image} alt="" />
       </div>

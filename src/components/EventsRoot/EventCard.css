@@ -22,7 +22,7 @@ html {
 
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#3A3A5C", endColorstr="#0A0A1B", GradientType=1 );
 }
-.EventCard {
+.EventCardd {
   display: flex;
   background: linear-gradient(
     89.62deg,

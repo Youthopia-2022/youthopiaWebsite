@@ -11,44 +11,50 @@ const Navbar = () => {
   return (
     <nav className="navbar ">
       <div className="social-icons absolute py-4 right-[1rem] ">
-                  <a
-                    className="px-4"
-                    href="https://www.linkedin.com/school/dit-university/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fa-brands fa-xl fa-linkedin-in"></i>
-                  </a>
-                  <a
-                    className="px-4"
-                    href="https://www.instagram.com/dituniversity/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fa-brands fa-xl fa-instagram"></i>
-                  </a>
-                  <a
-                    className="px-4"
-                    href="https://www.facebook.com/DITUniversity.edu"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fa-brands fa-xl fa-facebook"></i>
-                  </a>
-                  <a
-                    className="px-4"
-                    href="https://www.youtube.com/channel/UCUibKytzSf4QnOCZfcZW3fw/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fa-brands fa-xl fa-youtube"></i>
-                  </a>
-                </div>
+        <a
+          className="px-4"
+          href="https://www.linkedin.com/school/dit-university/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fa-brands fa-xl fa-linkedin-in"></i>
+        </a>
+        <a
+          className="px-4"
+          href="https://www.instagram.com/dituniversity/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fa-brands fa-xl fa-instagram"></i>
+        </a>
+        <a
+          className="px-4"
+          href="https://www.facebook.com/DITUniversity.edu"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fa-brands fa-xl fa-facebook"></i>
+        </a>
+        <a
+          className="px-4"
+          href="https://www.youtube.com/channel/UCUibKytzSf4QnOCZfcZW3fw/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fa-brands fa-xl fa-youtube"></i>
+        </a>
+      </div>
       <div className=" lap-navbar mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="inner-nav relative flex h-16 items-center justify-between ">
-        <div className="flex flex-shrink-0 items-center">
-              <Link to="/"><img className="navicon"src={require("../../images/navbar-logo.png")} alt="" /></Link>
-            </div>
+          <div className="flex flex-shrink-0 items-center">
+            <Link to="/">
+              <img
+                className="navicon"
+                src={require("../../images/navbar-logo.png")}
+                alt=""
+              />
+            </Link>
+          </div>
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* <!-- Mobile menu button--> */}
             <button
@@ -106,7 +112,6 @@ const Navbar = () => {
             </button>
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch  ">
-            
             <div className=" inner-navbar hidden sm:block">
               <div className="nav-item flex space-x-4">
                 <Link
@@ -147,15 +152,13 @@ const Navbar = () => {
                 </Link>
 
                 <Link
-                  to="/contact"
+                  to="/aboutus"
                   className={` text-white px-9 py-2 rounded-md text-sm font-medium ${
-                    location.pathname === "/contact" ? "active" : ""
+                    location.pathname === "/aboutus" ? "active" : ""
                   }`}
                 >
                   About Us
                 </Link>
-
-                
               </div>
             </div>
           </div>
@@ -206,9 +209,9 @@ const Navbar = () => {
               </Link>
 
               <Link
-                to="/contact"
+                to="/aboutus"
                 className={` text-white block px-3 py-2 rounded-md text-sm font-medium ${
-                  location.pathname === "/contact" ? "active" : ""
+                  location.pathname === "/aboutus" ? "active" : ""
                 }`}
               >
                 About Us

@@ -70,6 +70,9 @@ i{
 }
 .footer-content-right>.download-app{
     display: flex;
+    position: absolute;
+    top: 6rem;
+    right: 5rem;
 }
 
 .footer-content-right>.download-app>img{
@@ -78,60 +81,61 @@ i{
 
 .footer-content-right>.social-icons{
     display: flex;
+    position: absolute;
+    bottom: 9rem;
+    right: 4rem;
 }
 
-@media only screen and (max-width: 550px){
-    .footer-content-right>.download-app{
+
+@media only screen and (max-width: 630px){
+    .footer{
         display: inline-block;
+        width: 100vw;
+        padding: 0;
+        align-items: center;
+        position:relative;
     }
-    .footer-content-right>.download-app{
-        right: 1rem;
+    .footer>.footer-content-left{
+        width: 100vw;
+        align-items: center;
+        margin-top: 10%;
+        padding-left: 7.5%;
     }
-    .footer-content-right>.download-app>img{
-        margin-top: 5vw;
+    .footer>.footer-content-left>.call-content{
+        margin-top: 5%;
+    }
+    .footer-content-left >.location-content>a> h5 {
+    
+        font-size: 2rem;
+    }
+    .footer-content-left>.location-content>a>h2 {
+    
+        max-width: 80vw;
+    }
+    .footer-content-left>.location-content>.location-icon{
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 4%;
+    }
+    .footer>.footer-content-left>.call-content{
+        font-size: 1.3rem;
+    }
+    
+    .footer-content-left>.call-content>.call-icon{
+        
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 2%;
+    }
+    .footer>.footer-content-right>.download-app{
+        left: 20%;
+        right: 0;
+        top: 70%;
+        margin-right: 5rem;
     }
     .footer-content-right>.social-icons{
-        right: 1rem;
-    }
-}
-@media only screen and (max-width: 490px){
-    .footer-content-right>.social-icons>div>.px-4{
-        font-size: smaller;
-        padding: 0 0.75rem;
-    }
-    .footer-content-right>.download-app>img{
-        scale: 0.8;
-    }
-}
-@media only screen and (max-width: 430px){
-    .footer-content-right>.social-icons{
-        display: inline-block;
-    }
-    .footer-content-right>.social-icons>div{
-        margin-top: 0.5rem ;
-    } 
-    .footer-content-right>.download-app{
-        right: 0rem;
-        top: 2rem;
-    }
-    .footer-content-right>.social-icons{
-        right: 1rem;
-        bottom: 12rem;
-    }
-    .footer-content-right>.download-app>img{
-        scale: 0.8;
-    }
-}
-@media only screen and (max-width: 330px){
-    .footer-content-right>.download-app{
-        right: 0rem;
-        top: 1.5rem;
-    }
-    .footer-content-right>.social-icons{
-        right: 1rem;
-        bottom: 14rem;
-    }
-    .footer-content-right>.download-app>img{
-        scale: 0.7;
+        left: 20%;
+        right: 0;
+        top: 88%;
     }
 }

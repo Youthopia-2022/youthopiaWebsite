@@ -8,8 +8,12 @@
     position: relative;
     margin-right: 0%;
     padding-right: 0;
+    margin-left: 0;
 }
 
+/* .navicon{
+    margin-right: 10%;
+} */
 .nav-item>.social-icons{
     display: flex;
     position: absolute;
@@ -26,11 +30,21 @@
     font-weight: 500 !important;
 }
 
-@media (min-width: 640px)
-{
-.sm\:ml-6 {
-    margin-left: 3.5rem;
+.inner-navbar{
+    
 }
+
+@media only screen and (max-width: 640px)
+{
+    .navicon{
+        margin: 0 42vw;
+    }
+}
+@media only screen and (max-width: 335px)
+{
+    .navicon{
+        margin: 0 40vw;
+    }
 }
 
 @media only screen and (max-width: 1180px)
@@ -40,12 +54,13 @@
         right: 0rem;
     }
 }
-@media only screen and (max-width: 1030px)
+@media only screen and (max-width: 1225px)
 {
-    .nav-item>.social-icons{
+    .navbar>.social-icons{
         display: none;
     }
 }
+
 @media only screen and (max-width: 830px)
 {
     .inner-nav{

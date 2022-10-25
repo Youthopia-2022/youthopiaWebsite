@@ -26,7 +26,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-content-right">
-        <div className="download-app absolute top-[6rem] right-[2rem]">
+        <div className="download-app ">
           <a href="/#">
             <h3>Download Our App:</h3>
           </a>
@@ -35,7 +35,7 @@ const Footer = () => {
             alt=""
           />
         </div>
-        <div className="social-icons absolute bottom-[9rem] right-[1rem]">
+        <div className="social-icons">
           <div className="first-two-icon">
             <a
               className="px-4"

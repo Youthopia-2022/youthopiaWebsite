@@ -1,55 +1,73 @@
 import React from "react";
 import absimage from "../../images/absimage.png";
 import logo from "../../images/logo.png";
-import "./Aboutus.css"
-
-//import { propTypes } from "react-bootstrap/esm/Image";
+import "./Aboutus.css";
 import Abus from "../../components/Abus/Abus";
-const Aboutus = () =>{
-    const myStyle7={
-        color:"white",
-        fontFamily:"'IBM Plex Sans'",
-        fontSize: 28,
-    }
-    
-    return(
-        <div  className=" maincontainer bg-[#3A3B5C]">
-            <div >
-            <center><h1 style={myStyle7}>Meet Our Team</h1></center> 
-            <br></br>
-            <div className="flex flex-row">
-            <div className="cont1">
-            <Abus title="Conveners"  membername="name" branchyear="branch-year" ></Abus>
-            <Abus membername="name" branchyear="branch-year" ></Abus></div>
-            <div className="cont2">
-            <Abus title="Designer team"  membername="Head 1" branchyear="branch-year"></Abus>
-            <Abus membername="Head2" branchyear="branch-year" ></Abus></div>
-            <div className="cont3">
-            <Abus title="Designer Team Members"  membername="Member 1" branchyear="branch-year"></Abus>
-            <Abus  membername="Member 2" branchyear="branch-year"></Abus>
-            <Abus  membername="Member 3" branchyear="branch-year" ></Abus>
-            <Abus  membername="Member 4" branchyear="branch-year" ></Abus></div>
-            <div className="cont4" >
-            <Abus title="Development team"  membername="Head 1" branchyear="branch-year" ></Abus>
-            <Abus membername="Head 2" branchyear="branch-year" ></Abus>
-            </div>
-            <div className="cont5" >
-            <Abus title="Development team members" membername="Member 1" branch-year="branch-year"></Abus>
-            <Abus  membername="Member 2" branchyear="branch-year"></Abus>
-            <Abus  membername="Member 3" branchyear="branch-year"></Abus>
-            <Abus  membername="Member 4" branchyear="branch-year"></Abus>
-            </div>
-            
-            
-            </div>
-            <div className="flex flex-row">
-                <img className="logo" src={logo} alt="img not availabe"></img>
-                <img className="absimage" src={absimage} alt="img not avilable"></img>
-            </div>
 
-            </div>
-            
+const AllTeams = [
+  {
+    "Designing Team": {
+      heads: [
+        { membername: "John Doe (Head)", branchyear: "CSE" },
+        { membername: "John Doe (Head)", branchyear: "CSE" },
+      ],
+      members: [
+        { membername: "Jack", branchyear: "CSE" },
+        { membername: "Jack", branchyear: "CSE" },
+        { membername: "Jack", branchyear: "CSE" },
+        { membername: "Jack", branchyear: "CSE" },
+      ],
+    },
+  },
+  {
+    "Technical Team": {
+      heads: [
+        { membername: "John Doe (Head)", branchyear: "CSE" },
+        { membername: "John Doe", branchyear: "CSE" },
+      ],
+      members: [
+        { membername: "John Doe", branchyear: "CSE" },
+        { membername: "John Doe", branchyear: "CSE" },
+        { membername: "John Doe", branchyear: "CSE" },
+        { membername: "John Doe", branchyear: "CSE" },
+      ],
+    },
+  },
+];
+
+const Aboutus = () => {
+  const myStyle7 = {
+    color: "white",
+    fontFamily: "'IBM Plex Sans'",
+    fontSize: 28,
+    fontWeight: 700,
+  };
+  const Conveners = [
+    { membername: "Jack", branchyear: "CSE" },
+    { membername: "Jack", branchyear: "CSE" },
+  ];
+
+  return (
+    <div className="maincontainerAboutUs bg-[#3A3B5C]">
+      <div className="aboutUsContent">
+        <h1 style={myStyle7}>Meet Our Team</h1>
+        <br></br>
+        <div className="teamsHolder">
+          <Abus title="Conveners" heads={[]} members={Conveners} />
+
+          {AllTeams.map((team, id) => (
+            <Abus
+              key={id}
+              title={Object.keys(team)[0]}
+              heads={team[Object.keys(team)[0]].heads}
+              members={team[Object.keys(team)[0]].members}
+            />
+          ))}
         </div>
-    )
-}
+      </div>
+      <img className="logo" src={logo} alt="img not availabe"></img>
+      <img className="absimage" src={absimage} alt="img not avilable"></img>
+    </div>
+  );
+};
 export default Aboutus;

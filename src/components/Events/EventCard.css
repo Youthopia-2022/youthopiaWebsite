@@ -19,15 +19,7 @@
   border: 2px solid #fc0160;
   border-radius: 0%;
 }
-.cl{
-  background-color: #fc0160;
-  width: max-content;
-  color: white;
-  font-family: 'IBM Plex Sans';
-
-}
-.dsf{
-  color: #00495C;
-  font-family: 'IBM Plex Sans';
-
+.dsf {
+  color: #00495c;
+  font-family: "IBM Plex Sans";
 }

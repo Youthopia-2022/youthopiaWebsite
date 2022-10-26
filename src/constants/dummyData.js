@@ -9,23 +9,27 @@ export const events = [
     title: "Technical Events",
     desc: "Fingerstache flexitarian street art 8-bit waistcoat.  Distillery hexagon disrupt edison bulbche.",
     thumbnail: image1,
+    eventSlug: "evt",
   },
   {
     id: 2,
     title: "Cultural Events",
     desc: "Fingerstache flexitarian street art 8-bit waistcoat.  Distillery hexagon disrupt edison bulbche.",
     thumbnail: image2,
+    eventSlug: "evc",
   },
   {
     id: 3,
     title: "Informal Events",
     desc: "Fingerstache flexitarian street art 8-bit waistcoat.  Distillery hexagon disrupt edison bulbche.",
     thumbnail: image3,
+    eventSlug: "evi",
   },
   {
     id: 4,
     title: "Debate Events",
     desc: "Fingerstache flexitarian street art 8-bit waistcoat.  Distillery hexagon disrupt edison bulbche.",
     thumbnail: image4,
+    eventSlug: "evd",
   },
 ];

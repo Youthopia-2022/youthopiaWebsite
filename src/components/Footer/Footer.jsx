@@ -11,10 +11,9 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h5>DIT UNIVERSITY,</h5>
             <h2>
-              Mussoorie - Diversion Road, Village Makkawala,Dehradun,
-              Uttarakhand -248009,India
+              DIT UNIVERSITY, Mussoorie - Diversion Road, Village
+              Makkawala,Dehradun, Uttarakhand -248009,India
             </h2>
           </a>
         </div>

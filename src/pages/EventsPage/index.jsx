@@ -79,25 +79,25 @@ const EventsPage = () => {
           </button>
           <button
             className={isActivet ? "active" : ""}
-            onClick={() => handleClickTe("Technical")}
+            onClick={() => handleClickTe("evt")}
           >
             Technical
           </button>
           <button
             className={isActivec ? "active" : ""}
-            onClick={() => handleClickCu("CULTURAL")}
+            onClick={() => handleClickCu("evc")}
           >
             Cultural
           </button>
           <button
             className={isActivei ? "active" : ""}
-            onClick={() => handleClickIn("Informal")}
+            onClick={() => handleClickIn("evi")}
           >
             Informal
           </button>
           <button
             className={isActived ? "active" : ""}
-            onClick={() => handleClickDe("Debate")}
+            onClick={() => handleClickDe("evd")}
           >
             Debate
           </button>
@@ -115,6 +115,7 @@ const EventsPage = () => {
                 time={event.time}
                 price={event.price}
                 date={event.date}
+                Link={`${event.Category}/${event.name}`}
               />
             );
           })}

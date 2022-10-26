@@ -6,6 +6,10 @@
 	);
 }
 
+.eventTitle {
+	max-width: 100%;
+}
+
 @media only screen and (max-width: 880px) {
 	.eventImage > img {
 		width: 250px;
@@ -15,7 +19,7 @@
 
 @media only screen and (max-width: 767px) {
 	.EventContainerChild {
-		flex-direction: column;
+		flex-direction: column !important;
 	}
 	.eventImage {
 		width: 100%;
@@ -24,12 +28,12 @@
 		width: 100%;
 	}
 	.eventTitle {
-		font-size: 3rem;
+		font-size: 2rem !important;
 	}
 }
 
 @media only screen and (max-width: 880px) {
 	.EventContainerChild {
-		padding: 0.5rem;
+		padding: 0.5rem !important;
 	}
 }

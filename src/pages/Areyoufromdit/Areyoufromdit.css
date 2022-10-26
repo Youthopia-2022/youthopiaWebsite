@@ -1,15 +1,14 @@
 .image1{
         position: absolute;
-        width: 158px;
-        height: 239px;
-        left: 140px;
-        top: 145px;
+        width: 30%;
+        height: 30%;
+        left:5vw;
+        top: 10vw;
         
 }
 .class1{
-    position: absolute;
-    width: 237px;
-    height: 38px;
+    /* position: absolute; */
+    width:100%;
     left: 20vw;
     top: 5vw;
     right: 1162;
@@ -21,9 +20,8 @@
     color: #FFFFFF;
 }
 .class2{
-position: absolute;
-width: 165px;
-height: 30px;
+/* position: absolute; */
+width: 100%;
 top: 12vw;
 left:20vw;
 font-family: 'IBM Plex Sans';
@@ -32,25 +30,35 @@ font-weight: 500;
 font-size: 25px;
 line-height: 120%;
 color: #FC0160;
-
 }
 
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .class2{
+font-size: 9px !important;
+    }
+    
+    }
+
 .class3{
-    position: absolute;
-        width: 319px;
-        height: 72px;
-        top:19vw;
-        left: 20vw;
-        right: 1082;
+        width: 100%;
+        top:14vw;
+        margin-right: 2vw;
         font-family: 'IBM Plex Sans';
         font-style: normal;
         font-weight: 700;
         font-size: 18px;
-        line-height: 120%;
+        
         color: #1BBEE9;
 
 }
 
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .class3 {
+        font-size: 9px !important;
+        top:45vw;
+    }
+
+}
 .class4{
     position: absolute;
         width: 152px;
@@ -69,15 +77,16 @@ color: #FC0160;
 }
 
 .class5{
-    position: absolute;
-        width: 440px;
-        height: 38px;
-        
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
         left:35vw;
         font-family: 'IBM Plex Sans';
         font-style: normal;
         font-weight: 700;
-        font-size: 32px;
+        font-size: 20px;
         line-height: 120%;
         color: #FFFFFF;
 
@@ -86,14 +95,12 @@ color: #FC0160;
 .button1{
     box-sizing: border-box;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    
     align-items: center;
     padding: 20px 24px;
     gap: 24px;
-    position: absolute;
-    width: 180px;
-    height: 55px;
+    width: 10%;
+    ;
     left: 35vw;
     top:40vw;
     background: linear-gradient(89.62deg, rgba(41, 18, 78, 0.8) 35.41%, rgba(183, 44, 161, 0.4) 99.72%);
@@ -103,15 +110,13 @@ color: #FC0160;
 .button2{
         box-sizing: border-box;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        
         align-items: center;
-        padding: 20px 24px;
+        
         gap: 24px;
-        position: absolute;
-        width: 180px;
-        height: 55px;
-        left: 50vw;
+        width: 10%;
+        
+        
         top: 40vw;
         background: linear-gradient(89.62deg, rgba(41, 18, 78, 0.8) 35.41%, rgba(183, 44, 161, 0.4) 99.72%);
         border: 1px solid #FC0160;
@@ -133,5 +138,5 @@ color: #FC0160;
         flex-grow: 0;
 }
 .maincontainer{
-    width: 100vw;
+    width: 100%;
 }

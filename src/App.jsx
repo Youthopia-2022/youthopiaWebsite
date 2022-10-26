@@ -13,6 +13,8 @@ import Navbar from "./components/Navbar/Navbar";
 import Aboutus from "./pages/Aboutus/Aboutus";
 import RegisterIndvdit from "./components/eventRegisteForm/RegisterIndvdit";
 import RegisterIndv from "./components/eventRegisteForm/RegisterIndv";
+import Registerteamdit from "./components/eventRegisteForm/Registerteamdit";
+import Registerteam from "./components/eventRegisteForm/Registerteam";
 const useScrollToTop = () => {
   const location = useLocation();
   useEffect(() => {
@@ -49,6 +51,8 @@ const App = () => {
         <Route path="/gallery" element={<Gallery />} />;
         <Route path="/forms/indv/dit" element={<RegisterIndvdit/>} />;
         <Route path="/forms/indv/nondit" element={<RegisterIndv/>} />;
+        <Route path="/forms/team/dit" element={<Registerteamdit/>} />;
+        <Route path="/forms/team/nondit" element={<Registerteam/>} />;
         <Route path="/aboutus" element={<Aboutus />} />;
       </Routes>
       <Footer />

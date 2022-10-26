@@ -90,10 +90,3 @@
 		left: 0;
 	}
 }
-
-@media only screen and (max-width: 840px) {
-	.googlePlay > img {
-		width: 6rem;
-		margin-bottom: 0.5rem;
-	}
-}

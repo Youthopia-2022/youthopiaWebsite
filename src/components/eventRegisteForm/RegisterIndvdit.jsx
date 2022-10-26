@@ -1,95 +1,108 @@
-import React from 'react'
-import './RegisterIndvdit.css'
+import React, { useRef, useState } from "react";
+import icon from "../../images/addPhoto.png";
+import "./register.css";
 
 function RegisterIndvdit() {
-    return (
-        <div className='form'>
-            <div className="md:grid md:grid-cols-3 md:gap-6 my-3">
-                <div className="mt-5 md:col-span-2 md:mt-0">
-                    <form action="#" method="POST">
-                        <div className=" sm:overflow-hidden sm:rounded-md">
-                            <div className="content space-y-6 px-4 py-5 sm:p-6">
-                                <div>
-                                    <div className="mt-1 flex items-center">
-                                        <span className="inline-block h-12 w-12 overflow-hidden rounded-full bg-gray-300">
-                                            <svg className="h-full w-full text-gray-600" fill="currentColor" viewBox="0 0 24 24">
-                                                <path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" />
-                                            </svg>
-                                        </span>
-                                        <label className="block text-lg font-medium text-white mx-5">Upload Your Profile Photo</label>
-                                    </div>
-                                </div>
-                                <hr />
+	const [uploadedImage, setuploadedImage] = useState("");
+	const onImageChange = (event) => {
+		if (event.target.files && event.target.files[0]) {
+			let img = event.target.files[0];
+			setuploadedImage(img);
+			console.log(uploadedImage);
+		}
+	};
+	const image = useRef();
+	return (
+		<div className="flex justify-center w-[100vw] items-center my-[2rem]">
+			<div className="formResponsive space-y-6 px-[2rem] w-[75vw]">
+				<div className="mt-1 flex items-center">
+					<div
+						className="bg-[#252525] w-[4rem] h-[4rem] rounded-[50%] flex justify-center items-center border-[#353535] border-2"
+						onClick={() => image.current.click()}
+					>
+						<img src={icon} alt="add photo" className="w-[15px] h-[15px]" />
+					</div>
+					<p className="ml-[1rem] text-white font-normal">
+						Upload Your Profile Photo
+					</p>
+				</div>
+				<div className="w-[100%] h-[0px] border-t-[1px] border-[#343434]"></div>
 
-                                <div className="grid grid-cols-3 gap-6">
-                                    <div className="col-span-3 sm:col-span-2">
-                                        <label htmlFor="name" className="block text-lg font-medium text-white">
-                                            Your Name
-                                        </label>
-                                        <div className="mt-1 flex rounded-md shadow-sm">
-                                            <input
-                                                type="text"
-                                                name="name"
-                                                id="name"
-                                                className="px-2 py-1 block w-full flex-1 rounded-md focus:border-indigo-500 focus:ring-indigo-500 sm:text-lg bg-transparent"
-                                                placeholder="Enter your Full Name"
-                                                required
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
+				<div>
+					<p
+						htmlFor="name"
+						className="block text-[1rem] font-normal text-white"
+					>
+						Your Name
+					</p>
+					<div className="mt-1 flex rounded-md shadow-sm">
+						<input
+							type="text"
+							name="name"
+							id="name"
+							className="registerFormInput h-[2.5rem] px-2 py-1 block w-[100%] rounded-[5px] bg-transparent"
+							placeholder="Enter your Full Name"
+							required
+						/>
+					</div>
+				</div>
 
-                                <div className="grid grid-cols-3 gap-6">
-                                    <div className="col-span-3 sm:col-span-2">
-                                        <label htmlFor="studentId" className="block text-lg font-medium text-white">
-                                            SAP ID
-                                        </label>
-                                        <div className="mt-1 flex rounded-md shadow-sm">
-                                            <input
-                                                type="number"
-                                                name="studentId"
-                                                id="studentId"
-                                                className="px-2 py-1 block w-full flex-1 rounded-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 sm:text-lg bg-transparent"
-                                                placeholder="Enter your SAP ID"
-                                                required
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
+				<div>
+					<p
+						htmlFor="name"
+						className="block text-[1rem] font-normal text-white"
+					>
+						SAP ID
+					</p>
+					<div className="mt-1 flex rounded-md shadow-sm">
+						<input
+							type="text"
+							name="name"
+							id="name"
+							className="registerFormInput h-[2.5rem] px-2 py-1 block w-[100%] rounded-[5px] bg-transparent"
+							placeholder="Enter your SAP ID"
+							required
+						/>
+					</div>
+				</div>
 
-                                <div className="grid grid-cols-3 gap-6">
-                                    <div className="col-span-3 sm:col-span-2">
-                                        <label htmlFor="phNumber" className="block text-lg font-medium text-white">
-                                            Phone Number
-                                        </label>
-                                        <div className="mt-1 flex rounded-md shadow-sm">
-                                            <input
-                                                type="number"
-                                                name="phNumber"
-                                                id="phNumber"
-                                                className="px-2 py-1 block w-full flex-1 rounded-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 sm:text-lg bg-transparent"
-                                                placeholder="Enter your Phone Number"
-                                                required
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
+				<div>
+					<p
+						htmlFor="name"
+						className="block text-[1rem] font-normal text-white"
+					>
+						Phone Number
+					</p>
+					<div className="mt-1 flex rounded-md shadow-sm">
+						<input
+							type="text"
+							name="name"
+							id="name"
+							className="registerFormInput h-[2.5rem] px-2 py-1 block w-[100%] rounded-[5px] bg-transparent"
+							placeholder="Enter your Phone Number"
+							required
+						/>
+					</div>
+				</div>
 
-                                <div className=" px-4 py-3 text-left sm:px-0">
-                                    <button 
-                                        type="submit"
-                                        className="registerbtn inline-flex justify-center  border border-[#FC0160] bg-[#2C0022] py-2 px-4 text-lg font-medium text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-                                    >
-                                        Register Now
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    )
+				<div className=" px-4 py-3 text-left sm:px-0">
+					<button
+						type="submit"
+						className="registerbtn inline-flex justify-center  border border-[#FC0160] bg-[#2C0022] py-2 px-4 text-lg font-medium text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+					>
+						Register Now
+					</button>
+				</div>
+			</div>
+			<input
+				type="file"
+				name="myImage"
+				ref={image}
+				className="hidden"
+				onChange={onImageChange}
+			/>
+		</div>
+	);
 }
 
 export default RegisterIndvdit;

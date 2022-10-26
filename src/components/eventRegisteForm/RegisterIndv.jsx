@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import icon from "../../images/addPhoto.png";
-import "./registerIndv.css";
+import "./register.css";
 
 function RegisterIndv() {
 	const [uploadedImage, setuploadedImage] = useState("");

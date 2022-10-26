@@ -1,0 +1,79 @@
+input {
+	border: 1px solid white;
+	color: white;
+}
+
+.registerbtn {
+	transition-duration: 0.4s;
+	scale: 1;
+}
+
+.registerbtn:hover {
+	transition-duration: 0.4s;
+	scale: 1.2;
+}
+
+.registerFormInput {
+	border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.registerSelected {
+	background-clip: text;
+	background-image: linear-gradient(
+		90deg,
+		#f7797d 0%,
+		#c471ed 52.08%,
+		#12c2e9 100%
+	);
+	font-family: "IBM Plex Sans";
+	font-style: normal;
+	font-weight: 400;
+	background-clip: text;
+	color: transparent;
+	margin-bottom: 2px solid;
+	position: relative;
+	padding: 0 0.5rem;
+	text-align: center;
+}
+
+.registerSelected::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	z-index: 10;
+	height: 3px;
+	background-image: linear-gradient(
+		90deg,
+		#f7797d 0%,
+		#c471ed 52.08%,
+		#12c2e9 100%
+	);
+}
+
+.registerNotSelected {
+	font-family: "IBM Plex Sans";
+	font-style: normal;
+	font-weight: 400;
+	color: #ffffff;
+	opacity: 0.3;
+	padding: 0 0.5rem;
+}
+
+@media only screen and (max-width: 899px) {
+	.formResponsive {
+		width: 90vw !important;
+	}
+}
+@media only screen and (max-width: 720px) {
+	.formResponsive {
+		width: 95vw !important;
+	}
+}
+
+@media only screen and (max-width: 442px) {
+	.formResponsive {
+		width: 100vw !important;
+	}
+}

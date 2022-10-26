@@ -1,0 +1,137 @@
+.image1{
+        position: absolute;
+        width: 158px;
+        height: 239px;
+        left: 140px;
+        top: 145px;
+        
+}
+.class1{
+    position: absolute;
+    width: 237px;
+    height: 38px;
+    left: 20vw;
+    top: 5vw;
+    right: 1162;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+.class2{
+position: absolute;
+width: 165px;
+height: 30px;
+top: 12vw;
+left:20vw;
+font-family: 'IBM Plex Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+line-height: 120%;
+color: #FC0160;
+
+}
+
+.class3{
+    position: absolute;
+        width: 319px;
+        height: 72px;
+        top:19vw;
+        left: 20vw;
+        right: 1082;
+        font-family: 'IBM Plex Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 120%;
+        color: #1BBEE9;
+
+}
+
+.class4{
+    position: absolute;
+        width: 152px;
+        height: 38px;
+        font-family: 'IBM Plex Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 120%;
+        color: #1BBEE9;
+        top:197px;
+        left:1275px;
+        bottom: 981px;
+        right: 366px;
+
+}
+
+.class5{
+    position: absolute;
+        width: 440px;
+        height: 38px;
+        
+        left:35vw;
+        font-family: 'IBM Plex Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 120%;
+        color: #FFFFFF;
+
+}
+
+.button1{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 24px;
+    gap: 24px;
+    position: absolute;
+    width: 180px;
+    height: 55px;
+    left: 35vw;
+    top:40vw;
+    background: linear-gradient(89.62deg, rgba(41, 18, 78, 0.8) 35.41%, rgba(183, 44, 161, 0.4) 99.72%);
+    border: 1px solid #FC0160;
+
+}
+.button2{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 24px;
+        gap: 24px;
+        position: absolute;
+        width: 180px;
+        height: 55px;
+        left: 50vw;
+        top: 40vw;
+        background: linear-gradient(89.62deg, rgba(41, 18, 78, 0.8) 35.41%, rgba(183, 44, 161, 0.4) 99.72%);
+        border: 1px solid #FC0160;
+
+}
+.buttonfont{
+    width: 26px;
+        height: 16px;
+    
+        font-family: 'IBM Plex Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 100%;
+        color: #FFFFFF;
+    
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+}
+.maincontainer{
+    width: 100vw;
+}

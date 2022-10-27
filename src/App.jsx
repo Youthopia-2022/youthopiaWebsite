@@ -8,13 +8,14 @@ import EventDetailsTechnical from "./pages/EventsDetails/EventDetailsTechnical";
 import EventDetailsCultural from "./pages/EventsDetails/EventDetailsCultural";
 import EventDetailsDebate from "./pages/EventsDetails/EventDetailsDebate";
 import EventDetailsInformal from "./pages/EventsDetails/EventDetailsInformal";
+import Areyoufromdit from "./pages/Areyoufromdit/Areyoufromdit";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import Aboutus from "./pages/Aboutus/Aboutus";
-import RegisterIndvdit from "./components/eventRegisteForm/RegisterIndvdit";
 import RegisterIndv from "./components/eventRegisteForm/RegisterIndv";
-import Registerteamdit from "./components/eventRegisteForm/Registerteamdit";
+import RegisterIndvdit from "./components/eventRegisteForm/RegisterIndvdit";
 import Registerteam from "./components/eventRegisteForm/Registerteam";
+import Registerteamdit from "./components/eventRegisteForm/Registerteamdit";
 const useScrollToTop = () => {
   const location = useLocation();
   useEffect(() => {
@@ -23,6 +24,7 @@ const useScrollToTop = () => {
     // the window object is a normal DOM object and is safe to use in React.
   }, [location]);
 };
+
 const App = () => {
   useScrollToTop();
   return (
@@ -51,9 +53,12 @@ const App = () => {
         <Route path="/gallery" element={<Gallery />} />;
         <Route path="/forms/indv/dit" element={<RegisterIndvdit/>} />;
         <Route path="/forms/indv/nondit" element={<RegisterIndv/>} />;
-        <Route path="/forms/team/dit" element={<Registerteamdit/>} />;
+        <Route path="/forms/indv/nondit" element={<RegisterIndv/>} />;
+        <Route path="/forms/indv/nondit" element={<RegisterIndv/>} />;
         <Route path="/forms/team/nondit" element={<Registerteam/>} />;
+        <Route path="/forms/team/dit" element={<Registerteamdit/>} />;
         <Route path="/aboutus" element={<Aboutus />} />;
+        <Route path="/fromdit" element={<Areyoufromdit />} />;
       </Routes>
       <Footer />
     </>

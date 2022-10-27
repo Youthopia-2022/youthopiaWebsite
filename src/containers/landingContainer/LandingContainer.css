@@ -51,7 +51,8 @@
 }
 
 .youthopiaLogo > div {
-	transform: translateY(-2.5rem);
+	/* transform: translateY(-2.5rem); */
+	margin-top: -2rem;
 	color: #1bbee9;
 }
 
@@ -77,16 +78,9 @@
 
 @media only screen and (max-width: 975px) {
 	.youthopiaLogo > div {
-		transform: translateY(0);
+		margin-top: 0;
 	}
 	.registerButton {
 		margin-top: 1rem;
-	}
-	.youthopiaLogo {
-		position: absolute;
-		height: 100vh;
-		width: 100vw;
-		top: 0;
-		left: 0;
 	}
 }

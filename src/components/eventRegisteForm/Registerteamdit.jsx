@@ -131,4 +131,4 @@ function Registerteamdit() {
     )
 }
 
-export default Registerteamdit
+export default Registerteamdit;

@@ -32,10 +32,10 @@ const LandingContainer = () => {
 			delay: 1200,
 			distance: "50px",
 		});
-		sr.reveal(".googlePlay, .scrollDownButton", {
+		sr.reveal(" .scrollDownButton", {
 			origin: "bottom",
 			duration: 1500,
-			delay: 1400,
+			delay: 100,
 			distance: "50px",
 		});
 	}, []);
@@ -58,7 +58,7 @@ const LandingContainer = () => {
 					</Zoom>
 				</Fade>
 
-				<div className="youthopiaDetails mt-5">
+				<div className="youthopiaDetails mb-[1rem]">
 					<p>17th-19th</p>
 					<p>November</p>
 				</div>
@@ -68,10 +68,9 @@ const LandingContainer = () => {
 					</div>
 				</Link>
 			</div>
-
 			<img
 				src={scrollDownIcon}
-				className="scrollDownButton absolute bottom-[1rem] w-[3rem] h-[3rem] mt-10"
+				className="scrollDownButton mb-[1rem] mt-[2rem] w-[3rem] h-[3rem]"
 				alt=""
 			/>
 		</div>

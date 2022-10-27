@@ -6,50 +6,51 @@ import "./CountDown.css";
 import { useEffect, useState } from "react";
 
 const CountDown = () => {
-	const [expiryTime, setExpiryTime] = useState("15 nov 2022 17:00:00");
-	const [countdownTime, setCountdownTime] = useState({
-		countdownDays: "",
-		countdownHours: "",
-		countdownMinutes: "",
-		countdownSeconds: "",
-	});
 
-	const countdownTimer = () => {
-		const timeInterval = setInterval(() => {
-			const countdownDateTime = new Date(expiryTime).getTime();
-			const currentTime = new Date().getTime();
-			const remainingDayTime = countdownDateTime - currentTime;
-			const totalDays = Math.floor(remainingDayTime / (1000 * 60 * 60 * 24));
-			const totalHours = Math.floor(
-				(remainingDayTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-			);
-			const totalMinutes = Math.floor(
-				(remainingDayTime % (1000 * 60 * 60)) / (1000 * 60)
-			);
-			const totalSeconds = Math.floor((remainingDayTime % (1000 * 60)) / 1000);
+  const [expiryTime, setExpiryTime] = useState("17 nov 2022 09:00:00");
+  const [countdownTime, setCountdownTime] = useState({
+    countdownDays: "",
+    countdownHours: "",
+    countdownlMinutes: "",
+    countdownSeconds: "",
+  });
 
-			const runningCountdownTime = {
-				countdownDays: totalDays,
-				countdownHours: totalHours,
-				countdownMinutes: totalMinutes,
-				countdownSeconds: totalSeconds,
-			};
+  const countdownTimer = () => {
+    const timeInterval = setInterval(() => {
+      const countdownDateTime = new Date(expiryTime).getTime();
+      const currentTime = new Date().getTime();
+      const remainingDayTime = countdownDateTime - currentTime;
+      const totalDays = Math.floor(remainingDayTime / (1000 * 60 * 60 * 24));
+      const totalHours = Math.floor(
+        (remainingDayTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      const totalMinutes = Math.floor(
+        (remainingDayTime % (1000 * 60 * 60)) / (1000 * 60)
+      );
+      const totalSeconds = Math.floor((remainingDayTime % (1000 * 60)) / 1000);
 
-			setCountdownTime(runningCountdownTime);
+      const runningCountdownTime = {
+        countdownDays: totalDays,
+        countdownHours: totalHours,
+        countdownMinutes: totalMinutes,
+        countdownSeconds: totalSeconds,
+      };
 
-			if (remainingDayTime < 0) {
-				clearInterval(timeInterval);
-				setExpiryTime(false);
-			}
-		}, 1000);
-	};
+      setCountdownTime(runningCountdownTime);
 
-	useEffect(() => {
-		countdownTimer();
-	});
+      if (remainingDayTime < 0) {
+        clearInterval(timeInterval);
+        setExpiryTime(false);
+      }
+    }, 1000);
+  };
+
+  useEffect(() => {
+    countdownTimer();
+  });
 
 	return (
-		<div className=" w-[100vw] flex flex-col justify-center items-center mb-[2rem]">
+		<div className=" w-full flex flex-col justify-center items-center mb-[2rem]">
 			<div className="countDownContent w-[75vw]">
 				<div className="topBar w-[100%] flex items-center justify-between">
 					<div className="topBarLeft bg-[#1A1A1A] flex items-center justify-center px-[1.5rem] h-[3rem] text-[#1BBEE9]">

@@ -29,7 +29,7 @@ const fromdit = () =>{
                         <p>Over All Head:Dio Brando</p>
                         </div>
                         <div style={{justifyContent:'flex-end', width:'100%', display:'flex', marginRight:'12px'}}>
-                           Frees:300/Head
+                        git Frees:300/Head
                         </div>
                     </div>
                     {/* <div className="class3 flex flex-row space-x-72  ">

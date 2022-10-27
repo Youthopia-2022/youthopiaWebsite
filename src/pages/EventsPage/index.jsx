@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import EventCard from "../../components/EventsRoot/EventCard";
 import dummyData from "./dummyData.json";
+// import { useLocation } from "react-router-dom";
 import "@fontsource/ibm-plex-sans";
 import "./EventsPage.css";
 
@@ -67,6 +68,17 @@ const EventsPage = () => {
     });
     setData(result);
   };
+  useEffect(() => {
+    if (window.location.href === "http://localhost:3000/events/:t") {
+      handleClickTe("evt");
+    } else if (window.location.href === "http://localhost:3000/events/:c") {
+      handleClickCu("evc");
+    } else if (window.location.href === "http://localhost:3000/events/:d") {
+      handleClickDe("evd");
+    } else if (window.location.href === "http://localhost:3000/events/:i") {
+      handleClickIn("evi");
+    }
+  });
   return (
     <div>
       <div>
@@ -99,7 +111,13 @@ const EventsPage = () => {
             className={isActived ? "active" : ""}
             onClick={() => handleClickDe("evd")}
           >
-            Debate
+            Literary
+          </button>
+          <button
+            className={isActived ? "active" : ""}
+            onClick={() => handleClickDe("evf")}
+          >
+            Fine Arts
           </button>
         </div>
       </div>

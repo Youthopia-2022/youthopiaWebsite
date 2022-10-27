@@ -52,7 +52,7 @@ const Aboutus = () => {
       <div className="aboutUsContent">
         <h1 style={myStyle7}>Meet Our Team</h1>
         <br></br>
-        <div className="teamsHolder">
+        <div className="teamsHolder px-5 md:px-0 pb-10 md:justify-center">
           <Abus title="Conveners" heads={[]} members={Conveners} />
 
           {AllTeams.map((team, id) => (

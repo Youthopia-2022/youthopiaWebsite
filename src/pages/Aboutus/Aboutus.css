@@ -1,21 +1,6 @@
 .maincontainer {
   width: 100vw;
 }
-.cont1 {
-  width: 15%;
-}
-.cont2 {
-  width: 15%;
-}
-.cont3 {
-  width: 25%;
-}
-.cont4 {
-  width: 20%;
-}
-.cont5 {
-  width: 20%;
-}
 .maincontainerAboutUs {
   min-height: calc(100vh - 64px);
   overflow: hidden;
@@ -55,22 +40,17 @@
 }
 
 .teamsHolder {
-  padding: 1rem;
-  width: 100vw;
+  width: 100%;
   display: grid;
   row-gap: 3rem;
   grid-template-columns: repeat(4, calc(24vw - 2rem));
   grid-template-rows: auto;
-  /* justify-content: center; */
 }
 
 .teamsHolder > div {
   width: 100%;
-  padding: 0.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
 }
 
 @media only screen and (max-width: 871px) {
@@ -87,11 +67,9 @@
 @media only screen and (max-width: 517px) {
   .teamsHolder {
     grid-template-columns: repeat(1, auto);
-    padding: 0;
   }
   .teamsHolder > div {
     width: max-content;
-    padding: 0;
   }
 }
 @media only screen and (max-width: 672px) {

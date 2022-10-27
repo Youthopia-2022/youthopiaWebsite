@@ -2,7 +2,7 @@ import "./EventContainer.css";
 import background from "../../images/informalEventBackground.png";
 // import image from "../../images/image01.png";
 import "./EventContainer.css";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import dummyData from "../../pages/EventsPage/dummyData.json";
 import { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
@@ -73,9 +73,11 @@ const InformalEvent = (props) => {
 										</div>
 									</div>
 								</div>
-								<button className="eventResgisterButton border-[1px] border-solid border-[#fc0160] w-[9rem] h-[3rem] mt-[2rem]">
-									Resgister Now
-								</button>
+								<Link to={`/register/${name}`}>
+									<button className="eventResgisterButton border-[1px] border-solid border-[#fc0160] w-[9rem] h-[3rem] mt-[2rem]">
+										Resgister Now
+									</button>
+								</Link>
 							</div>
 						</div>
 					</div>

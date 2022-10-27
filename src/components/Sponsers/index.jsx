@@ -20,7 +20,7 @@ const Sponsers = () => {
 		sr.reveal(`.sponser2`, { delay: 90 });
 		sr.reveal(`.sponser3`, { delay: 130 });
 		sr.reveal(`.sponser4`, { delay: 170 });
-		sr.reveal(`.sponser5`, { delay: 210 });
+		sr.reveal(`.sponser5`, { delay: 210 });								// eslint-disable-next-line
 	}, []);
 
 	return (

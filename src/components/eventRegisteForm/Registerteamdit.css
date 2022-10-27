@@ -1,0 +1,54 @@
+input {
+    border: 1px solid white;
+    color: white;
+
+}
+
+.form {
+    width: 80vw;
+}
+
+.content {
+    position: relative;
+    left: 6vw;
+
+}
+
+hr {
+    width: 70vw;
+}
+
+.registerbtn {
+    transition-duration: 0.4s;
+    scale: 1;
+}
+
+.registerbtn:hover {
+    transition-duration: 0.4s;
+    scale: 1.2;
+}
+
+.counter>.counter-btn {
+    background: #252525;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    width: 56px;
+    height: 60px;
+    color: white;
+}
+
+.counter>.number-display {
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 56px;
+    margin: 0 10px;
+    text-align: center;
+    color: white;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}

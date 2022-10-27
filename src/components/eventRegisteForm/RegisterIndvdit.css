@@ -1,29 +1,35 @@
 input {
-  border: 1px solid white;
-  color: white;
-
+	border: 1px solid white;
+	color: white;
 }
 
-.form {
-  width: 80vw;
-}
-
-.content {
-  position: relative;
-  left: 6vw;
-
-}
-
-hr {
-  width: 70vw;
-}
-
-.registerbtn{
-  transition-duration: 0.4s;
-  scale: 1;
+.registerbtn {
+	transition-duration: 0.4s;
+	scale: 1;
 }
 
 .registerbtn:hover {
-  transition-duration: 0.4s;
-  scale: 1.2;
+	transition-duration: 0.4s;
+	scale: 1.2;
+}
+
+.registerFormInput {
+	border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+@media only screen and (max-width: 899px) {
+	.formResponsive {
+		width: 90vw !important;
+	}
+}
+@media only screen and (max-width: 720px) {
+	.formResponsive {
+		width: 95vw !important;
+	}
+}
+
+@media only screen and (max-width: 442px) {
+	.formResponsive {
+		width: 100vw !important;
+	}
 }

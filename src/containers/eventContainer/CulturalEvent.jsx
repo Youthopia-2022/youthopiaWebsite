@@ -18,12 +18,11 @@ const CulturalEvent = (props) => {
 			origin: "bottom",
 		});
 		sr.reveal(`.eventImage`, { origin: "left" });
-		sr.reveal(`.eventTitle`, { origin: "right", delay: 800 });
-		sr.reveal(`.afterEventTitle`, { origin: "bottom", delay: 1100 });
-		sr.reveal(`.eventDescription`, { origin: "bottom", delay: 1400 });
-		sr.reveal(`.eventResgisterButton`, { origin: "bottom", delay: 1700 });
+		sr.reveal(`.eventTitle`, { origin: "right" });
+		sr.reveal(`.afterEventTitle`, { origin: "bottom" });
+		sr.reveal(`.eventDescription`, { origin: "bottom" });
+		sr.reveal(`.eventResgisterButton`, { origin: "bottom" });
 	}, []);
-
 	return (
 		<>
 			{dummyData

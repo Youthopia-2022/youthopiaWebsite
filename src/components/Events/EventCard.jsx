@@ -16,7 +16,7 @@ const EventCard = ({ data }) => {
 
         <div className="px-4 pb-8">
           <p className="leading-relaxed text-base dsf">{data.desc}</p>
-          <Link to={`/events`}>
+          <Link to={data.link}>
             <button className="flex ml-auto text-[#FC0160] py-2 px-6 focus:outline-none bg-transparent mb-5">
               {"Explore more >"}
             </button>

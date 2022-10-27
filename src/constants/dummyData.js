@@ -10,6 +10,7 @@ export const events = [
     desc: "Fingerstache flexitarian street art 8-bit waistcoat.  Distillery hexagon disrupt edison bulbche.",
     thumbnail: image1,
     eventSlug: "evt",
+    link: "/events?evt",
   },
   {
     id: 2,
@@ -17,6 +18,7 @@ export const events = [
     desc: "Fingerstache flexitarian street art 8-bit waistcoat.  Distillery hexagon disrupt edison bulbche.",
     thumbnail: image2,
     eventSlug: "evc",
+    link: "/events?evc",
   },
   {
     id: 3,
@@ -24,12 +26,14 @@ export const events = [
     desc: "Fingerstache flexitarian street art 8-bit waistcoat.  Distillery hexagon disrupt edison bulbche.",
     thumbnail: image3,
     eventSlug: "evi",
+    link: "/events?evi",
   },
   {
     id: 4,
-    title: "Debate Events",
+    title: "Literary Events",
     desc: "Fingerstache flexitarian street art 8-bit waistcoat.  Distillery hexagon disrupt edison bulbche.",
     thumbnail: image4,
     eventSlug: "evd",
+    link: "/events?evd",
   },
 ];

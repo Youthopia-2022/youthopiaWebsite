@@ -3,13 +3,13 @@ import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
-  let location = useLocation();
+  const { pathname } = useLocation();
   const [menuVisible, setmenuVisible] = useState(false);
   const showMenu = () => {
     setmenuVisible((current) => !current);
   };
   return (
-    <nav className="navbar ">
+    <nav className="navbar sticky">
       <div className="social-icons absolute py-4 right-[1rem] ">
         <a
           className="px-4"
@@ -117,7 +117,7 @@ const Navbar = () => {
                 <Link
                   to="/"
                   className={` text-white px-9 py-2 rounded-md text-sm font-medium ${
-                    location.pathname === "/" ? "active" : ""
+                    pathname === "/" ? "active" : ""
                   }`}
                   aria-current="page"
                 >
@@ -127,7 +127,7 @@ const Navbar = () => {
                 <Link
                   to="/events"
                   className={` text-white px-9 py-2 rounded-md text-sm font-medium ${
-                    location.pathname === "/events" ? "active" : ""
+                    pathname.includes("/events") ? "active" : ""
                   }`}
                 >
                   Events
@@ -136,7 +136,7 @@ const Navbar = () => {
                 <Link
                   to="/gallery"
                   className={` text-white px-9 py-2 rounded-md text-sm font-medium ${
-                    location.pathname === "/gallery" ? "active" : ""
+                    pathname === "/gallery" ? "active" : ""
                   }`}
                 >
                   Gallery
@@ -145,7 +145,7 @@ const Navbar = () => {
                 <Link
                   to="/aboutus"
                   className={` text-white px-9 py-2 rounded-md text-sm font-medium ${
-                    location.pathname === "/aboutus" ? "active" : ""
+                    pathname === "/aboutus" ? "active" : ""
                   }`}
                 >
                   About Us
@@ -165,7 +165,7 @@ const Navbar = () => {
               <Link
                 to="/"
                 className={` text-white block px-3 py-2 rounded-md text-sm font-medium ${
-                  location.pathname === "/" ? "active" : ""
+                  pathname === "/" ? "active" : ""
                 }`}
                 aria-current="page"
               >
@@ -175,7 +175,7 @@ const Navbar = () => {
               <Link
                 to="/events"
                 className={` text-white block px-3 py-2 rounded-md text-sm font-medium ${
-                  location.pathname === "/events" ? "active" : ""
+                  pathname.includes("/events") ? "active" : ""
                 }`}
               >
                 Events
@@ -184,7 +184,7 @@ const Navbar = () => {
               <Link
                 to="/gallery"
                 className={` text-white block px-3 py-2 rounded-md text-sm font-medium ${
-                  location.pathname === "/gallery" ? "active" : ""
+                  pathname === "/gallery" ? "active" : ""
                 }`}
               >
                 Gallery
@@ -193,7 +193,7 @@ const Navbar = () => {
               <Link
                 to="/aboutus"
                 className={` text-white block px-3 py-2 rounded-md text-sm font-medium ${
-                  location.pathname === "/aboutus" ? "active" : ""
+                  pathname === "/aboutus" ? "active" : ""
                 }`}
               >
                 About Us

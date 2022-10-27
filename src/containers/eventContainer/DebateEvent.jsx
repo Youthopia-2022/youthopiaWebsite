@@ -2,7 +2,7 @@ import "./EventContainer.css";
 import background from "../../images/debateEventBackground.png";
 import "./EventContainer.css";
 import dummyData from "../../pages/EventsPage/dummyData.json";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 
@@ -17,10 +17,10 @@ const DebateEvent = (props) => {
 			origin: "bottom",
 		});
 		sr.reveal(`.eventImage`, { origin: "left" });
-		sr.reveal(`.eventTitle`, { origin: "right", delay: 800 });
-		sr.reveal(`.afterEventTitle`, { origin: "bottom", delay: 1100 });
-		sr.reveal(`.eventDescription`, { origin: "bottom", delay: 1400 });
-		sr.reveal(`.eventResgisterButton`, { origin: "bottom", delay: 1700 });
+		sr.reveal(`.eventTitle`, { origin: "right" });
+		sr.reveal(`.afterEventTitle`, { origin: "bottom" });
+		sr.reveal(`.eventDescription`, { origin: "bottom" });
+		sr.reveal(`.eventResgisterButton`, { origin: "bottom" });
 	}, []);
 
 	return (
@@ -72,9 +72,11 @@ const DebateEvent = (props) => {
 										</div>
 									</div>
 								</div>
-								<button className="eventResgisterButton border-[1px] border-solid border-[#fc0160] w-[9rem] h-[3rem] mt-[2rem]">
-									Resgister Now
-								</button>
+								<Link to={`/register/${name}`}>
+									<button className="eventResgisterButton border-[1px] border-solid border-[#fc0160] w-[9rem] h-[3rem] mt-[2rem]">
+										Resgister Now
+									</button>
+								</Link>
 							</div>
 						</div>
 					</div>

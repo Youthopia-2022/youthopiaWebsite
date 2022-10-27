@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import EventCard from "../../components/EventsRoot/EventCard";
 import dummyData from "./dummyData.json";
-// import { useLocation } from "react-router-dom";
 import "@fontsource/ibm-plex-sans";
 import "./EventsPage.css";
+import { useLocation } from "react-router-dom";
 
 const EventsPage = () => {
   const [data, setData] = useState(dummyData);
@@ -12,13 +12,41 @@ const EventsPage = () => {
   const [isActivei, setIsActivei] = useState(false);
   const [isActived, setIsActived] = useState(false);
   const [isActiveal, setIsActiveal] = useState(true);
+  const [isActivefa, setIsActivefa] = useState(false);
+
+  const { search } = useLocation(); // using location object to get the query params
+
+  useEffect(() => {
+    if (search !== "") {
+      let tabName = search.split("?")[1];
+
+      if (tabName === "evt") {
+        handleClickTe("evt");
+      } else if (tabName === "evc") {
+        handleClickCu("evc");
+      } else if (tabName === "evd") {
+        handleClickDe("evd");
+      } else if (tabName === "evi") {
+        handleClickIn("evi");
+      } else if (tabName === "evfa") {
+        handleClickFa("evfa");
+      }
+    }
+
+    // eslint-disable-next-line
+  }, []);
+
   const handleClickAl = () => {
     setIsActiveal((current) => true);
     setIsActivet((current) => false);
     setIsActivec((current) => false);
     setIsActivei((current) => false);
     setIsActived((current) => false);
+
     setData(dummyData);
+    if (search !== "") {
+      window.history.pushState({}, "", "/events"); // resetting the state of url to default
+    }
   };
   const handleClickTe = (catItem) => {
     setIsActivet((current) => true);
@@ -31,6 +59,9 @@ const EventsPage = () => {
       return curData.Category === catItem;
     });
     setData(result);
+    if (search !== "") {
+      window.history.pushState({}, "", "/events"); // resetting the state of url to default
+    }
   };
   const handleClickCu = (catItem) => {
     setIsActivec((current) => true);
@@ -43,6 +74,9 @@ const EventsPage = () => {
       return curData.Category === catItem;
     });
     setData(result);
+    if (search !== "") {
+      window.history.pushState({}, "", "/events"); // resetting the state of url to default
+    }
   };
   const handleClickIn = (catItem) => {
     setIsActivei((current) => true);
@@ -55,6 +89,9 @@ const EventsPage = () => {
       return curData.Category === catItem;
     });
     setData(result);
+    if (search !== "") {
+      window.history.pushState({}, "", "/events"); // resetting the state of url to default
+    }
   };
   const handleClickDe = (catItem) => {
     setIsActived((current) => true);
@@ -67,18 +104,28 @@ const EventsPage = () => {
       return curData.Category === catItem;
     });
     setData(result);
-  };
-  useEffect(() => {
-    if (window.location.href === "http://localhost:3000/events/:t") {
-      handleClickTe("evt");
-    } else if (window.location.href === "http://localhost:3000/events/:c") {
-      handleClickCu("evc");
-    } else if (window.location.href === "http://localhost:3000/events/:d") {
-      handleClickDe("evd");
-    } else if (window.location.href === "http://localhost:3000/events/:i") {
-      handleClickIn("evi");
+    if (search !== "") {
+      window.history.pushState({}, "", "/events"); // resetting the state of url to default
     }
-  });
+  };
+
+  const handleClickFa = (catItem) => {
+    setIsActiveal((current) => false);
+    setIsActivet((current) => false);
+    setIsActivec((current) => false);
+    setIsActivei((current) => false);
+    setIsActived((current) => false);
+    setIsActivefa((current) => true);
+
+    const result = dummyData.filter((curData) => {
+      return curData.Category === catItem;
+    });
+    setData(result);
+    if (search !== "") {
+      window.history.pushState({}, "", "/events"); // resetting the state of url to default
+    }
+  };
+
   return (
     <div>
       <div>
@@ -114,8 +161,8 @@ const EventsPage = () => {
             Literary
           </button>
           <button
-            className={isActived ? "active" : ""}
-            onClick={() => handleClickDe("evf")}
+            className={isActivefa ? "active" : ""}
+            onClick={() => handleClickFa("evfa")}
           >
             Fine Arts
           </button>

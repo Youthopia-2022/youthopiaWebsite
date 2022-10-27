@@ -10,7 +10,8 @@ const CountDown = () => {
 	const [countdownTime, setCountdownTime] = useState({
 		countdownDays: "",
 		countdownHours: "",
-		countdownlMinutes: "",
+		countdownMinutes: "",
+		countdownSeconds: "",
 	});
 
 	const countdownTimer = () => {
@@ -25,11 +26,13 @@ const CountDown = () => {
 			const totalMinutes = Math.floor(
 				(remainingDayTime % (1000 * 60 * 60)) / (1000 * 60)
 			);
+			const totalSeconds = Math.floor((remainingDayTime % (1000 * 60)) / 1000);
 
 			const runningCountdownTime = {
 				countdownDays: totalDays,
 				countdownHours: totalHours,
 				countdownMinutes: totalMinutes,
+				countdownSeconds: totalSeconds,
 			};
 
 			setCountdownTime(runningCountdownTime);
@@ -70,6 +73,12 @@ const CountDown = () => {
 								{countdownTime.countdownMinutes}
 							</p>
 							<p className="text-white text-[0.8rem]">MINS</p>
+						</div>
+						<div className="mins bg-[#1A1A1A] flex items-center h-[3rem] justify-center w-[5rem]">
+							<p className="text-[#1BBEE9] mr-[5px]">
+								{countdownTime.countdownSeconds}
+							</p>
+							<p className="text-white text-[0.8rem]">SEC</p>
 						</div>
 					</div>
 				</div>

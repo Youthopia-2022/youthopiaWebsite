@@ -6,16 +6,15 @@ import "./Register.css";
 const Register = () => {
 	const { name } = useParams();
 	return (
-		<div className="maincontainer">
+		<div className="maincontainer ">
 			<div
 				className="div2"
-				style={{ backgroundImage: `url(${registerbackground})` }}
+				style={{ backgroundImage: `url(${registerbackground})`}}
 			>
-				<div style={{ display: "flex" }}>
+				<div  className="pl-5 pr-20" style={{ display: "flex" }}>
 					<div>
-						<img className="w=72 h=72  pl-5 pt-5" alt="" src={sampleimage1} />
+						<img className="w=72 h=72 pt-10 mr-2" alt="" src={sampleimage1} />
 					</div>
-
 					<div className="div1" style={{ width: "100%" }}>
 						<div className="class1 mt-9">
 							<div>Technical Events</div>
@@ -71,6 +70,7 @@ const Register = () => {
 					</div>
 				</div>
 			</div>
+			
 		</div>
 	);
 };

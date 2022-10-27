@@ -1,12 +1,13 @@
-import "./EventRegisterForm.css";
+import "./register.css";
 import RegisterIndv from "./RegisterIndv";
 import RegisterIndvdit from "./RegisterIndvdit";
 import "./register.css";
 import { useState } from "react";
+import Registerteamdit from "./Registerteamdit";
+import Registerteam from "./Registerteam";
 
-const EventRegisterForm = () => {
+const EventRegisterForm = (props) => {
 	const [isTeam, setisTeam] = useState(false);
-	const [isDit, setisDit] = useState(true);
 	return (
 		<>
 			<div className="flex mt-[2rem] w-[100vw] items-center justify-center">
@@ -29,12 +30,12 @@ const EventRegisterForm = () => {
 				</div>
 			</div>
 			{isTeam ? (
-				isDit ? (
-					"teamDit"
+				props.isDit ? (
+					<Registerteamdit />
 				) : (
-					"teamNotDit"
+					<Registerteam />
 				)
-			) : isDit ? (
+			) : props.isDit ? (
 				<RegisterIndvdit />
 			) : (
 				<RegisterIndv />

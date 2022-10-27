@@ -51,9 +51,9 @@ const App = () => {
 				></Route>
 				<Route path="/gallery" element={<Gallery />} />;
 				<Route path="/aboutus" element={<Aboutus />} />;
-				<Route path="/register/" element={<Register />} />;
-				<Route path="/register/dit" element={<RegisterDit />} />;
-				<Route path="/register/outside" element={<RegisterOutside />} />;
+				<Route path="/register/:name" element={<Register />} />;
+				<Route path="/registerdit/:name" element={<RegisterDit />} />;
+				<Route path="/registeroutside/:name" element={<RegisterOutside />} />;
 			</Routes>
 			<Footer />
 		</>

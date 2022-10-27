@@ -51,12 +51,10 @@ const App = () => {
           element={<EventDetailsInformal />}
         ></Route>
         <Route path="/gallery" element={<Gallery />} />;
-        <Route path="/forms/indv/dit" element={<RegisterIndvdit/>} />;
-        <Route path="/forms/indv/nondit" element={<RegisterIndv/>} />;
-        <Route path="/forms/indv/nondit" element={<RegisterIndv/>} />;
-        <Route path="/forms/indv/nondit" element={<RegisterIndv/>} />;
-        <Route path="/forms/team/nondit" element={<Registerteam/>} />;
-        <Route path="/forms/team/dit" element={<Registerteamdit/>} />;
+        <Route path="/forms/indv/dit" element={<RegisterIndvdit />} />;
+        <Route path="/forms/indv/nondit" element={<RegisterIndv />} />;
+        <Route path="/forms/team/nondit" element={<Registerteam />} />;
+        <Route path="/forms/team/dit" element={<Registerteamdit />} />;
         <Route path="/aboutus" element={<Aboutus />} />;
         <Route path="/fromdit" element={<Areyoufromdit />} />;
       </Routes>

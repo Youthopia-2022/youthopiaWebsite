@@ -5,16 +5,15 @@ import sampleimage1 from "../../images/sampleimage1.png";
 import "./Register.css";
 const Register = () => {
 	return (
-		<div className="maincontainer">
+		<div className="maincontainer ">
 			<div
 				className="div2"
-				style={{ backgroundImage: `url(${registerbackground})` }}
+				style={{ backgroundImage: `url(${registerbackground})`}}
 			>
-				<div style={{ display: "flex" }}>
+				<div  className="pl-5 pr-20" style={{ display: "flex" }}>
 					<div>
-						<img className="w=72 h=72  pl-5 pt-5" alt="" src={sampleimage1} />
+						<img className="w=72 h=72 pt-10 mr-2" alt="" src={sampleimage1} />
 					</div>
-
 					<div className="div1" style={{ width: "100%" }}>
 						<div className="class1 mt-9">
 							<div>Technical Events</div>
@@ -80,7 +79,7 @@ const Register = () => {
                         <p>Over All Head:Dio Brando</p>
                         </div>
                         <div >
-                            <p>Frees:300/Head</p>
+                        <p>Frees:300/Head</p>
                         </div>
                     </div>
                 </div>
@@ -90,8 +89,8 @@ const Register = () => {
 				<br></br>
 
 				<div className="ques-btn">
-					<div className="class5">Are you From DIT University?</div>
-					<div className="main-btn flex flex-row mt-5  ">
+					<div className="class5 pb-2">Are you From DIT University?</div>
+					<div className="main-btn flex flex-row  ">
 						<Link to={"/register/dit"}>
 							<div className="button1 mx-5 ">
 								<button className="buttonfont mx-7 my-6 px-9">Yes</button>
@@ -105,6 +104,7 @@ const Register = () => {
 					</div>
 				</div>
 			</div>
+			
 		</div>
 	);
 };

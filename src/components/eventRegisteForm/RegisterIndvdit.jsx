@@ -20,7 +20,7 @@ function RegisterIndvdit() {
 						className="bg-[#252525] w-[4rem] h-[4rem] rounded-[50%] flex justify-center items-center border-[#353535] border-2"
 						onClick={() => image.current.click()}
 					>
-						<img src={icon} alt="add photo" className="w-[15px] h-[15px]" />
+						<img src={icon} alt="" className="w-[15px] h-[15px]" />
 					</div>
 					<p className="ml-[1rem] text-white font-normal">
 						Upload Your Profile Photo

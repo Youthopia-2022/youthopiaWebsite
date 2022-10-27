@@ -14,7 +14,8 @@ import Navbar from "./components/Navbar/Navbar";
 import Aboutus from "./pages/Aboutus/Aboutus";
 import RegisterIndv from "./components/eventRegisteForm/RegisterIndv";
 import RegisterIndvdit from "./components/eventRegisteForm/RegisterIndvdit";
-
+import Registerteam from "./components/eventRegisteForm/Registerteam";
+import Registerteamdit from "./components/eventRegisteForm/Registerteamdit";
 const useScrollToTop = () => {
   const location = useLocation();
   useEffect(() => {
@@ -50,8 +51,12 @@ const App = () => {
           element={<EventDetailsInformal />}
         ></Route>
         <Route path="/gallery" element={<Gallery />} />;
-        <Route path="/forms/indv/dit" element={<RegisterIndvdit />} />;
-        <Route path="/forms/indv/nondit" element={<RegisterIndv />} />;
+        <Route path="/forms/indv/dit" element={<RegisterIndvdit/>} />;
+        <Route path="/forms/indv/nondit" element={<RegisterIndv/>} />;
+        <Route path="/forms/indv/nondit" element={<RegisterIndv/>} />;
+        <Route path="/forms/indv/nondit" element={<RegisterIndv/>} />;
+        <Route path="/forms/team/nondit" element={<Registerteam/>} />;
+        <Route path="/forms/team/dit" element={<Registerteamdit/>} />;
         <Route path="/aboutus" element={<Aboutus />} />;
         <Route path="/fromdit" element={<Areyoufromdit />} />;
       </Routes>

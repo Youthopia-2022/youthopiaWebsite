@@ -42,7 +42,7 @@ const TechnicalEvent = (props) => {
                   className="w-[300px] min-w-[300px] rounded"
                 />
               </div>
-              <div className="eventDetails w-[60%] max-w-[800px] text-white flex flex-col mt-[0.15rem] pr-[1rem]">
+              <div className="eventDetails max-w-[100%] text-white flex flex-col mt-[0.15rem] pr-[1rem]">
                 <div className="w-[max-content] w-[100%]">
                   <div className="eventTitle font-bold text-[3rem] justify-center text-center">
                     {items.name}

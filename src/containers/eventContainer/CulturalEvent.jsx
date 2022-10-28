@@ -1,13 +1,12 @@
 import "./EventContainer.css";
 import background from "../../images/culturalEventBackground.png";
-// import image from "../../images/image01.png";
 import "./EventContainer.css";
-import dummyData from "../../pages/EventsPage/dummyData.json";
 import { Link, useParams } from "react-router-dom";
+import dummyData from "../../pages/EventsPage/dummyData.json";
 import { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 
-const CulturalEvent = (props) => {
+const TechnicalEvent = (props) => {
   const { name } = useParams();
   useEffect(() => {
     const sr = ScrollReveal({
@@ -23,6 +22,7 @@ const CulturalEvent = (props) => {
     sr.reveal(`.eventDescription`, { origin: "bottom" });
     sr.reveal(`.eventResgisterButton`, { origin: "bottom" });
   }, []);
+
   return (
     <>
       {dummyData
@@ -42,41 +42,44 @@ const CulturalEvent = (props) => {
                   className="w-[300px] min-w-[300px] rounded"
                 />
               </div>
-              <div className="eventDetails w-[60%] max-w-[800px] text-white flex flex-col mt-[0.15rem] pr-[1rem]">
-                <div className="w-[max-content] max-w-[100%]">
-                  <div className="eventTitle font-bold text-[3rem]">
+              <div className="eventDetails max-width[100%] text-white flex flex-col mt-[0.15rem] pr-[1rem]">
+                <div className="w-[max-content] w-[100%]">
+                  <div className="eventTitle font-bold text-[3rem] justify-center text-center">
                     {items.name}
                   </div>
-                  <div className="afterEventTitle flex justify-between items-center w-[100%] mt-[1rem] text-[1.2rem] font-[500]">
-                    <p>{items.location} </p>{" "}
-                    <div className="w-[10px] h-[10px] rounded-[50%] bg-white"></div>
-                    <p className="text-[#fc0160]">{items.date}</p>
-                    <div className="w-[10px] h-[10px] rounded-[50%] bg-white"></div>
-                    <p>{items.time}</p>
+                  <div className="afterEventTitle flex flex-wrap justify-between items-center w-[100%] mt-[1rem] text-[1.2rem] font-[500]">
+                    <p className="">{items.location} </p>{" "}
+                    {/* <div className="w-[10px] h-[10px] rounded-[50%] bg-white"></div> */}
+                    <p className="text-[#fc0160] m-3">{items.date}</p>
+                    {/* <div className="w-[10px] h-[10px] rounded-[50%] bg-white"></div> */}
+                    <p className="m-3">{items.time}</p>
                   </div>
                 </div>
-                <div className="eventDescription mt-[2rem] flex items-start flex-col gap-[1rem]">
-                  <p>{items.aboutt}</p>
-                  <div>
-                    <div className="flex text-[#1bbee9] gap-[0.5rem] leading-[1.2rem]">
+                <div className="eventDescription mt-[2rem] flex items-start w-[100%] flex-col gap-[1rem justify-center]">
+                  <p className="">{items.aboutt}</p>
+                  <div className="cen justify-center text-center">
+                    <div className="flex text-[#1bbee9] gap-[0.5rem] justify-center text-center">
                       <p className="font-medium">Event Coordinator: </p>
                       <p>{items.Coordinator}</p>
                     </div>
-                    <div className="flex text-[#1bbee9] gap-[0.5rem] leading-[1.2rem]">
-                      <p className="font-medium">Over All Headr: </p>
+                    <div className="flex text-[#1bbee9] gap-[0.5rem] leading-[1.2rem] justify-center">
+                      <p className="font-medium">Over All Head: </p>
                       <p>Some person</p>
                     </div>
-                    <div className="flex text-[#1bbee9] gap-[0.5rem] leading-[1.2rem]">
-                      <p className="font-medium">Fees </p>
+                    <div className="flex text-[#1bbee9] gap-[0.5rem] leading-[1.2rem] justify-center">
+                      <p className="font-medium text-center">Fees </p>
                       <p>{items.eventFeeNonDIT}</p>
                     </div>
                   </div>
                 </div>
-                <Link to={`/register/${name}`}>
-                  <button className="eventResgisterButton border-[1px] border-solid border-[#fc0160] w-[9rem] h-[3rem] mt-[2rem]">
+                <div className="anything text-center" >
+
+                  <button className="eventResgisterButton border-[1px] border-solid border-[#fc0160] w-[9rem] text-center h-[3rem] mt-[2rem] ">
+				  <Link to={`/register/${name}`} className="text-center">
                     Resgister Now
-                  </button>
                 </Link>
+                  </button>
+				</div>
               </div>
             </div>
           </div>
@@ -85,4 +88,4 @@ const CulturalEvent = (props) => {
   );
 };
 
-export default CulturalEvent;
+export default TechnicalEvent;

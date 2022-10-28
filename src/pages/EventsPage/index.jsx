@@ -42,6 +42,7 @@ const EventsPage = () => {
     setIsActivec((current) => false);
     setIsActivei((current) => false);
     setIsActived((current) => false);
+    setIsActivefa((current) => false);
 
     setData(dummyData);
     if (search !== "") {
@@ -54,6 +55,7 @@ const EventsPage = () => {
     setIsActivei((current) => false);
     setIsActived((current) => false);
     setIsActiveal((current) => false);
+    setIsActivefa((current) => false);
 
     const result = dummyData.filter((curData) => {
       return curData.Category === catItem;
@@ -69,6 +71,7 @@ const EventsPage = () => {
     setIsActivei((current) => false);
     setIsActived((current) => false);
     setIsActiveal((current) => false);
+    setIsActivefa((current) => false);
 
     const result = dummyData.filter((curData) => {
       return curData.Category === catItem;
@@ -84,6 +87,7 @@ const EventsPage = () => {
     setIsActivet((current) => false);
     setIsActived((current) => false);
     setIsActiveal((current) => false);
+    setIsActivefa((current) => false);
 
     const result = dummyData.filter((curData) => {
       return curData.Category === catItem;
@@ -99,6 +103,7 @@ const EventsPage = () => {
     setIsActivet((current) => false);
     setIsActivec((current) => false);
     setIsActiveal((current) => false);
+    setIsActivefa((current) => false);
 
     const result = dummyData.filter((curData) => {
       return curData.Category === catItem;

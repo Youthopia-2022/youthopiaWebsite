@@ -1,5 +1,5 @@
 import "./EventContainer.css";
-import background from "../../images/technicalEventBackground.png";
+import background from "../../images/informalEventBackground.png";
 import "./EventContainer.css";
 import { Link, useParams } from "react-router-dom";
 import dummyData from "../../pages/EventsPage/dummyData.json";

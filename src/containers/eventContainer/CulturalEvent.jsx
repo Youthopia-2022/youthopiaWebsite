@@ -1,5 +1,5 @@
 import "./EventContainer.css";
-import background from "../../images/technicalEventBackground.png";
+import background from "../../images/culturalEventBackground.png";
 import "./EventContainer.css";
 import { Link, useParams } from "react-router-dom";
 import dummyData from "../../pages/EventsPage/dummyData.json";
@@ -42,7 +42,7 @@ const TechnicalEvent = (props) => {
                   className="w-[300px] min-w-[300px] rounded"
                 />
               </div>
-              <div className="eventDetails  max-w-[100%] text-white flex flex-col mt-[0.15rem] pr-[1rem]">
+              <div className="eventDetails w-[60%] max-w-[800px] text-white flex flex-col mt-[0.15rem] pr-[1rem]">
                 <div className="w-[max-content] w-[100%]">
                   <div className="eventTitle font-bold text-[3rem] justify-center text-center">
                     {items.name}
@@ -56,7 +56,7 @@ const TechnicalEvent = (props) => {
                   </div>
                 </div>
                 <div className="eventDescription mt-[2rem] flex items-start w-[100%] flex-col gap-[1rem justify-center]">
-                  <p className="text-center">{items.aboutt}</p>
+                  <p className="">{items.aboutt}</p>
                   <div className="cen justify-center text-center">
                     <div className="flex text-[#1bbee9] gap-[0.5rem] justify-center text-center">
                       <p className="font-medium">Event Coordinator: </p>

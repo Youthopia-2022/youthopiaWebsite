@@ -7,7 +7,7 @@ export const events = [
   {
     id: 1,
     title: "Technical Events",
-    desc: "Fingerstache flexitarian street art 8-bit waistcoat.  Distillery hexagon disrupt edison bulbche.",
+    desc: "A fest is totally incomplete without the event which appreciates our techy side.",
     thumbnail: image1,
     eventSlug: "evt",
     link: "/events?evt",
@@ -15,7 +15,7 @@ export const events = [
   {
     id: 2,
     title: "Cultural Events",
-    desc: "Fingerstache flexitarian street art 8-bit waistcoat.  Distillery hexagon disrupt edison bulbche.",
+    desc: "The integration of culture with any event brings forth a fun factor. The awakening of this aspect in students is done at YOUTHOPIA'22, at the cultural event.",
     thumbnail: image2,
     eventSlug: "evc",
     link: "/events?evc",
@@ -23,7 +23,7 @@ export const events = [
   {
     id: 3,
     title: "Informal Events",
-    desc: "Fingerstache flexitarian street art 8-bit waistcoat.  Distillery hexagon disrupt edison bulbche.",
+    desc: "Ranging from arts and educational genres, and going to sports and communication, the informal events have them all.",
     thumbnail: image3,
     eventSlug: "evi",
     link: "/events?evi",

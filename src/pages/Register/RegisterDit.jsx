@@ -43,14 +43,15 @@ const RegisterDit = () => {
 										<div className="ResigterTitle">{items.name}</div>
 										<div className="ResigterInfo">
 											<div>
-												<div></div> <p>{items.location}</p>
+												<div></div>
+												<p>{items.location ? items.location : "Unknown"}</p>
 											</div>
 											<div>
 												<div></div>
-												<p>{items.date}</p>
+												<p>{items.date ? items.date : "unknown"}</p>
 											</div>
 											<div>
-												<div></div> <p>{items.time}</p>
+												<div></div> <p>{items.time ? items.time : "unknown"}</p>
 											</div>
 										</div>
 									</div>

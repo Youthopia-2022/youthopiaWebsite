@@ -1,33 +1,9 @@
-import React, { useRef, useState } from "react";
-import icon from "../../images/addPhoto.png";
 import "./register.css";
 
 function RegisterIndvdit() {
-	const [uploadedImage, setuploadedImage] = useState("");
-	const onImageChange = (event) => {
-		if (event.target.files && event.target.files[0]) {
-			let img = event.target.files[0];
-			setuploadedImage(img);
-			console.log(uploadedImage);
-		}
-	};
-	const image = useRef();
 	return (
 		<div className="flex justify-center w-[100vw] items-center my-[2rem]">
 			<div className="formResponsive space-y-6 px-[2rem] w-[75vw]">
-				<div className="mt-1 flex items-center">
-					<div
-						className="bg-[#252525] w-[4rem] h-[4rem] rounded-[50%] flex justify-center items-center border-[#353535] border-2"
-						onClick={() => image.current.click()}
-					>
-						<img src={icon} alt="" className="w-[15px] h-[15px]" />
-					</div>
-					<p className="ml-[1rem] text-white font-normal">
-						Upload Your Profile Photo
-					</p>
-				</div>
-				<div className="w-[100%] h-[0px] border-t-[1px] border-[#343434]"></div>
-
 				<div>
 					<p
 						htmlFor="name"
@@ -94,13 +70,6 @@ function RegisterIndvdit() {
 					</button>
 				</div>
 			</div>
-			<input
-				type="file"
-				name="myImage"
-				ref={image}
-				className="hidden"
-				onChange={onImageChange}
-			/>
 		</div>
 	);
 }

@@ -1,5 +1,5 @@
 import { React, useState } from "react";
-import "./Registerteamdit.css";
+import "./register.css";
 
 function Registerteamdit() {
 	const [arr, setArr] = useState([{ name: "" }]);

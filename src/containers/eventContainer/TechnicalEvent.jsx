@@ -57,16 +57,15 @@ const TechnicalEvent = () => {
 									<p>{items.aboutt}</p>
 									<div>
 										<div>
-											<p>Event Coordinator: </p>
-											<p>{items.Coordinator}</p>
+											<div></div>
+											<p>{items.location ? items.location : "Unknown"}</p>
 										</div>
 										<div>
-											<p>Over All Headr: </p>
-											<p>{items["Overall Head"]}</p>
+											<div></div>
+											<p>{items.date ? items.date : "unknown"}</p>
 										</div>
 										<div>
-											<p>Fees: </p>
-											<p>{items.eventFeeNonDIT}</p>
+											<div></div> <p>{items.time ? items.time : "unknown"}</p>
 										</div>
 									</div>
 								</div>

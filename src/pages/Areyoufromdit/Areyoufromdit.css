@@ -1,0 +1,278 @@
+.image1 {
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    left: 5vw;
+    top: 10vw;
+
+}
+
+.class1 {
+    /* position: absolute; */
+    width: 100%;
+    left: 20vw;
+    top: 5vw;
+    right: 1162;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+.class2 {
+    /* position: absolute; */
+    width: 100%;
+    top: 12vw;
+    left: 20vw;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 120%;
+    color: #FC0160;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .class2 {
+        font-size: 9px !important;
+    }
+
+}
+
+.class3 {
+    width: 100%;
+    top: 14vw;
+    margin-right: 2vw;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+
+    color: #1BBEE9;
+
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .class3 {
+        font-size: 9px !important;
+        top: 45vw;
+    }
+
+}
+
+.class4 {
+    position: absolute;
+    width: 152px;
+    height: 38px;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    color: #1BBEE9;
+    top: 197px;
+    left: 1275px;
+    bottom: 981px;
+    right: 366px;
+
+}
+
+.class5 {
+    width: fit-content;
+    /* display: flex; */
+    position: relative;
+    left: 41.7vw;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 120%;
+    color: #FFFFFF;
+
+}
+
+.main-btn {
+    position: absolute;
+    left: 38.5vw;
+
+}
+
+.button1 {
+    box-sizing: border-box;
+    /* display: flex; */
+
+    align-items: center;
+    gap: 24px;
+    width: 150px;
+    left: 35vw;
+    top: 40vw;
+    background: linear-gradient(89.62deg, rgba(41, 18, 78, 0.8) 35.41%, rgba(183, 44, 161, 0.4) 99.72%);
+    border: 1px solid #FC0160;
+
+}
+
+.button2 {
+    box-sizing: border-box;
+    display: flex;
+
+    align-items: center;
+
+    gap: 24px;
+    width: 150px;
+
+
+    top: 40vw;
+    background: linear-gradient(89.62deg, rgba(41, 18, 78, 0.8) 35.41%, rgba(183, 44, 161, 0.4) 99.72%);
+    border: 1px solid #FC0160;
+
+}
+
+.buttonfont {
+    width: 26px;
+    height: 16px;
+
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #FFFFFF;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.maincontainer {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+@media only screen and (max-width:1000px) {
+    .main-btn {
+        left: 37.5vw;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .class5 {
+        left: 35.5vw;
+    }
+
+    .main-btn {
+        left: 30.5vw;
+    }
+}
+
+@media only screen and (max-width:715px) {
+    .class5 {
+        left: 33.5vw;
+    }
+
+    .main-btn {
+        left: 28.5vw;
+    }
+}
+
+@media only screen and (max-width:640px) {
+    .main-btn {
+        display: inline-block;
+        left: 37.5vw;
+    }
+
+    .button1 {
+        margin-bottom: 8px;
+    }
+
+    .button2 {
+        margin-left: 3.3vw;
+
+    }
+}
+
+@media only screen and (max-width:530px) {
+    .class5 {
+        left: 29.5vw;
+    }
+
+    .main-btn {
+        left: 34.5vw;
+    }
+
+    .button2 {
+        margin-left: 3.7vw;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .class5 {
+        left: 22.5vw;
+    }
+
+    .main-btn {
+        left: 28.5vw;
+    }
+
+    .button2 {
+        margin-left: 5vw;
+    }
+}
+
+@media only screen and (max-width:350px) {
+    .class5 {
+        left: 18.5vw;
+    }
+
+    .main-btn {
+        left: 24.5vw;
+    }
+
+    .button2 {
+        margin-left: 5.7vw;
+    }
+}
+
+@media only screen and (max-width:325px) {
+    .class5 {
+        left: 13.5vw;
+    }
+
+    .main-btn {
+        left: 20.5vw;
+    }
+
+    .button2 {
+        margin-left: 6.2vw;
+    }
+}
+
+@media only screen and (max-width:310px) {
+    .class5 {
+        left: 5.5vw;
+    }
+
+    .main-btn {
+        left: 13.5vw;
+    }
+
+    .button2 {
+        margin-left: 6.8vw;
+    }
+}
+
+.div1 {
+    padding: 2%;
+}
+
+.div2 {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+
+.ques-btn {
+    position: relative;
+    top: 20vh;
+}

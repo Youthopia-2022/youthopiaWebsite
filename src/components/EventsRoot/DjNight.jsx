@@ -1,6 +1,6 @@
 import React from "react";
 import EventsRoot from "./EventsRoot";
-import image from "../../images/image-3.png";
+import image from "../../images/DSC_0542.JPG";
 
 function DjNight() {
   return (

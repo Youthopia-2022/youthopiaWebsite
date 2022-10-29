@@ -33,7 +33,6 @@ function Registerteamdit() {
                                     </div>
                                 </div>
                                 <hr />
-
                                 <div className="grid grid-cols-3 gap-6">
                                     <div className="col-span-3 sm:col-span-2">
                                         <label htmlFor="name" className="block text-lg font-medium text-white">

@@ -59,15 +59,23 @@ const TechnicalEvent = () => {
 									<div>
 										<div>
 											<p>Event Coordinator: </p>
-											<p>{items.Coordinator}</p>
+											<p>{items.Coordinator ? items.Coordinator : "Unknown"}</p>
 										</div>
 										<div>
 											<p>Over All Headr: </p>
-											<p>{items["Overall Head"]}</p>
+											<p>
+												{items["Overall Head"]
+													? items["Overall Head"]
+													: "Unknown"}
+											</p>
 										</div>
 										<div>
 											<p>Fees: </p>
-											<p>{items.eventFeeNonDIT}</p>
+											<p>
+												{items.eventFeeNonDIT
+													? items.eventFeeNonDIT
+													: "Unknown"}
+											</p>
 										</div>
 									</div>
 								</div>

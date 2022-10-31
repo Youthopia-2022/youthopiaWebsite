@@ -7,9 +7,6 @@ const EventCard = (props) => {
   const { image, location, date, price, startTime, endTime, name, link } =
     props;
 
-  console.log("start time", startTime);
-  console.log("end time", endTime);
-
   return (
     <div className="EventCardd">
       <div className="imagee">

@@ -1,23 +1,37 @@
 import "./EventCard.css";
 import "@fontsource/ibm-plex-sans";
 import { Link } from "react-router-dom";
+import moment from "moment/moment";
+
 const EventCard = (props) => {
+  const { image, location, date, price, startTime, endTime, name, link } =
+    props;
+
+  console.log("start time", startTime);
+  console.log("end time", endTime);
+
   return (
     <div className="EventCardd">
       <div className="imagee">
-        <img src={props.image} alt="" />
+        <img src={image} alt="" />
       </div>
       <div className="r1">
-        <div className="locationn">{props.location}</div>
-        <div className="datee">{props.date}</div>
+        <div className="locationn capitalize">{location}</div>
+        <div className="datee font-semibold">
+          {moment(date).format("DD-MM-YYYY")}
+        </div>
       </div>
       <div className="r2">
-        <div className="pricee">{props.price}</div>
-        <div className="timee">{props.time}</div>
+        <div className="pricee">₹{price}</div>
+        <div className="timee">
+          {moment(startTime, "HH:mm:ss").format("hh:mm a")}
+          {" - "}
+          {moment(endTime, "HH:mm:ss").format("hh:mm a")}
+        </div>
       </div>
       <div className="r3">
-        <div className="namee">{props.name}</div>
-        <Link to={props.Link}>
+        <div className="namee capitalize">{name}</div>
+        <Link to={link}>
           <div className="buttonn">Register Now</div>
         </Link>
       </div>

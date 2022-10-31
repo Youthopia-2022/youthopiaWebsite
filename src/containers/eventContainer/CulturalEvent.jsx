@@ -20,7 +20,7 @@ const CulturalEvent = () => {
 		sr.reveal(`.eventTitle`, { origin: "right" });
 		sr.reveal(`.eventInfo`, { origin: "bottom" });
 		sr.reveal(`.eventDescription`, { origin: "bottom" });
-		sr.reveal(`.eventResgisterButton`, { origin: "bottom" });
+		// sr.reveal(`.eventResgisterButton`, { origin: "bottom" });
 	}, []);
 	return (
 		<>

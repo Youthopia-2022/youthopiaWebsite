@@ -1,13 +1,31 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import registerbackground from "../../images/registerbackground.png";
-import dummyData from "../../pages/EventsPage/dummyData.json";
 import ScrollReveal from "scrollreveal";
 import EventRegisterForm from "../../components/eventRegisteForm/EventRegisterForm";
+import { createClient } from "@supabase/supabase-js";
+import { useState } from "react";
 import "./Register.css";
 
 const RegisterDit = () => {
 	const { name } = useParams();
+	const [data, setdata] = useState("");
+
+	//superbase Integration
+	const supabaseUrl = "https://bwqibqbxbirzbyjqovco.supabase.co";
+	const supabaseKey =
+		"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJ3cWlicWJ4YmlyemJ5anFvdmNvIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjU2NDMxNTcsImV4cCI6MTk4MTIxOTE1N30.7TLUvzsw1-YI-G02oDJbsHHH7U5d1RS25-b-mLiXL6M";
+	const supabase = createClient(supabaseUrl, supabaseKey);
+	const getData = async () => {
+		let { data: events_new, error } = await supabase
+			.from("events_new")
+			.select("*")
+			.ilike("event_id", name);
+		setdata(events_new);
+		if (error) {
+			console.log(error);
+		}
+	};
 	useEffect(() => {
 		const sr = ScrollReveal({
 			distance: "60px",
@@ -21,12 +39,12 @@ const RegisterDit = () => {
 		sr.reveal(`.eventInfo`, { origin: "bottom" });
 		// sr.reveal(`.RegisterFormQuestionButtons`, { origin: "bottom" });
 		// sr.reveal(`.eventResgisterButton`, { origin: "bottom" });
+		getData();
 	}, []);
 	return (
 		<>
-			{dummyData
-				.filter((items) => items.name === name)
-				.map((items) => (
+			{data &&
+				data.map((items) => (
 					<div
 						className="ResigterContainer"
 						style={{
@@ -36,7 +54,14 @@ const RegisterDit = () => {
 						<div className="ResigterContainerChild">
 							<div className="registerforu">
 								<div className="ResigterImage">
-									<img src={items.imag} alt="" />
+									<img
+										src={
+											items.event_image
+												? items.event_image
+												: "https://propertywiselaunceston.com.au/wp-content/themes/property-wise/images/no-image@2x.png"
+										}
+										alt="event"
+									/>
 								</div>
 								<div className="ResigterDetails">
 									<div className="ResigterDetailsTop">
@@ -44,14 +69,25 @@ const RegisterDit = () => {
 										<div className="ResigterInfo">
 											<div>
 												<div></div>
-												<p>{items.location ? items.location : "Unknown"}</p>
+												<p>
+													{items.event_venue ? items.event_venue : "Unknown"}
+												</p>
 											</div>
 											<div>
 												<div></div>
-												<p>{items.date ? items.date : "unknown"}</p>
+												<p>{items.event_date ? items.event_date : "unknown"}</p>
 											</div>
 											<div>
-												<div></div> <p>{items.time ? items.time : "unknown"}</p>
+												<div></div>
+												<p>{items.event_time ? items.event_time : "unknown"}</p>
+											</div>
+											<div>
+												<div></div>
+												<p>
+													{items.event_fees
+														? "₹" + items.event_fees
+														: "Unknown"}
+												</p>
 											</div>
 										</div>
 									</div>

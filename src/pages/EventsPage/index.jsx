@@ -18,7 +18,6 @@ const EventsPage = () => {
   const getData = async () => {
     try {
       setLoading(true);
-      {loading && <Loader/>}
       const { data, error, status } = await supabase.from("events").select("*");
 
       if (error && status !== 406) {
@@ -120,38 +119,42 @@ const EventsPage = () => {
         </button>
       </div>
 
-      <div className="allEvents">
-        {filteredData &&
-          filteredData.map((event, id) => {
-            return (
-              <EventCard
-                key={id}
-                name={event.event_name}
-                image={
-                  event.event_image
-                    ? event.event_image
-                    : "https://propertywiselaunceston.com.au/wp-content/themes/property-wise/images/no-image@2x.png"
-                }
-                location={event.event_venue}
-                startTime={event.event_startTime}
-                endTime={event.event_endTime}
-                price={event.event_fees}
-                date={event.event_date}
-                link={`${
-                  event.event_category === "Technical"
-                    ? "evt"
-                    : event.event_category === "Literary"
-                    ? "evd"
-                    : event.event_category === "Informal"
-                    ? "evi"
-                    : event.event_category === "Fine Arts"
-                    ? "evfa"
-                    : "evc"
-                }/${event.event_id}`}
-              />
-            );
-          })}
-      </div>
+      {loading ? (
+        <Loader />
+      ) : (
+        <div className="allEvents">
+          {filteredData &&
+            filteredData.map((event, id) => {
+              return (
+                <EventCard
+                  key={id}
+                  name={event.event_name}
+                  image={
+                    event.event_image
+                      ? event.event_image
+                      : "https://propertywiselaunceston.com.au/wp-content/themes/property-wise/images/no-image@2x.png"
+                  }
+                  location={event.event_venue}
+                  startTime={event.event_startTime}
+                  endTime={event.event_endTime}
+                  price={event.event_fees}
+                  date={event.event_date}
+                  link={`${
+                    event.event_category === "Technical"
+                      ? "evt"
+                      : event.event_category === "Literary"
+                      ? "evd"
+                      : event.event_category === "Informal"
+                      ? "evi"
+                      : event.event_category === "Fine Arts"
+                      ? "evfa"
+                      : "evc"
+                  }/${event.event_id}`}
+                />
+              );
+            })}
+        </div>
+      )}
     </div>
   );
 };

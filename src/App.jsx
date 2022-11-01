@@ -1,19 +1,20 @@
-import { Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
 import { useEffect } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import EventsPage from "./pages/EventsPage";
 import Gallery from "./pages/Gallery";
-import EventDetailsTechnical from "./pages/EventsDetails/EventDetailsTechnical";
-import EventDetailsCultural from "./pages/EventsDetails/EventDetailsCultural";
-import EventDetailsDebate from "./pages/EventsDetails/EventDetailsDebate";
-import EventDetailsInformal from "./pages/EventsDetails/EventDetailsInformal";
 import Register from "./pages/Register";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import Aboutus from "./pages/Aboutus/Aboutus";
 import RegisterDit from "./pages/Register/RegisterDit";
 import RegisterOutside from "./pages/Register/RegisterOutside";
+import CulturalEvent from "./containers/eventContainer/CulturalEvent";
+import TechnicalEvent from "./containers/eventContainer/TechnicalEvent";
+import LiteraryEvent from "./containers/eventContainer/LiteraryEvent";
+import InformalEvent from "./containers/eventContainer/InformalEvent";
+import FineArtsEvent from "./containers/eventContainer/FineArtsEvent";
 
 const useScrollToTop = () => {
   const location = useLocation();
@@ -32,27 +33,16 @@ const App = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />;
         <Route path="/events" element={<EventsPage />} />;
-        <Route
-          path="/events/evc/:name"
-          element={<EventDetailsCultural />}
-        ></Route>
-        <Route
-          path="/events/evt/:name"
-          element={<EventDetailsTechnical />}
-        ></Route>
-        <Route
-          path="/events/evd/:name"
-          element={<EventDetailsDebate />}
-        ></Route>
-        <Route
-          path="/events/evi/:name"
-          element={<EventDetailsInformal />}
-        ></Route>
+        <Route path="/events/evc/:id" element={<CulturalEvent />} />
+        <Route path="/events/evt/:id" element={<TechnicalEvent />} />
+        <Route path="/events/evd/:id" element={<LiteraryEvent />} />
+        <Route path="/events/evi/:id" element={<InformalEvent />} />
+        <Route path="/events/evfa/:id" element={<FineArtsEvent />} />
         <Route path="/gallery" element={<Gallery />} />;
         <Route path="/aboutus" element={<Aboutus />} />;
-        <Route path="/register/:name" element={<Register />} />;
-        <Route path="/registerdit/:name" element={<RegisterDit />} />;
-        <Route path="/registeroutside/:name" element={<RegisterOutside />} />;
+        <Route path="/register/:id" element={<Register />} />;
+        <Route path="/registerdit/:id" element={<RegisterDit />} />;
+        <Route path="/registeroutside/:id" element={<RegisterOutside />} />;
       </Routes>
       <Footer />
     </>

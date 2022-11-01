@@ -7,7 +7,7 @@ import background from "../../images/informalEventBackground.webp";
 import { supabase } from "../../supabaseClient";
 import Loader from "../../components/Loader/Loader";
 
-const TechnicalEvent = () => {
+const FineArtsEvent = () => {
   const { id } = useParams();
   const [data, setData] = useState("");
   const [loading, setLoading] = useState(false);
@@ -162,4 +162,4 @@ const TechnicalEvent = () => {
     </>
   );
 };
-export default TechnicalEvent;
+export default FineArtsEvent;

@@ -7,7 +7,7 @@ import background from "../../images/informalEventBackground.webp";
 import { supabase } from "../../supabaseClient";
 import Loader from "../../components/Loader/Loader";
 
-const TechnicalEvent = () => {
+const LiteraryEvent = () => {
   const { id } = useParams();
   const [data, setData] = useState("");
   const [loading, setLoading] = useState(false);
@@ -35,7 +35,7 @@ const TechnicalEvent = () => {
     }
   };
 
-  useEffect((name) => {
+  useEffect(() => {
     const sr = ScrollReveal({
       distance: "60px",
       reset: false,
@@ -162,4 +162,4 @@ const TechnicalEvent = () => {
     </>
   );
 };
-export default TechnicalEvent;
+export default LiteraryEvent;

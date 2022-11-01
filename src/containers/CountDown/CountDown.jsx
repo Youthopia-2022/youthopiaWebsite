@@ -1,4 +1,4 @@
-import image from "../../images/CountDownThumbnail.png";
+import image from "../../images/CountDownThumbnail.webp";
 import logo1 from "../../images/WhiteLogo.png";
 import logo2 from "../../images/ditWhite.png";
 import logo3 from "../../images/YouthopiaLogo.svg";

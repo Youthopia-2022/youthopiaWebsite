@@ -1,5 +1,5 @@
 import "./EventContainer.css";
-import background from "../../images/informalEventBackground.png";
+import background from "../../images/informalEventBackground.webp";
 import "./EventContainer.css";
 import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";

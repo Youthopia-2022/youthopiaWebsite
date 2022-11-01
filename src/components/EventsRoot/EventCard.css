@@ -122,7 +122,7 @@ html {
   margin-top: 6px;
 }
 .namee {
-  font-weight: 700;
+  font-weight: 600;
 }
 .locationn,
 .timee,
@@ -132,9 +132,21 @@ html {
   color: white;
 }
 .buttonn {
-  padding: 8px;
+  padding: 8px 10px;
   font-family: "IBM Plex Sans";
   letter-spacing: 0.1em;
-
   background: #2c0022;
+}
+
+/* Fix */
+.locationn,
+.namee {
+  flex: 1;
+  text-align: left;
+  margin-right: 5px;
+}
+.timee {
+  flex: 1;
+  text-align: right;
+  margin-left: 5px;
 }

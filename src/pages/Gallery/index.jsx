@@ -37,19 +37,19 @@ const Gallery = () => {
 					<h3 className="text-white text-6xl font-bold">REMEMBER</h3>
 					<h3 className="text-[#3F2EA1] text-6xl font-bold">YOUR</h3>
 					<h3 className="text-[#3F2EA1] text-6xl font-bold">ENTIRE LIFE</h3>
-					<img className="h-96 w-96 mt-10" src={gimage1} alt="image.jpg" />
+					<img className="h-96 w-96 mt-10" src={gimage1} alt="galleryImage" />
 				</div>
                 <Loader/>
 				{/* Second Column Images */}
 				<div className="flex flex-col mt-8 md:mt-0 md:ml-10">
-					<img className="h-96 w-auto" src={gimage2} alt="image.jpg" />
-					<img className="h-96 w-auto mt-10" src={gimage3} alt="image.jpg" />
+					<img className="h-96 w-auto" src={gimage2} alt="galleryImage" />
+					<img className="h-96 w-auto mt-10" src={gimage3} alt="galleryImage" />
 				</div>
 			</div>
 
 			{/* Second Row */}
 			<div className="px-5 md:px-10 py-10">
-				<img className="h-96 w-full" src={gimage4} alt="image.jpg" />
+				<img className="h-96 w-full" src={gimage4} alt="galleryImage" />
 			</div>
 
 			{/* Third Row */}
@@ -61,125 +61,125 @@ const Gallery = () => {
 				<img
 					className="py-5 px-5 md:px-10 md:w-1/3 h-30"
 					src={gimage5}
-					alt="image.jpg"
+					alt="galleryImage"
 				/>
 				<img
 					className="py-5 px-5 md:px-10 md:w-1/3 h-30"
 					src={gimage6}
-					alt="image.jpg"
+					alt="galleryImage"
 				/>
 				<img
 					className="py-5 px-5 md:px-10 md:w-1/3 h-30"
 					src={gimage7}
-					alt="image.jpg"
+					alt="galleryImage"
 				/>
 			</div>
 
 			<img
 				className="w-full h-auto object-contain px-5 md:px-10 mt-10"
 				src={gimage8}
-				alt="image.jpg"
+				alt="galleryImage"
 			/>
 
 			<img
 				className="w-full h-auto object-contain px-5 md:px-10 mt-10"
 				src={gimage9}
-				alt="image.jpg"
+				alt="galleryImage"
 			/>
 
 			<img
 				className="w-full h-auto object-contain px-5 md:px-10 mt-10"
 				src={gimage10}
-				alt="image.jpg"
+				alt="galleryImage"
 			/>
 			<div className="flex flex-col md:flex-row w-full items-center">
 				<img
 					className="py-5 px-5 md:px-10 md:w-1/3 h-30"
 					src={gimage11}
-					alt="image.jpg"
+					alt="galleryImage"
 				/>
 				<img
 					className="py-5 px-5 md:px-10 md:w-1/3 h-30"
 					src={gimage12}
-					alt="image.jpg"
+					alt="galleryImage"
 				/>
 				<img
 					className="py-5 px-5 md:px-10 md:w-1/3 h-30"
 					src={gimage13}
-					alt="image.jpg"
+					alt="galleryImage"
 				/>
 			</div>
 			<img
 				className="w-full h-auto object-contain px-5 md:px-10 mt-10"
 				src={gimage14}
-				alt="image.jpg"
+				alt="galleryImage"
 			/>
 
 			<img
 				className="w-full h-auto object-contain px-5 md:px-10 mt-10"
 				src={gimage15}
-				alt="image.jpg"
+				alt="galleryImage"
 			/>
 			<div className="flex flex-col md:flex-row w-full items-center">
 				<img
 					className="py-5 px-5 md:px-10 md:w-1/3 h-30"
 					src={gimage16}
-					alt="image.jpg"
+					alt="galleryImage"
 				/>
 				<img
 					className="py-5 px-5 md:px-10 md:w-1/3 h-30"
 					src={gimage17}
-					alt="image.jpg"
+					alt="galleryImage"
 				/>
 				<img
 					className="py-5 px-5 md:px-10 md:w-1/3 h-30"
 					src={gimage18}
-					alt="image.jpg"
+					alt="galleryImage"
 				/>
 			</div>
 			<img
 				className="w-full h-auto object-contain px-5 md:px-10 mt-10"
 				src={gimage19}
-				alt="image.jpg"
+				alt="galleryImage"
 			/>
 
 			<img
 				className="w-full h-auto object-contain px-5 md:px-10 mt-10"
 				src={gimage20}
-				alt="image.jpg"
+				alt="galleryImage"
 			/>
 			<div className="flex flex-col md:flex-row w-full items-center">
 				<img
 					className="py-5 px-5 md:px-10 md:w-1/3 h-30"
 					src={gimage21}
-					alt="image.jpg"
+					alt="galleryImage"
 				/>
 				<img
 					className="py-5 px-5 md:px-10 md:w-1/3 h-30"
 					src={gimage22}
-					alt="image.jpg"
+					alt="galleryImage"
 				/>
 				<img
 					className="py-5 px-5 md:px-10 md:w-1/3 h-30"
 					src={gimage23}
-					alt="image.jpg"
+					alt="galleryImage"
 				/>
 			</div>
 			<img
 				className="w-full h-auto object-contain px-5 md:px-10 mt-10"
 				src={gimage24}
-				alt="image.jpg"
+				alt="galleryImage"
 			/>
 
 			<img
 				className="w-full h-auto object-contain px-5 md:px-10 mt-10"
 				src={gimage25}
-				alt="image.jpg"
+				alt="galleryImage"
 			/>
 			<img
 				className="w-full h-auto object-contain px-5 md:px-10 mt-10"
 				src={gimage26}
-				alt="image.jpg"
+				alt="galleryImage"
 			/>
 		</div>
 	);

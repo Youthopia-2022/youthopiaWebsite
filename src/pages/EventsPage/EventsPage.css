@@ -7,6 +7,7 @@
   margin: 5px;
   margin: auto;
   width: 77vw;
+  align-items: stretch;
 }
 @media only screen and (max-width: 600px) {
   .allEvents {

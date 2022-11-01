@@ -4,6 +4,7 @@ import "@fontsource/ibm-plex-sans";
 import "./EventsPage.css";
 import { useLocation } from "react-router-dom";
 import { supabase } from "../../supabaseClient";
+import Loader from "../../components/Loader/Loader";
 
 const EventsPage = () => {
   const [data, setData] = useState("");
@@ -17,6 +18,7 @@ const EventsPage = () => {
   const getData = async () => {
     try {
       setLoading(true);
+      {loading && <Loader/>}
       const { data, error, status } = await supabase.from("events").select("*");
 
       if (error && status !== 406) {

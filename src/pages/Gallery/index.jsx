@@ -24,6 +24,7 @@ import gimage23 from "../../images/gimage23-min.JPG";
 import gimage24 from "../../images/gimage24-min.JPG";
 import gimage25 from "../../images/gimage25-min.JPG";
 import gimage26 from "../../images/gimage26-min.JPG";
+import Loader from "../../components/Loader/Loader";
 
 const Gallery = () => {
 	return (
@@ -38,6 +39,7 @@ const Gallery = () => {
 					<h3 className="text-[#3F2EA1] text-6xl font-bold">ENTIRE LIFE</h3>
 					<img className="h-96 w-96 mt-10" src={gimage1} alt="image.jpg" />
 				</div>
+                <Loader/>
 				{/* Second Column Images */}
 				<div className="flex flex-col mt-8 md:mt-0 md:ml-10">
 					<img className="h-96 w-auto" src={gimage2} alt="image.jpg" />

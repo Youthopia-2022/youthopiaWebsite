@@ -3,7 +3,7 @@ import moment from "moment";
 import { Link, useParams } from "react-router-dom";
 import ScrollReveal from "scrollreveal";
 import "./EventContainer.css";
-import background from "../../images/informalEventBackground.png";
+import background from "../../images/informalEventBackground.webp";
 import { supabase } from "../../supabaseClient";
 import Loader from "../../components/Loader/Loader";
 

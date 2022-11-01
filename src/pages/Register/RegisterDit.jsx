@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import registerbackground from "../../images/registerbackground.webp";
 import ScrollReveal from "scrollreveal";
 import EventRegisterForm from "../../components/eventRegisteForm/EventRegisterForm";
-import { createClient } from "@supabase/supabase-js";
 import { useState } from "react";
 import "./Register.css";
 import { supabase } from "../../supabaseClient";

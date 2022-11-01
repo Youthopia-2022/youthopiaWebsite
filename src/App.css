@@ -21,3 +21,30 @@ html {
 	text-align: center;
 	font-size: 3vh;
 }
+
+::-webkit-scrollbar-track {
+	background: linear-gradient(
+		180deg,
+		hsla(240, 23%, 29%, 1) 0%,
+		hsla(240, 46%, 7%, 1) 100%
+	);
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	background: linear-gradient(
+		180deg,
+		hsla(240, 23%, 29%, 1) 0%,
+		hsla(240, 46%, 7%, 1) 100%
+	);
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background: linear-gradient(
+		180deg,
+		rgb(41, 18, 78) 0%,
+		rgb(183, 44, 162) 100%
+	);
+}

@@ -1,7 +1,7 @@
-import image1 from "../images/image1.png";
-import image2 from "../images/image2.png";
-import image3 from "../images/image3.png";
-import image4 from "../images/image4.png";
+import image1 from "../images/image1.webp";
+import image2 from "../images/image2.webp";
+import image3 from "../images/image3.webp";
+import image4 from "../images/image4.webp";
 
 export const events = [
   {

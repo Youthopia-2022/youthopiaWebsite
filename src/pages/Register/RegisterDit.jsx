@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
-import registerbackground from "../../images/registerbackground.png";
+import registerbackground from "../../images/registerbackground.webp";
 import ScrollReveal from "scrollreveal";
 import EventRegisterForm from "../../components/eventRegisteForm/EventRegisterForm";
 import { createClient } from "@supabase/supabase-js";

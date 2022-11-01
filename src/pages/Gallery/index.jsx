@@ -1,29 +1,29 @@
-import gimage1 from "../../images/gimage1-min.JPG";
-import gimage2 from "../../images/gimage2-min.JPG";
-import gimage3 from "../../images/gimage3-min.JPG";
-import gimage4 from "../../images/gimage4-min.JPG";
-import gimage5 from "../../images/gimage5-min.JPG";
-import gimage6 from "../../images/gimage6-min.JPG";
-import gimage7 from "../../images/gimage7-min.JPG";
-import gimage8 from "../../images/gimage8-min.JPG";
-import gimage9 from "../../images/gimage9-min.JPG";
-import gimage10 from "../../images/gimage10.webp";
-import gimage11 from "../../images/gimage11-min.JPG";
-import gimage12 from "../../images/gimage12-min.JPG";
-import gimage13 from "../../images/gimage13-min.JPG";
-import gimage14 from "../../images/gimage14-min.JPG";
-import gimage15 from "../../images/gimage15-min.JPG";
-import gimage16 from "../../images/gimage16-min.JPG";
-import gimage17 from "../../images/gimage17-min.JPG";
-import gimage18 from "../../images/gimage18-min.JPG";
-import gimage19 from "../../images/gimage19-min.JPG";
-import gimage20 from "../../images/gimage20-min.JPG";
-import gimage21 from "../../images/gimage21-min.JPG";
-import gimage22 from "../../images/gimage22-min.JPG";
-import gimage23 from "../../images/gimage23-min.JPG";
-import gimage24 from "../../images/gimage24-min.JPG";
-import gimage25 from "../../images/gimage25-min.JPG";
-import gimage26 from "../../images/gimage26-min.JPG";
+import gimage1 from "../../images/gimage1-min.webp";
+import gimage2 from "../../images/gimage2-min.webp";
+import gimage3 from "../../images/gimage3-min.webp";
+import gimage4 from "../../images/gimage4-min.webp";
+import gimage5 from "../../images/gimage5-min.webp";
+import gimage6 from "../../images/gimage6-min.webp";
+import gimage7 from "../../images/gimage7-min.webp";
+import gimage8 from "../../images/gimage8-min.webp";
+import gimage9 from "../../images/gimage9-min.webp";
+import gimage10 from "../../images/gimage10-min.webp";
+import gimage11 from "../../images/gimage11-min.webp";
+import gimage12 from "../../images/gimage12-min.webp";
+import gimage13 from "../../images/gimage13-min.webp";
+import gimage14 from "../../images/gimage14-min.webp";
+import gimage15 from "../../images/gimage15-min.webp";
+import gimage16 from "../../images/gimage16-min.webp";
+import gimage17 from "../../images/gimage17-min.webp";
+import gimage18 from "../../images/gimage18-min.webp";
+import gimage19 from "../../images/gimage19-min.webp";
+import gimage20 from "../../images/gimage20-min.webp";
+import gimage21 from "../../images/gimage21-min.webp";
+import gimage22 from "../../images/gimage22-min.webp";
+import gimage23 from "../../images/gimage23-min.webp";
+import gimage24 from "../../images/gimage24-min.webp";
+import gimage25 from "../../images/gimage25-min.webp";
+import gimage26 from "../../images/gimage26-min.webp";
 
 const Gallery = () => {
 	return (
@@ -47,7 +47,7 @@ const Gallery = () => {
 
 			{/* Second Row */}
 			<div className="px-5 md:px-10 py-10">
-				<img className="h-96 w-full" src={gimage4} alt="galleryImage" />
+				<img className="h-auto w-full" src={gimage4} alt="galleryImage" />
 			</div>
 
 			{/* Third Row */}

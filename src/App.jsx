@@ -15,6 +15,7 @@ import TechnicalEvent from "./containers/eventContainer/TechnicalEvent";
 import LiteraryEvent from "./containers/eventContainer/LiteraryEvent";
 import InformalEvent from "./containers/eventContainer/InformalEvent";
 import FineArtsEvent from "./containers/eventContainer/FineArtsEvent";
+import Signup from "./components/Signup/Signup";
 
 const useScrollToTop = () => {
   const location = useLocation();
@@ -39,6 +40,7 @@ const App = () => {
         <Route path="/events/evi/:id" element={<InformalEvent />} />
         <Route path="/events/evfa/:id" element={<FineArtsEvent />} />
         <Route path="/gallery" element={<Gallery />} />;
+        <Route path="/signup" element={<Signup/>} />;
         <Route path="/aboutus" element={<Aboutus />} />;
         <Route path="/register/:id" element={<Register />} />;
         <Route path="/registerdit/:id" element={<RegisterDit />} />;

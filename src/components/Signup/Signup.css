@@ -1,0 +1,39 @@
+input {
+	border: 1px solid white;
+	color: white;
+}
+
+.createAcbtn {
+	transition-duration: 0.4s;
+	scale: 1;
+}
+
+.createAcbtn:hover {
+	transition-duration: 0.4s;
+	scale: 1.2;
+}
+
+.signUpForm {
+	border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.formResponsive{
+    font-family: IBM Plex Sans , FontAwesome;
+}
+
+@media only screen and (max-width: 899px) {
+	.formResponsive {
+		width: 90vw !important;
+	}
+}
+@media only screen and (max-width: 720px) {
+	.formResponsive {
+		width: 95vw !important;
+	}
+}
+
+@media only screen and (max-width: 442px) {
+	.formResponsive {
+		width: 100vw !important;
+	}
+}

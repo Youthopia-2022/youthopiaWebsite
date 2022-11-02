@@ -1,4 +1,5 @@
 import "./register.css";
+import UploadAndDisplayImage from "./UploadAndDisplayImage";
 
 function RegisterIndv() {
 	return (
@@ -40,6 +41,7 @@ function RegisterIndv() {
 							required
 						/>
 					</div>
+					<UploadAndDisplayImage/>
 				</div>
 
 				<div>

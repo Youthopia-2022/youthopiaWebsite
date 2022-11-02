@@ -1,5 +1,6 @@
 import { React, useState } from "react";
 import "./register.css";
+import UploadAndDisplayImage from "./UploadAndDisplayImage";
 
 function Registerteam() {
   const [arr, setArr] = useState([{ name: "" }]);
@@ -60,6 +61,7 @@ function Registerteam() {
                 required
               />
             </div>
+              <UploadAndDisplayImage/>
           </div>
 
           <div>

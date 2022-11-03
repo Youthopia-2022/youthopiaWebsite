@@ -31,7 +31,7 @@ export const events = [
   {
     id: 4,
     title: "Literary Events",
-    desc: "Fingerstache flexitarian street art 8-bit waistcoat.  Distillery hexagon disrupt edison bulbche.",
+    desc: "Literature is an eternal piece of art and entertainment. It reflects what one has grown into, tremendously in innovative ways. But what stays stagnant is literature, words, wisdom, and knowledge.",
     thumbnail: image4,
     eventSlug: "evd",
     link: "/events?evd",

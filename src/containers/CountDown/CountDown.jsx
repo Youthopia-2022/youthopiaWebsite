@@ -1,8 +1,9 @@
-import image from "../../images/CountDownThumbnail.webp";
+import image from "../../images/gimage1-min.webp";
 import logo1 from "../../images/WhiteLogo.png";
 import logo2 from "../../images/ditWhite.png";
 import logo3 from "../../images/YouthopiaLogo.svg";
 import "./CountDown.css";
+
 import { useEffect, useState } from "react";
 
 const CountDown = () => {

@@ -2,11 +2,15 @@ import React from "react";
 import { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import { supabase } from "../../supabaseClient";
+import { useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import "./Signup.css";
 
 function Signup() {
+	const location = useLocation();
 	const [status, setStatus] = useState(0);
 	const [formData, setFormData] = useState("");
+	const navigate = useNavigate();
 
 	//for varifying email
 	const validateEmail = (data) => {
@@ -40,6 +44,7 @@ function Signup() {
 	const validatePass = (data) => {
 		var res = data.password.length >= 6 && data.cpassoword == data.password;
 		!res && toast.error("Password must be >6 and comfirm pass must be same!");
+		return res;
 	};
 
 	//storing values of inputs in useState
@@ -63,7 +68,6 @@ function Signup() {
 				password: formData.password,
 			});
 
-			console.log(user);
 			if (error) {
 				toast.error("Some Error occured! Please try again");
 			}
@@ -71,7 +75,6 @@ function Signup() {
 		}
 	};
 	const updateData = async () => {
-		console.log(formData);
 		const { data, error } = await supabase
 			.from("profiles")
 			.update({
@@ -83,6 +86,17 @@ function Signup() {
 				events_registered: [],
 			})
 			.eq("user_email", formData.user_email);
+
+		if (!error) {
+			toast.success("Registered Successfully!");
+			navigate(location.state.url, {
+				state: {
+					formData: location.state.formData,
+					submit: location.state.submit,
+					handleChange: location.state.handleChange,
+				},
+			});
+		}
 		if (error) {
 			console.log(error);
 		}
@@ -215,8 +229,8 @@ function Signup() {
 									<div className="mt-1 flex rounded-md shadow-sm">
 										<input
 											type="text"
-											name="universityName"
-											id="universityName"
+											name="user_college"
+											id="user_college"
 											className="signUpForm h-[2.5rem] px-2 py-1 block w-[100%] rounded-[5px] bg-transparent"
 											placeholder="&#xf19d;&nbsp;&nbsp;&nbsp;Enter your University Name"
 											required
@@ -239,7 +253,7 @@ function Signup() {
 								className="mx-3"
 								type="radio"
 								name="user_year"
-								value="firstYear"
+								value="one"
 								onChange={(e) => handleChange(e)}
 							/>
 							1st
@@ -247,7 +261,7 @@ function Signup() {
 								className="mx-3"
 								type="radio"
 								name="user_year"
-								value="secondYear"
+								value="two"
 								onChange={(e) => handleChange(e)}
 							/>
 							2nd
@@ -255,7 +269,7 @@ function Signup() {
 								className="mx-3"
 								type="radio"
 								name="user_year"
-								value="thirdYear"
+								value="three"
 								onChange={(e) => handleChange(e)}
 							/>
 							3rd
@@ -263,7 +277,7 @@ function Signup() {
 								className="mx-3"
 								type="radio"
 								name="user_year"
-								value="forthYear"
+								value="four"
 								onChange={(e) => handleChange(e)}
 							/>
 							4th
@@ -271,7 +285,7 @@ function Signup() {
 								className="mx-3"
 								type="radio"
 								name="user_year"
-								value="fifthYear"
+								value="five"
 								onChange={(e) => handleChange(e)}
 							/>
 							5th

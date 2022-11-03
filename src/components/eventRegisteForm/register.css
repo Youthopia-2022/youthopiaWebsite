@@ -8,11 +8,6 @@ input {
 	scale: 1;
 }
 
-.registerbtn:hover {
-	transition-duration: 0.4s;
-	scale: 1.2;
-}
-
 .registerFormInput {
 	border: 1px solid rgba(255, 255, 255, 0.3);
 }

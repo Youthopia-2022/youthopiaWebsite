@@ -240,6 +240,23 @@ const Gallery = () => {
 				/>
             
 			</div>
+            <div className="flex flex-col md:flex-row w-full items-center">
+				<img
+					className="py-5 px-5 md:px-10 md:w-1/3 h-30"
+					src={gimage21}
+					alt="galleryImage"
+				/>
+				<img
+					className="py-5 px-5 md:px-10 md:w-1/3 h-30"
+					src={gimage22}
+					alt="galleryImage"
+				/>
+				<img
+					className="py-5 px-5 md:px-10 md:w-1/3 h-30"
+					src={gimage23}
+					alt="galleryImage"
+				/>
+			</div>
 		</div>
 	);
 };

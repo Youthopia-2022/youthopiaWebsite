@@ -82,7 +82,7 @@ const EventsPage = () => {
     <div className="pb-10">
       <div className="eventheader">
         <button
-          className={selectedTab === "All" ? "active" : ""}
+          className={selectedTab === "All" ? "active" : "" }
           onClick={() => filterEvents("All")}
         >
           All

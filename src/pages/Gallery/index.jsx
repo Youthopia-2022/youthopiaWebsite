@@ -100,11 +100,7 @@ const Gallery = () => {
 				alt="galleryImage"
 			/>
 
-			<img
-				className="w-full h-auto object-contain px-5 md:px-10 mt-10"
-				src={gimage10}
-				alt="galleryImage"
-			/>
+			
 			<div className="flex flex-col md:flex-row w-full items-center">
 				<img
 					className="py-5 px-5 md:px-10 md:w-1/3 h-30"

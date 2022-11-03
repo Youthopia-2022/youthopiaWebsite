@@ -13,7 +13,7 @@ const EventCard = (props) => {
         <img src={image} alt="" />
       </div>
       <div className="r1">
-        <div className="locationn capitalize">{location}</div>
+        <div className="namee capitalize">{name}</div>
         <div className="datee font-semibold">
           {moment(date).format("DD-MM-YYYY")}
         </div>
@@ -27,7 +27,7 @@ const EventCard = (props) => {
         </div>
       </div>
       <div className="r3">
-        <div className="namee capitalize">{name}</div>
+        <div className="locationn capitalize">{location}</div>
         <Link to={link}>
           <div className="buttonn">Register Now</div>
         </Link>

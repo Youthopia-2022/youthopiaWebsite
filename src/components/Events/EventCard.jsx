@@ -2,7 +2,7 @@ import "./EventCard.css";
 import { Link } from "react-router-dom";
 const EventCard = ({ data }) => {
 	return (
-		<div className="xl:w-1/4  md:w-1/2 p-4">
+		<div className="xl:w-1/4 md:w-1/2 p-4">
 			<div className="bg-gray-100 bgimgg h-full">
 				<img
 					className="h-40 w-full object-cover object-center mb-5 -z-10"

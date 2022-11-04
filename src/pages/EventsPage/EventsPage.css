@@ -39,6 +39,9 @@
   font-size: 1.3rem;
   flex-wrap: wrap;
 }
+.eventheader>button {
+  margin: 0 0.5rem;
+}
 .active {
   border-bottom: 2px solid #fc0160;
 }

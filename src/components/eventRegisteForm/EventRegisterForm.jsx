@@ -172,6 +172,11 @@ const EventRegisterForm = (props) => {
 			validateEmail(formData) &&
 			validatePhone(formData)
 		) {
+			if (isTeam) {
+				let x = formData;
+				x.team_members_name[0] = formData.participant_name;
+				setFormData(x);
+			}
 			getPID();
 		}
 	};

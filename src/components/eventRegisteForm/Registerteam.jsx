@@ -8,7 +8,7 @@ function Registerteam(props) {
 	const temp = location.state;
 	let data;
 	temp ? (data = temp) : (data = props);
-	console.log(data);
+
 	const [count, setCount] = useState(1);
 	const decrease = () => {
 		if (data.formData.team_members_name.length > 1) {
@@ -21,7 +21,7 @@ function Registerteam(props) {
 	const increase = () => {
 		if (data.formData.team_members_name.length < 4) {
 			let x = data.formData.team_members_name;
-			x.push(data.formData.team_members_name.length);
+			x.push("member" + data.formData.team_members_name.length);
 			data.setFormData({ ...data.formData, team_members_name: x });
 			setCount((current) => current + 1);
 		}
@@ -167,6 +167,12 @@ function Registerteam(props) {
 											className="registerFormInput h-[2.5rem] px-2 py-1 block w-[100%] rounded-[5px] bg-transparent"
 											placeholder="Enter Name"
 											required
+											value={
+												id === 0
+													? data.formData.participant_name
+													: data.formData.team_members_name[id]
+											}
+											disabled={id === 0}
 											onChange={(e) => {
 												changeData(e);
 											}}

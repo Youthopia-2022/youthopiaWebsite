@@ -1,4 +1,4 @@
-import gimage1 from "../../images/gimage1-min.webp";
+// import gimage1 from "../../images/gimage1-min.webp";
 import gimage2 from "../../images/gimage2-min.webp";
 import gimage3 from "../../images/gimage3-min.webp";
 import gimage4 from "../../images/gimage4-min.webp";
@@ -33,7 +33,7 @@ import gimage32 from "../../images/gimage32-min.webp";
 import gimage33 from "../../images/gimage33-min.webp";
 import gimage34 from "../../images/gimage34-min.webp";
 import gimage35 from "../../images/gimage35-min.webp";
-import gimage36 from "../../images/gimage36-min.webp";
+// import gimage36 from "../../images/gimage36-min.webp";
 import gimage37 from "../../images/gimage37-min.webp";
 import gimage38 from "../../images/gimage38-min.webp";
 
@@ -50,7 +50,7 @@ const Gallery = () => {
 					<h3 className="text-white text-6xl font-bold">REMEMBER</h3>
 					<h3 className="text-[#3F2EA1] text-6xl font-bold">YOUR</h3>
 					<h3 className="text-[#3F2EA1] text-6xl font-bold">ENTIRE LIFE</h3>
-					<img className="h-96 w-96 mt-10" src={gimage4} alt="galleryImage" />
+					<img className="h-96 w-auto mt-10" src={gimage4} alt="galleryImage" />
 				</div>
                 
 				{/* Second Column Images */}

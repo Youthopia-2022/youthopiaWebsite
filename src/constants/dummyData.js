@@ -7,7 +7,7 @@ export const events = [
   {
     id: 1,
     title: "Technical Events",
-    desc: "A fest is totally incomplete without the event which appreciates our techy side.When advancement of technological measures is necessity for humanity and we fulfill that necessity at the Tech events of YOUTHOPIA.",
+    desc: "A fest is totally incomplete without the event which appreciates our techy side.When advancement of technological measures is necessity for humanity and we fulfill that necessity at the Tech events of YOUTHOPIA.",
     thumbnail: image1,
     eventSlug: "evt",
     link: "/events?evt",
@@ -15,7 +15,7 @@ export const events = [
   {
     id: 2,
     title: "Cultural Events",
-    desc: "The incorporation of culture into every event adds a fun element.From what-ifs and nukkad-natak to pantomime and theatre, from poetry and mushairas to dance and song, all these things are cultural activities.",
+    desc: "The incorporation of culture into every event adds a fun element.From what-ifs and nukkad-natak to pantomime and theatre, from poetry and mushairas to dance and song, all these things are cultural activities.",
     thumbnail: image2,
     eventSlug: "evc",
     link: "/events?evc",
@@ -23,7 +23,7 @@ export const events = [
   {
     id: 3,
     title: "Informal Events",
-    desc: "Ranging from arts and educational genres, and going to sports and communication, the informal events have them all.",
+    desc: "Ranging from arts and educational genres, and going to sports and communication, the informal events have them all.",
     thumbnail: image3,
     eventSlug: "evi",
     link: "/events?evi",

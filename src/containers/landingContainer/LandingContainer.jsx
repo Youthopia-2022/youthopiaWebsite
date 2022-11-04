@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import ditLogo from "../../images/ditLogo.png";
-import hands from "../../images/hands.webp";
+import hands from "../../images/hands.png";
 // import scrollDownIcon from "../../images/scrollDownIcon.png";
 import "./LandingContainer.css";
 import { useEffect } from "react";
@@ -48,8 +48,8 @@ const LandingContainer = () => {
 				</Fade>
 
 				<div className="youthopiaDetails mb-[1rem]">
-					<p>17th-19th</p>
-					<p>November</p>
+					<p>17th-19th NOVEMBER</p>
+					<p>2022</p>
 				</div>
 				<Link to="/" style={{ zIndex: 1 }}>
 					<div className="registerButton mb-5 z-10">

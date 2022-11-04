@@ -10,7 +10,9 @@ import { useNavigate, useParams, useLocation } from "react-router-dom";
 
 const EventRegisterForm = (props) => {
 	const { isTeam, isDit } = props;
-	const [formData, setFormData] = useState("");
+	const [formData, setFormData] = useState({
+		team_members_name: [""],
+	});
 	const event_id = useParams();
 	const location = useLocation();
 
@@ -170,6 +172,11 @@ const EventRegisterForm = (props) => {
 			validateEmail(formData) &&
 			validatePhone(formData)
 		) {
+			if (isTeam) {
+				let x = formData;
+				x.team_members_name[0] = formData.participant_name;
+				setFormData(x);
+			}
 			getPID();
 		}
 	};
@@ -183,12 +190,14 @@ const EventRegisterForm = (props) => {
 						handleChange={handleChange}
 						submit={submit}
 						formData={formData}
+						setFormData={setFormData}
 					/>
 				) : (
 					<Registerteam
 						handleChange={handleChange}
 						submit={submit}
 						formData={formData}
+						setFormData={setFormData}
 					/>
 				)
 			) : isDit ? (

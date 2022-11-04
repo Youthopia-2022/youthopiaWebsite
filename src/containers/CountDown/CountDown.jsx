@@ -5,50 +5,51 @@ import logo3 from "../../images/YouthopiaLogo.svg";
 import "./CountDown.css";
 
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const CountDown = () => {
 
-  const [expiryTime, setExpiryTime] = useState("17 nov 2022 09:00:00");
-  const [countdownTime, setCountdownTime] = useState({
-    countdownDays: "",
-    countdownHours: "",
-    countdownlMinutes: "",
-    countdownSeconds: "",
-  });
+	const [expiryTime, setExpiryTime] = useState("17 nov 2022 09:00:00");
+	const [countdownTime, setCountdownTime] = useState({
+		countdownDays: "",
+		countdownHours: "",
+		countdownlMinutes: "",
+		countdownSeconds: "",
+	});
 
-  const countdownTimer = () => {
-    const timeInterval = setInterval(() => {
-      const countdownDateTime = new Date(expiryTime).getTime();
-      const currentTime = new Date().getTime();
-      const remainingDayTime = countdownDateTime - currentTime;
-      const totalDays = Math.floor(remainingDayTime / (1000 * 60 * 60 * 24));
-      const totalHours = Math.floor(
-        (remainingDayTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      const totalMinutes = Math.floor(
-        (remainingDayTime % (1000 * 60 * 60)) / (1000 * 60)
-      );
-      const totalSeconds = Math.floor((remainingDayTime % (1000 * 60)) / 1000);
+	const countdownTimer = () => {
+		const timeInterval = setInterval(() => {
+			const countdownDateTime = new Date(expiryTime).getTime();
+			const currentTime = new Date().getTime();
+			const remainingDayTime = countdownDateTime - currentTime;
+			const totalDays = Math.floor(remainingDayTime / (1000 * 60 * 60 * 24));
+			const totalHours = Math.floor(
+				(remainingDayTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+			);
+			const totalMinutes = Math.floor(
+				(remainingDayTime % (1000 * 60 * 60)) / (1000 * 60)
+			);
+			const totalSeconds = Math.floor((remainingDayTime % (1000 * 60)) / 1000);
 
-      const runningCountdownTime = {
-        countdownDays: totalDays,
-        countdownHours: totalHours,
-        countdownMinutes: totalMinutes,
-        countdownSeconds: totalSeconds,
-      };
+			const runningCountdownTime = {
+				countdownDays: totalDays,
+				countdownHours: totalHours,
+				countdownMinutes: totalMinutes,
+				countdownSeconds: totalSeconds,
+			};
 
-      setCountdownTime(runningCountdownTime);
+			setCountdownTime(runningCountdownTime);
 
-      if (remainingDayTime < 0) {
-        clearInterval(timeInterval);
-        setExpiryTime(false);
-      }
-    }, 1000);
-  };
+			if (remainingDayTime < 0) {
+				clearInterval(timeInterval);
+				setExpiryTime(false);
+			}
+		}, 1000);
+	};
 
-  useEffect(() => {
-    countdownTimer();
-  });
+	useEffect(() => {
+		countdownTimer();
+	});
 
 	return (
 		<div className=" w-full flex flex-col justify-center items-center mb-[2rem]">
@@ -108,7 +109,9 @@ const CountDown = () => {
 								<img src={logo2} alt="" className="ditLogoCD w-[40rem]" />
 							</div>
 						</div>
-						<div className="CountDownButton">REGISTER NOW</div>
+						<Link to="./events">
+							<button className="CountDownButton">REGISTER NOW</button>
+						</Link>
 						<div className="Ylogo">
 							<img src={logo3} alt="" />
 						</div>

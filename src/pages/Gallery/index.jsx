@@ -7,7 +7,7 @@ import gimage6 from "../../images/gimage6-min.webp";
 import gimage7 from "../../images/gimage7-min.webp";
 import gimage8 from "../../images/gimage8-min.webp";
 import gimage9 from "../../images/gimage9-min.webp";
-import gimage10 from "../../images/gimage10-min.webp";
+// import gimage10 from "../../images/gimage10-min.webp";
 import gimage11 from "../../images/gimage11-min.webp";
 import gimage12 from "../../images/gimage12-min.webp";
 import gimage13 from "../../images/gimage13-min.webp";

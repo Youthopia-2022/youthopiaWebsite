@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import ditLogo from "../../images/ditLogo.png";
-import hands from "../../images/hands.webp";
+import hands from "../../images/hands.png";
 // import scrollDownIcon from "../../images/scrollDownIcon.png";
 import "./LandingContainer.css";
 import { useEffect } from "react";

@@ -1,6 +1,6 @@
 input {
 	border: 1px solid white;
-	color: white;
+	color: white !important;
 }
 
 .createAcbtn {
@@ -17,8 +17,8 @@ input {
 	border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.formResponsive{
-    font-family: IBM Plex Sans , FontAwesome;
+.formResponsive {
+	font-family: IBM Plex Sans, FontAwesome;
 }
 
 @media only screen and (max-width: 899px) {

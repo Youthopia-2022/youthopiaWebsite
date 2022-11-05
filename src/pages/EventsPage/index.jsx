@@ -40,12 +40,13 @@ const EventsPage = () => {
   }, []);
 
   useEffect(() => {
-    setTimeout(() => {
+    if(data){
       if (search !== "") {
         let tabName = search.split("?")[1];
 
         if (tabName === "evt") {
           filterEvents("Technical");
+          console.log("object");
         } else if (tabName === "evc") {
           filterEvents("Cultural");
         } else if (tabName === "evd") {
@@ -56,10 +57,10 @@ const EventsPage = () => {
           filterEvents("Fine Arts");
         }
       }
-    }, 1500);
+    }
 
     // eslint-disable-next-line
-  }, []);
+  }, [data]);
 
   // filtering the data based on the selected tab
   const filterEvents = (tab) => {

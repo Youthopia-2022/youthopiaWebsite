@@ -61,7 +61,6 @@ const Sponsers = () => {
 				<div className="flex flex-col md:flex-row my-10 justify-center items-center">
 					{data.length > 0 &&
 						data?.map((sponsors, id) => {
-							console.log(sponsors.sponsor_icon_url);
 							return (
 								<img
 									key={id}

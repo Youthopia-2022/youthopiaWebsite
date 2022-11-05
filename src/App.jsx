@@ -17,6 +17,7 @@ import InformalEvent from "./containers/eventContainer/InformalEvent";
 import FineArtsEvent from "./containers/eventContainer/FineArtsEvent";
 import Signup from "./components/Signup/Signup";
 import EmialVerify from "./components/Emailverify/EmialVerify";
+import Ticket from "./components/Ticket/Ticket";
 
 const useScrollToTop = () => {
   const location = useLocation();
@@ -43,6 +44,7 @@ const App = () => {
         <Route path="/gallery" element={<Gallery />} />;
         <Route path="/signup" element={<Signup/>} />;
         <Route path="/emailverify" element={<EmialVerify/>} />;
+        <Route path="/ticket" element={<Ticket/>} />;
         <Route path="/aboutus" element={<Aboutus />} />;
         <Route path="/register/:id" element={<Register />} />;
         <Route path="/registerdit/:id" element={<RegisterDit />} />;

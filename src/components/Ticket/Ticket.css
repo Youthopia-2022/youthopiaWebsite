@@ -1,0 +1,68 @@
+.ticket{
+    background-image: url("../../images/tkt-background.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.logo-blk{
+width: 17vw;
+padding-top: 1vw;
+padding-left: 2vw;
+}
+
+.ticket>.ticket-left>.youthopia-logo{
+    width: 42vw;
+    margin-left: 33%;
+    margin-top: 2%;
+}
+
+.date-tkt{
+    width: 23vw;
+    margin-left: 57%;
+    margin-top: 1%;
+}
+
+.address{
+    font-size: 1.3vw;
+    margin-left: 7%;
+    margin-top: 6%;
+    padding-bottom: 5%;
+    font-weight: 500;
+}
+
+.address>i{
+    font-size: 2.5vw;
+    margin-top: 1%;
+    margin-right: 3%;
+}
+
+.ticket>.ticket-right{
+    margin-left: 3vw;
+}
+.ticket>.ticket-right>.heading-tkt{
+    font-size: 1.8vw;
+    margin-left: 34.5vw;
+    font-weight: 600;
+    margin-top: 2%;
+}
+
+.ticket>.ticket-right>.subheading-tkt{
+    font-size: 1.5vw;
+    margin-left: 27vw;
+    margin-top: 3vw;
+    font-weight: 600;
+}
+
+.ticket>.ticket-right>.subheading-tkt>p{
+    margin-bottom: 1vw;
+}
+
+.ticket>.ticket-right>.admit-btn{
+    background-color:#6b06f9;
+    border: 0.3vw dashed white;
+    border-radius: 30px;
+    color: white;
+    padding: 0.5vw 1.5vw;
+    font-size: 1.2vw;
+    margin-top: 3.5vw;
+    margin-left: 43vw;
+}

@@ -41,7 +41,7 @@ function DjNight() {
 
 	return (
 		<div className="main-container">
-			{data && (
+			{data && data.length > 0 && (
 				<EventsRoot
 					title={
 						data[current - 1].event_name
@@ -70,28 +70,29 @@ function DjNight() {
 					}
 				></EventsRoot>
 			)}
-
-			<div className="right">
-				<div className="rightTop">
-					<p>
-						{current < 10 && "0"}
-						{current}
-					</p>
-					<p>/</p>
-					<p>
-						{data.length < 10 && "0"}
-						{data.length}
-					</p>
-				</div>
-				<div className="rightBottom">
-					<div onClick={() => decrease()}>
-						<div> &lt;</div>
+			{data && data.length > 0 && (
+				<div className="right">
+					<div className="rightTop">
+						<p>
+							{current < 10 && "0"}
+							{current}
+						</p>
+						<p>/</p>
+						<p>
+							{data.length < 10 && "0"}
+							{data.length}
+						</p>
 					</div>
-					<div onClick={() => increase()}>
-						<div>&gt;</div>
+					<div className="rightBottom">
+						<div onClick={() => decrease()}>
+							<div> &lt;</div>
+						</div>
+						<div onClick={() => increase()}>
+							<div>&gt;</div>
+						</div>
 					</div>
 				</div>
-			</div>
+			)}
 		</div>
 	);
 }

@@ -1,128 +1,128 @@
 .topBarLeft {
-	font-family: "IBM Plex Sans";
-	font-style: normal;
-	font-weight: 400;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
 }
 
 .topBarCounter {
-	font-family: "IBM Plex Sans";
-	font-style: normal;
-	font-weight: 400;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
 }
 
 .countDownImageContent {
-	background: rgba(0, 0, 0, 0.45);
-	backdrop-filter: blur(16px);
-	position: relative;
-	padding: 3rem 2rem;
-	font-family: "IBM Plex Sans";
-	font-style: normal;
-	font-weight: 400;
-	color: #1bbee9;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(16px);
+  position: relative;
+  padding: 3rem 2rem;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  color: #1bbee9;
 }
 
 .CountDownButton {
-	padding: 1rem;
-	text-align: center;
-	background: #2c0022;
-	border: 1px solid #fc0160;
-	color: white;
-	margin-top: 2rem;
-	width: max-content;
+  padding: 12px 24px;
+  text-align: center;
+  background: #2c0022;
+  border: 1px solid #fc0160;
+  color: white;
+  margin-top: 2rem;
+  width: max-content;
 }
 
 .coutDownImage > img:nth-last-child(2) {
-	transform: translateY(6.5rem);
+  transform: translateY(6.5rem);
 }
 .coutDownImage {
-	margin-top: -5rem;
+  margin-top: -5rem;
 }
 
 .Ylogo {
-	background: rgba(252, 1, 96, 0.5);
-	position: absolute;
-	left: 2rem;
-	top: -1.5rem;
-	width: 15rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  background: rgba(252, 1, 96, 0.5);
+  position: absolute;
+  left: 2rem;
+  top: -1.5rem;
+  width: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media only screen and (max-width: 1030px) {
-	.coutDownImage > img:nth-last-child(2) {
-		transform: translateY(4.5rem);
-	}
-	.coutDownImage {
-		margin-top: -3.5rem;
-	}
+  .coutDownImage > img:nth-last-child(2) {
+    transform: translateY(4.5rem);
+  }
+  .coutDownImage {
+    margin-top: -3.5rem;
+  }
 }
 
 @media only screen and (max-width: 970px) {
-	.countDownImageContent > div:nth-child(1) {
-		flex-direction: column;
-		justify-content: center;
-	}
-	.ditLogoCD {
-		width: 4rem;
-	}
+  .countDownImageContent > div:nth-child(1) {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .ditLogoCD {
+    width: 4rem;
+  }
 }
 
 @media only screen and (max-width: 770px) {
-	.coutDownImage > img:nth-last-child(2) {
-		transform: translateY(3.5rem);
-	}
-	.coutDownImage {
-		margin-top: -2.5rem;
-	}
-	.coutDownImage > img {
-		padding: 0 1.5rem;
-	}
+  .coutDownImage > img:nth-last-child(2) {
+    transform: translateY(3.5rem);
+  }
+  .coutDownImage {
+    margin-top: -2.5rem;
+  }
+  .coutDownImage > img {
+    padding: 0 1.5rem;
+  }
 }
 @media only screen and (max-width: 706px) {
-	.countDownContent {
-		width: 90vw;
-	}
-	.coutDownImage > img:nth-last-child(2) {
-		transform: translateY(3.8rem);
-	}
-	.coutDownImage {
-		margin-top: -2.8rem;
-	}
+  .countDownContent {
+    width: 90vw;
+  }
+  .coutDownImage > img:nth-last-child(2) {
+    transform: translateY(3.8rem);
+  }
+  .coutDownImage {
+    margin-top: -2.8rem;
+  }
 }
 @media only screen and (max-width: 581px) {
-	.topBar {
-		flex-direction: column;
-	}
-	.topBarLeft {
-		width: 100%;
-		border-bottom: 2px solid #2b2929;
-	}
-	.topBarCounter > div {
-		width: 33.3%;
-	}
-	.topBarCounter {
-		width: 100%;
-	}
-	.coutDownImage > img:nth-last-child(2) {
-		transform: translateY(2.5rem);
-	}
-	.coutDownImage {
-		margin-top: -1.5rem;
-	}
+  .topBar {
+    flex-direction: column;
+  }
+  .topBarLeft {
+    width: 100%;
+    border-bottom: 2px solid #2b2929;
+  }
+  .topBarCounter > div {
+    width: 33.3%;
+  }
+  .topBarCounter {
+    width: 100%;
+  }
+  .coutDownImage > img:nth-last-child(2) {
+    transform: translateY(2.5rem);
+  }
+  .coutDownImage {
+    margin-top: -1.5rem;
+  }
 }
 
 @media only screen and (max-width: 483px) {
-	.coutDownImage > img {
-		padding: 0 1rem;
-	}
+  .coutDownImage > img {
+    padding: 0 1rem;
+  }
 }
 
 @media only screen and (max-width: 376px) {
-	.coutDownImage > img:nth-last-child(2) {
-		transform: translateY(1.8rem);
-	}
-	.coutDownImage {
-		margin-top: -0.8rem;
-	}
+  .coutDownImage > img:nth-last-child(2) {
+    transform: translateY(1.8rem);
+  }
+  .coutDownImage {
+    margin-top: -0.8rem;
+  }
 }

@@ -1,97 +1,97 @@
 .LandingContainer {
-	/* height: var(--vh); */
-	/* margin-top: 100px; */
-	min-height: calc(100vh - 64px);
-	background-size: cover;
-	background-position: center;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	position: relative;
-	max-width: 100vw;
-	background-image: url("../../images/homeBackground.webp");
-	overflow: hidden;
+  /* height: var(--vh); */
+  /* margin-top: 100px; */
+  min-height: calc(100vh - 64px);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  max-width: 100vw;
+  background-image: url("../../images/homeBackground.webp");
+  overflow: hidden;
 }
 
 .LandingContainer::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: radial-gradient(
-			80.21% 80.21% at 33.31% 95.58%,
-			#3a3a5c 0%,
-			#0a0a1b 92.5%
-		)
-		/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-	opacity: 0.8;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+      80.21% 80.21% at 33.31% 95.58%,
+      #3a3a5c 0%,
+      #0a0a1b 92.5%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  opacity: 0.8;
 }
 
 .LandingContainer > .ditLogo {
-	position: absolute;
-	top: 4rem;
-	z-index: 10;
+  position: absolute;
+  top: 4rem;
+  z-index: 10;
 }
 
 .youthopiaLogo {
-	display: flex;
-	flex-direction: column;
-	height: calc(100vh - 64px);
-	max-width: 100vw;
-	position: absolute;
-	top: 0;
-	left: 0;
-	justify-content: center;
-	align-items: center;
-	z-index: 1;
-	transform: translateY(-3rem);
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 64px);
+  max-width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(-3rem);
 }
 
 .youthopiaLogoLC {
-	width: 100vw;
-	/* max-width: 100vw; */
-	align-self: center;
+  width: 100vw;
+  /* max-width: 100vw; */
+  align-self: center;
 }
 
 .youthopiaLogo > div {
-	/* transform: translateY(-2.5rem); */
-	margin-top: -2rem;
+  /* transform: translateY(-2.5rem); */
+  margin-top: -2rem;
 }
 
 .registerButton {
-	color: white;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 3rem;
-	background: #2c0022;
-	border: 1px solid #fc0160;
-	padding: 0 1rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  background: #2c0022;
+  border: 1px solid #fc0160;
+  padding: 0 1rem;
 }
 
 .youthopiaDetails {
-	font-style: normal;
-	font-weight: 900;
-	font-size: 2.5rem;
-	color: #59196c;
-	-webkit-text-stroke: 1px #ffffff;
-	text-align: center;
-	padding: 0 15px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2.5rem;
+  color: #59196c;
+  -webkit-text-stroke: 1px #ffffff;
+  text-align: center;
+  padding: 0 15px;
 }
 
 @media only screen and (max-width: 975px) {
-	.youthopiaLogo > div {
-		margin-top: 0;
-	}
-	.registerButton {
-		margin-top: 1rem;
-	}
+  .youthopiaLogo > div {
+    margin-top: 0;
+  }
+  .registerButton {
+    margin-top: 1rem;
+  }
 }
 
 @media only screen and (max-width: 1023px) {
-	.youthopiaLogoLC {
-		margin-top: 15vh;
-	}
+  .youthopiaLogoLC {
+    margin-top: 15vh;
+  }
 }

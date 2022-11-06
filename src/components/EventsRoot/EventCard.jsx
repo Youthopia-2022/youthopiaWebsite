@@ -9,11 +9,11 @@ const EventCard = (props) => {
     location,
     date,
     fees_dit,
-    fees_outsiders,
     startTime,
     endTime,
     name,
     link,
+    fees_outsiders,
   } = props;
 
   return (
@@ -26,7 +26,10 @@ const EventCard = (props) => {
         <div className="datee font-semibold">{date}</div>
       </div>
       <div className="r2">
-        <div className="pricee">₹{fees_dit}</div>
+        <div className="pricee">
+          ₹ {fees_dit === "0" ? fees_outsiders : fees_dit}
+        </div>
+
         <div className="timee">
           {moment(startTime, "hh:mm a").format("hh:mm a")}
           {" - "}
@@ -36,7 +39,7 @@ const EventCard = (props) => {
       <div className="r3">
         <div className="locationn capitalize">{location}</div>
         <Link to={link}>
-          <div className="buttonn">Register Now</div>
+          <div className="buttonn rounded-xl">Register Now</div>
         </Link>
       </div>
     </div>

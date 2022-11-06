@@ -11,13 +11,16 @@ const Events = () => {
             Top events happening
           </h1>
         </div>
-        <Link to="/events" className="flex ml-auto text-white bgu bd py-3 px-6 focus:outline-none ">
+        <Link
+          to="/events"
+          className="flex ml-auto text-white bgu bd py-3 px-6 focus:outline-none rounded-xl"
+        >
           REGISTER NOW
         </Link>
       </div>
       <EventsWrapper />
       <Link to="/events">
-      <div className="more">Explore More Events</div>
+        <div className="more">Explore More Events</div>
       </Link>
     </div>
   );

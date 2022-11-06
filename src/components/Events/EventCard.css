@@ -17,15 +17,12 @@
 
 .bd {
   border: 2px solid #fc0160;
-  border-radius: 0%;
 }
 .dsf {
   color: #00495c;
   font-family: "IBM Plex Sans";
-  }
+}
 
-  .abc{
-    height: max-content;
-  }
-
-  
+.abc {
+  height: max-content;
+}

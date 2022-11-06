@@ -40,13 +40,12 @@ const EventsPage = () => {
   }, []);
 
   useEffect(() => {
-    if(data){
+    if (data) {
       if (search !== "") {
         let tabName = search.split("?")[1];
 
         if (tabName === "evt") {
           filterEvents("Technical");
-          console.log("object");
         } else if (tabName === "evc") {
           filterEvents("Cultural");
         } else if (tabName === "evd") {
@@ -54,7 +53,7 @@ const EventsPage = () => {
         } else if (tabName === "evi") {
           filterEvents("Informal");
         } else if (tabName === "evfa") {
-          filterEvents("Fine Arts");
+          filterEvents("Fine arts");
         }
       }
     }
@@ -83,7 +82,7 @@ const EventsPage = () => {
     <div className="pb-10">
       <div className="eventheader">
         <button
-          className={selectedTab === "All" ? "active" : "" }
+          className={selectedTab === "All" ? "active" : ""}
           onClick={() => filterEvents("All")}
         >
           All
@@ -113,8 +112,8 @@ const EventsPage = () => {
           Literary
         </button>
         <button
-          className={selectedTab === "Fine Arts" ? "active" : ""}
-          onClick={() => filterEvents("Fine Arts")}
+          className={selectedTab === "Fine arts" ? "active" : ""}
+          onClick={() => filterEvents("Fine arts")}
         >
           Fine Arts
         </button>
@@ -138,7 +137,8 @@ const EventsPage = () => {
                   location={event.event_venue}
                   startTime={event.event_startTime}
                   endTime={event.event_endTime}
-                  price={event.event_fees}
+                  fees_dit={event.event_fees_dit}
+                  fees_outsiders={event.event_fees_outsiders}
                   date={event.event_date}
                   link={`${
                     event.event_category === "Technical"

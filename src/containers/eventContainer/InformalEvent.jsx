@@ -90,18 +90,16 @@ const InformalEvent = () => {
                         </div>
                         <div>
                           <div></div>
-                          <p className="capitalize">
-                            {moment(items.event_date).format("DD-MM-YYYY")}
-                          </p>
+                          <p className="capitalize">{items.event_date}</p>
                         </div>
                         <div>
                           <div></div>
                           <p>
-                            {moment(items.event_startTime, "HH:mm:ss").format(
+                            {moment(items.event_startTime, "hh:mm a").format(
                               "hh:mm a"
                             )}
                             {" - "}
-                            {moment(items.event_endTime, "HH:mm:ss").format(
+                            {moment(items.event_endTime, "hh:mm a").format(
                               "hh:mm a"
                             )}
                           </p>
@@ -134,8 +132,23 @@ const InformalEvent = () => {
                         </div>
 
                         <div>
-                          <p>Fees: </p>
-                          <p>₹{items.event_fees ? items.event_fees : "N/A"}</p>
+                          <p className="capitalize">Fees for DIT student: </p>
+                          <p>
+                            ₹
+                            {items.event_fees_dit
+                              ? items.event_fees_dit
+                              : "N/A"}
+                          </p>
+                        </div>
+
+                        <div>
+                          <p className="capitalize">Fees for outsiders: </p>
+                          <p>
+                            ₹
+                            {items.event_fees_outsiders
+                              ? items.event_fees_outsiders
+                              : "N/A"}
+                          </p>
                         </div>
 
                         {items.event_isTeam && (

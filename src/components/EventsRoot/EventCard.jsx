@@ -4,8 +4,17 @@ import { Link } from "react-router-dom";
 import moment from "moment/moment";
 
 const EventCard = (props) => {
-  const { image, location, date, price, startTime, endTime, name, link } =
-    props;
+  const {
+    image,
+    location,
+    date,
+    fees_dit,
+    fees_outsiders,
+    startTime,
+    endTime,
+    name,
+    link,
+  } = props;
 
   return (
     <div className="EventCardd">
@@ -14,16 +23,14 @@ const EventCard = (props) => {
       </div>
       <div className="r1">
         <div className="namee capitalize">{name}</div>
-        <div className="datee font-semibold">
-          {moment(date).format("DD-MM-YYYY")}
-        </div>
+        <div className="datee font-semibold">{date}</div>
       </div>
       <div className="r2">
-        <div className="pricee">₹{price}</div>
+        <div className="pricee">₹{fees_dit}</div>
         <div className="timee">
-          {moment(startTime, "HH:mm:ss").format("hh:mm a")}
+          {moment(startTime, "hh:mm a").format("hh:mm a")}
           {" - "}
-          {moment(endTime, "HH:mm:ss").format("hh:mm a")}
+          {moment(endTime, "hh:mm a").format("hh:mm a")}
         </div>
       </div>
       <div className="r3">

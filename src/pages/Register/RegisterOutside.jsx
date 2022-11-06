@@ -92,21 +92,19 @@ const RegisterOutside = () => {
                           </div>
                           <div>
                             <div></div>
-                            <p className="capitalize">
-                              {moment(items.event_date).format("DD-MM-YYYY")}
-                            </p>
+                            <p className="capitalize">{items.event_date}</p>
                           </div>
                           <div>
                             <div></div>
                             <p>
-                              {moment(items.event_startTime, "HH:mm:ss").format(
-                                "hh:mm a"
-                              )}
-                              {" - "}
-                              {moment(items.event_endTime, "HH:mm:ss").format(
-                                "hh:mm a"
-                              )}
-                            </p>
+															{moment(items.event_startTime, "hh:mm a").format(
+																"hh:mm a"
+															)}
+															{" - "}
+															{moment(items.event_endTime, "hh:mm a").format(
+																"hh:mm a"
+															)}
+														</p>
                           </div>
                         </div>
                       </div>

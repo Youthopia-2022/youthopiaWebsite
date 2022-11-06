@@ -109,7 +109,7 @@ const CountDown = () => {
 								<img src={logo2} alt="" className="ditLogoCD w-[40rem]" />
 							</div>
 						</div>
-						<Link to="./events">
+						<Link className="linkToEvent" to="./events">
 							<button className="CountDownButton">REGISTER NOW</button>
 						</Link>
 						<div className="Ylogo">

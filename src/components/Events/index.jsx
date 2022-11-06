@@ -11,9 +11,9 @@ const Events = () => {
             Top events happening
           </h1>
         </div>
-        <button className="flex ml-auto text-white bgu bd py-2 px-6 focus:outline-none ">
-          Registrations Starting Soon
-        </button>
+        <Link to="/events" className="flex ml-auto text-white bgu bd py-3 px-6 focus:outline-none ">
+          REGISTER NOW
+        </Link>
       </div>
       <EventsWrapper />
       <Link to="/events">

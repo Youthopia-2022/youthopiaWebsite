@@ -154,14 +154,14 @@ const InformalEvent = () => {
                         {items.event_isTeam && (
                           <div>
                             <p className="text-red-500 text-base">
-                              *Minimum member 1 and maximum members{" "}
-                              {items.event_members}
+                              *Minimum member {items.event_min_members} and maximum members{" "}
+                              {items.event_max_members}
                             </p>
                           </div>
                         )}
                       </div>
                     </div>
-                    <Link to={`/register/${items.event_id}`}>
+                    <Link className="linkToRegister" to={`/register/${items.event_id}`}>
                       <button className="eventResgisterButton uppercase">
                         Register Now
                       </button>

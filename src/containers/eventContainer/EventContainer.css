@@ -149,3 +149,7 @@
     min-width: 100px;
   }
 }
+
+.linkToRegister{
+  width: fit-content;
+}

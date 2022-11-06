@@ -140,17 +140,16 @@ const EventsPage = () => {
                   fees_dit={event.event_fees_dit}
                   fees_outsiders={event.event_fees_outsiders}
                   date={event.event_date}
-                  link={`${
-                    event.event_category === "Technical"
+                  link={`${event.event_category === "Technical"
                       ? "evt"
                       : event.event_category === "Literary"
-                      ? "evd"
-                      : event.event_category === "Informal"
-                      ? "evi"
-                      : event.event_category === "Fine Arts"
-                      ? "evfa"
-                      : "evc"
-                  }/${event.event_id}`}
+                        ? "evd"
+                        : event.event_category === "Informal"
+                          ? "evi"
+                          : event.event_category === "Fine arts"
+                            ? "evfa"
+                            : "evc"
+                    }/${event.event_id}`}
                 />
               );
             })}

@@ -19,7 +19,7 @@ function Registerteam(props) {
 		}
 	};
 	const increase = () => {
-		if (data.formData.team_members_name.length < 4) {
+		if (data.formData.team_members_name.length < props.max_num) {
 			let x = data.formData.team_members_name;
 			x.push("member" + (data.formData.team_members_name.length + 1));
 			data.setFormData({ ...data.formData, team_members_name: x });

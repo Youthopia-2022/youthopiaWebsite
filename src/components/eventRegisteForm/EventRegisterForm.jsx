@@ -5,12 +5,14 @@ import Registerteamdit from "./Registerteamdit";
 import Registerteam from "./Registerteam";
 import toast, { Toaster } from "react-hot-toast";
 import { supabase } from "../../supabaseClient";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate, useParams, useLocation } from "react-router-dom";
 
 const EventRegisterForm = (props) => {
+	const { id } = useParams();
 	const [selectedImage, setSelectedImage] = useState(null);
 	const { isTeam, isDit } = props;
+	const [evendData, setEventData] = useState("");
 	const [formData, setFormData] = useState({
 		team_members_name: [""],
 	});
@@ -195,16 +197,35 @@ const EventRegisterForm = (props) => {
 			.upload(`${order_id}.png`, selectedImage);
 	};
 
+	useEffect(() => {
+		const getEventData = async () => {
+			const { data, error, status } = await supabase
+				.from("events")
+				.select("*")
+				.ilike("event_id", id);
+
+			if (error && status !== 406) {
+				throw error;
+			}
+
+			if (data) {
+				setEventData(data);
+			}
+		};
+		getEventData();
+	}, []);
+
 	return (
 		<>
 			<Toaster />
-			{isTeam ? (
+			{evendData && isTeam ? (
 				isDit ? (
 					<Registerteamdit
 						handleChange={handleChange}
 						submit={submit}
 						formData={formData}
 						setFormData={setFormData}
+						max_num={evendData[0].event_max_members}
 					/>
 				) : (
 					<Registerteam
@@ -214,6 +235,7 @@ const EventRegisterForm = (props) => {
 						setFormData={setFormData}
 						selectedImage={selectedImage}
 						setSelectedImage={setSelectedImage}
+						max_num={evendData[0].event_max_members}
 					/>
 				)
 			) : isDit ? (

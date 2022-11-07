@@ -95,7 +95,10 @@ function Registerteam(props) {
 								onChange={(e) => data.handleChange(e)}
 							/>
 						</div>
-						<UploadAndDisplayImage />
+						<UploadAndDisplayImage
+							selectedImage={props.selectedImage}
+							setSelectedImage={props.setSelectedImage}
+						/>
 					</div>
 
 					<div>

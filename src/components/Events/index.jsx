@@ -8,7 +8,7 @@ const Events = () => {
       <div className="flex flex-wrap w-full">
         <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
           <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-[#1BBEE9]">
-            Top events happening
+            Upcomming Bonanzas !!
           </h1>
         </div>
         <Link

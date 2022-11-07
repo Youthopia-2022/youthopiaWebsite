@@ -68,11 +68,15 @@ const EventRegisterForm = (props) => {
 
 	//function to upload verified data
 	const uploadData = async (details, order_id) => {
-		const { data, error, status } = await supabase
+		const { error, status } = await supabase
 			.from("registrations")
 			.insert([details]);
 		if (status === 200 || status === 201) {
 			toast.success("Registeration Successful!", { duration: 5000 });
+			toast.success("Ticket will be sent to your email id!", {
+				duration: 5000,
+			});
+			navigate("/events");
 		} else if (status === 409) {
 			toast.error("This user has already registered for this event!");
 		}
@@ -144,7 +148,7 @@ const EventRegisterForm = (props) => {
 		}
 	};
 	const addToEventss = async (rp) => {
-		const { data, error } = await supabase
+		const { error } = await supabase
 			.from("events")
 			.update({ registered_participant: rp })
 			.eq("event_id", event_id.id);

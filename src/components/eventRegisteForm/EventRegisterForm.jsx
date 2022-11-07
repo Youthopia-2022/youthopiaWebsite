@@ -64,7 +64,7 @@ const EventRegisterForm = (props) => {
 	};
 
 	//function to upload verified data
-	const uploadData = async (details, participant_id) => {
+	const uploadData = async (details, order_id) => {
 		const { data, error, status } = await supabase
 			.from("registrations")
 			.insert([details]);
@@ -77,7 +77,7 @@ const EventRegisterForm = (props) => {
 			console.log(error.message);
 		}
 		if (!error) {
-			addToEvents(participant_id);
+			addToEvents(order_id);
 		}
 	};
 
@@ -102,7 +102,6 @@ const EventRegisterForm = (props) => {
 				},
 			});
 		}
-		const participant_id = data[0].user_id;
 		const order_id = event_id.id + "-" + formData.participant_identity;
 		let details = formData;
 		details = {
@@ -112,7 +111,7 @@ const EventRegisterForm = (props) => {
 			event_isTeamEvent: props.isTeam,
 		};
 		if (!error) {
-			uploadData(details, participant_id);
+			uploadData(details, order_id);
 		}
 	};
 

@@ -63,7 +63,7 @@ function Signup() {
 			validatePhone(formData) &&
 			validatePass(formData)
 		) {
-			const { user, error } = await supabase.auth.signUp({
+			const { error } = await supabase.auth.signUp({
 				email: formData.user_email,
 				password: formData.password,
 			});
@@ -77,7 +77,7 @@ function Signup() {
 		}
 	};
 	const updateData = async () => {
-		const { data, error } = await supabase
+		const { error } = await supabase
 			.from("profiles")
 			.update({
 				user_name: formData.user_name,

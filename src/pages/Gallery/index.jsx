@@ -62,7 +62,7 @@ const Gallery = () => {
 
 			{/* Second Row */}
 			<div className="px-5 md:px-10 py-10">
-				<img className="h-auto w-full" src={CountDownThumbnail} alt="galleryImage" />
+				<img className="h-96 w-full" src={CountDownThumbnail} alt="galleryImage" />
 			</div>
 
 			{/* Third Row */}

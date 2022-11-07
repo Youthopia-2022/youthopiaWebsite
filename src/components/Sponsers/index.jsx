@@ -45,7 +45,7 @@ const Sponsers = () => {
   return (
     <div className="bg-[#3A3B5C]">
       <div className="py-4 md:py-10">
-        <h3 className="self-center text-center font-normal text-3xl text-[#00DBFF]">
+        <h3 className="self-center text-center font-normal text-3xl text-[#FFF]">
           Our Sponsors
         </h3>
 
@@ -55,7 +55,7 @@ const Sponsers = () => {
               return (
                 <img
                   key={id}
-                  className="object-cover h-12 w-50 mx-10 my-5 md:my-0 sponser1"
+                  className="object-cover h-12 space-x-8 w-50 mx-10 my-5  md:my-0 sponser1"
                   src={sponsors.sponsor_icon_url}
                   alt="sponsers"
                 />

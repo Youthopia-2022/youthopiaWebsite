@@ -51,7 +51,7 @@ const LandingContainer = () => {
           <p>2022</p>
         </div>
         <Link to="/events" style={{ zIndex: 1 }}>
-          <div className="registerButton mb-5 z-10 rounded-xl">
+          <div className="registerLiveButton mb-5 z-10 rounded-xl">
             REGISTRATION LIVE
           </div>
         </Link>

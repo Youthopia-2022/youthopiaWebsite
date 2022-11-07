@@ -9,7 +9,7 @@ function Registerteamdit(props) {
 	temp ? (data = temp) : (data = props);
 	const [count, setCount] = useState(1);
 	const decrease = () => {
-		if (data.formData.team_members_name.length > 1) {
+		if (data.formData.team_members_name.length > props.max_num) {
 			let x = data.formData.team_members_name;
 			x.pop();
 			data.setFormData({ ...data.formData, team_members_name: x });

@@ -52,7 +52,7 @@ const LandingContainer = () => {
         </div>
         <Link to="/events" style={{ zIndex: 1 }}>
           <div className="registerLiveButton mb-5 z-10 rounded-xl">
-            REGISTERATION LIVE
+            REGISTRATION LIVE
           </div>
         </Link>
       </div>

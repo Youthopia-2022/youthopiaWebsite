@@ -1,6 +1,7 @@
 import "./register.css";
 import UploadAndDisplayImage from "./UploadAndDisplayImage";
 import { useLocation } from "react-router-dom";
+import { useState } from "react";
 
 function RegisterIndv(props) {
 	const location = useLocation();
@@ -72,7 +73,10 @@ function RegisterIndv(props) {
 							onChange={(e) => data.handleChange(e)}
 						/>
 					</div>
-					<UploadAndDisplayImage />
+					<UploadAndDisplayImage
+						selectedImage={props.selectedImage}
+						setSelectedImage={props.setSelectedImage}
+					/>
 				</div>
 
 				<div>

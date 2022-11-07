@@ -21,7 +21,7 @@ function Registerteam(props) {
 	const increase = () => {
 		if (data.formData.team_members_name.length < 4) {
 			let x = data.formData.team_members_name;
-			x.push("member" + data.formData.team_members_name.length);
+			x.push("member" + (data.formData.team_members_name.length + 1));
 			data.setFormData({ ...data.formData, team_members_name: x });
 			setCount((current) => current + 1);
 		}
@@ -95,7 +95,10 @@ function Registerteam(props) {
 								onChange={(e) => data.handleChange(e)}
 							/>
 						</div>
-						<UploadAndDisplayImage />
+						<UploadAndDisplayImage
+							selectedImage={props.selectedImage}
+							setSelectedImage={props.setSelectedImage}
+						/>
 					</div>
 
 					<div>

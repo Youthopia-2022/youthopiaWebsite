@@ -9,6 +9,7 @@ import { useState } from "react";
 import { useNavigate, useParams, useLocation } from "react-router-dom";
 
 const EventRegisterForm = (props) => {
+	const [selectedImage, setSelectedImage] = useState(null);
 	const { isTeam, isDit } = props;
 	const [formData, setFormData] = useState({
 		team_members_name: [""],
@@ -110,6 +111,15 @@ const EventRegisterForm = (props) => {
 			event_id: event_id.id,
 			event_isTeamEvent: props.isTeam,
 		};
+
+		if (!isDit) {
+			if (!selectedImage) {
+				toast.error("Please attach your identity proof");
+				return;
+			} else {
+				uploadIdentity(order_id);
+			}
+		}
 		if (!error) {
 			uploadData(details, order_id);
 		}
@@ -179,6 +189,11 @@ const EventRegisterForm = (props) => {
 			getPID();
 		}
 	};
+	const uploadIdentity = async (order_id) => {
+		await supabase.storage
+			.from("participant-identity-proof")
+			.upload(`${order_id}.png`, selectedImage);
+	};
 
 	return (
 		<>
@@ -197,6 +212,8 @@ const EventRegisterForm = (props) => {
 						submit={submit}
 						formData={formData}
 						setFormData={setFormData}
+						selectedImage={selectedImage}
+						setSelectedImage={setSelectedImage}
 					/>
 				)
 			) : isDit ? (
@@ -210,6 +227,8 @@ const EventRegisterForm = (props) => {
 					handleChange={handleChange}
 					submit={submit}
 					formData={formData}
+					selectedImage={selectedImage}
+					setSelectedImage={setSelectedImage}
 				/>
 			)}
 		</>

@@ -162,7 +162,7 @@ const FineArtsEvent = () => {
                       </div>
                     </div>
                     <Link className="linkToRegister" to={`/register/${items.event_id}`}>
-                      <button className="eventResgisterButton uppercase">
+                      <button className="eventResgisterButton uppercase rounded-xl">
                         Register Now
                       </button>
                     </Link>

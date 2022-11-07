@@ -48,7 +48,7 @@ const Register = () => {
     sr.reveal(`.eventInfo`, { origin: "bottom" });
     sr.reveal(`.RegisterFormQuestionButtons`, { origin: "bottom" });
     // sr.reveal(`.eventResgisterButton`, { origin: "bottom" });
-    getData();
+    getData();         //eslint-disable-next-line
   }, []);
 
   return (

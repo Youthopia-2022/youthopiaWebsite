@@ -1,4 +1,5 @@
 .ticket{
+    display: flex;
     background-image: url("../../images/tkt-background.png");
     background-repeat: no-repeat;
     background-size:cover;
@@ -56,13 +57,115 @@ padding-left: 2vw;
     margin-bottom: 1vw;
 }
 
-.ticket>.ticket-right>.admit-btn{
+.ticket>.ticket-right>.ticket-bottom>.admit-btn{
     background-color:#6b06f9;
     border: 0.3vw dashed white;
     border-radius: 30px;
     color: white;
     padding: 0.5vw 1.5vw;
-    font-size: 1.2vw;
-    margin-top: 3.5vw;
-    margin-left: 43vw;
+    font-size: 0.8vw;
+    margin-top: 7vw;
+    margin-left: 46vw;
+}
+.ticket>.ticket-right>.ticket-bottom>.ticketNo{
+    position: absolute;
+    right: 20.5vw;
+    margin-top: 2.5vw;
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+.ticket>.ticket-right>.ticket-bottom>.orderNo{
+    position: absolute;
+    right: 20.5vw;
+    margin-top: 7vw;
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+@media only screen and (max-width:630px) {
+    .ticket{
+        display: inline-block;
+        width: 100vw;
+    }
+    .ticket>.ticket-left{
+        border-bottom: 6px dashed black;
+    }
+
+    .logo-blk{
+        width: 33vw;
+    }
+
+    .ticket>.ticket-left>.youthopia-logo{
+        width: 70vw ;
+        margin:0 auto ;
+        margin-top: 10%;
+    }
+
+    .date-tkt{
+        width: 45vw;
+        margin:0 auto ;
+        margin-top: 1%;
+    }
+
+    .address{
+        font-size: 3.5vw;
+        margin-left: 5%;
+        margin-top: 10%;
+        padding-bottom: 5%;
+        font-weight: 500;
+    }
+
+    .address>i{
+        font-size: 5vw;
+        margin-top: 1%;
+        margin-right: 3%;
+    }
+    
+    .ticket>.ticket-right{
+        margin-left: 3vw;
+    }
+
+    .ticket>.ticket-right>.heading-tkt{
+        font-size: 7vw;
+        margin-left: 0;
+        text-align: center;
+        font-weight: 600;
+        margin-top: 2%;
+    }
+    
+    .ticket>.ticket-right>.subheading-tkt{
+        font-size: 5vw;
+        margin-left: 0vw;
+        margin-top: 3vw;
+        font-weight: 600;
+    }
+    
+    .ticket>.ticket-right>.subheading-tkt>p{
+        margin-bottom: 1vw;
+    }
+    
+    .ticket>.ticket-right>.ticket-bottom>.admit-btn{
+        background-color:#6b06f9;
+        border: 0.3vw dashed white;
+        border-radius: 30px;
+        color: white;
+        padding: 0.5vw 1.5vw;
+        font-size: 3vw;
+        margin-top: 3.5vw;
+        margin-left: 70vw;
+        margin-bottom: 8%;
+    }
+    .ticket>.ticket-right>.ticket-bottom>.ticketNo{
+        font-size: 5vw;
+        left: 2vw;
+        margin-top: 1vw;
+        font-weight: 600;
+    }
+    .ticket>.ticket-right>.ticket-bottom>.orderNo{
+        font-size: 5vw;
+        left: 2vw;
+        margin-top: 8vw;
+        /* margin-bottom: 5vw; */
+        font-weight: 600;
+    }
 }

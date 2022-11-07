@@ -49,7 +49,7 @@ const CulturalEvent = () => {
     sr.reveal(`.eventDescription`, { origin: "bottom" });
     // sr.reveal(`.eventResgisterButton`, { origin: "bottom" });
 
-    getData();
+    getData();      //eslint-disable-next-line
   }, []);
 
   return (

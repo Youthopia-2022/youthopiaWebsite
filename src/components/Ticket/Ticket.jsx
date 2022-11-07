@@ -6,7 +6,7 @@ import datetkt from "../../images/date-tkt-1.png"
 
 function Ticket() {
     return (
-        <div className="ticket flex">
+        <div className="ticket">
             <div className='ticket-left'>
                 <img className="logo-blk" src={logoblack} alt="" />
                 <img className="youthopia-logo" src={youthopialogo} alt="" />
@@ -19,13 +19,17 @@ function Ticket() {
             <div className="ticket-right">
                 <h1 className='heading-tkt'>Ticket Details</h1>
                 <div className="subheading-tkt">
-                    <p>Order Id-</p>
+                    {/* <p>Order Id-</p> */}
                     <p>Event Name-</p>
                     <p>Event Venue-</p>
                     <p>Event Date-</p>
                     <p>Event Time-</p>
                 </div>
+                <div className="ticket-bottom flex">
+                <p className='ticketNo mt-5'>Ticket No:</p>
+                <p className='orderNo'>ORDER ID</p>
                 <button className='admit-btn'>ADMIT ONE</button>
+                </div>
             </div>
         </div>
     )

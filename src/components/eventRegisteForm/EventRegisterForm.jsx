@@ -111,11 +111,17 @@ const EventRegisterForm = (props) => {
 			event_id: event_id.id,
 			event_isTeamEvent: props.isTeam,
 		};
+
+		if (!isDit) {
+			if (!selectedImage) {
+				toast.error("Please attach your identity proof");
+				return;
+			} else {
+				uploadIdentity(order_id);
+			}
+		}
 		if (!error) {
 			uploadData(details, order_id);
-		}
-		if (!isDit) {
-			uploadIdentity(order_id);
 		}
 	};
 

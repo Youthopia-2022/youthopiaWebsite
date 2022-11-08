@@ -140,7 +140,8 @@ html {
 
 /* Fix */
 .locationn,
-.namee {
+.namee,
+.pricee {
   flex: 1;
   text-align: left;
   margin-right: 5px;

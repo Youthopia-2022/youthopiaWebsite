@@ -64,7 +64,7 @@ function Ticket() {
     const domElement = document.querySelector("#customTicket");
     html2canvas(domElement).then((canvas) => {
       const img = canvas.toDataURL("image/jpeg");
-      downloadURI(img, "ticket");
+      downloadURI(img, `ticket_${order_id}`);
       document.getElementById("ticketButton").style.display = "flex";
     });
   };

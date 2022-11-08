@@ -18,6 +18,7 @@ import FineArtsEvent from "./containers/eventContainer/FineArtsEvent";
 import Signup from "./components/Signup/Signup";
 import EmialVerify from "./components/Emailverify/EmialVerify";
 import Ticket from "./components/Ticket/Ticket";
+import Error from "./components/Error/Error";
 
 const useScrollToTop = () => {
   const location = useLocation();
@@ -46,6 +47,7 @@ const App = () => {
         <Route path="/emailverify/:id" element={<EmialVerify />} />;
         <Route path="/ticket/:id" element={<Ticket />} />;
         <Route path="/aboutus" element={<Aboutus />} />;
+        <Route path="/notfound" element={<Error/>} />;
         <Route path="/register/:id" element={<Register />} />;
         <Route path="/registerdit/:id" element={<RegisterDit />} />;
         <Route path="/registeroutside/:id" element={<RegisterOutside />} />;

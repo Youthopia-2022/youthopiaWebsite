@@ -82,7 +82,10 @@ function Signup() {
 			validateName(formData) &&
 			validateEmail(formData) &&
 			validatePhone(formData) &&
-			validatePass(formData)
+			validatePass(formData) &&
+			validateCollege(formData) &&
+			validateGender(formData) &&
+			validateYear(formData)
 		) {
 			const { error } = await supabase.auth.signUp({
 				email: formData.user_email,

@@ -1,0 +1,65 @@
+.complete {
+    color: white;
+    position: relative;
+    top: 20vh;
+}
+
+.complete>img {
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.complete>p {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    opacity: 0.5;
+    text-align: center;
+    position: relative;
+    margin-top: 3%;
+}
+
+.backbtn {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12.3167px 6.15836px;
+    gap: 6.16px;
+    width: 122px;
+    height: 39.63px;
+    margin-top: 3%;
+    background: #000000;
+    border: 0.615836px solid #1BBEE9;
+    border-radius: 19.7067px;
+    margin: 5vh auto;
+}
+
+.logo-inc{
+    position: relative;
+    transform: rotate(358deg);
+    bottom: 8rem;
+    left: -1vw;
+    width: 25rem;
+}
+
+.logo-ver{
+    position: absolute;
+    top: 5vh;
+    right: 0;
+    width: 25rem;
+}
+
+@media only screen and (max-width:830px){
+    .logo-ver{
+        display: none;
+    }
+    .logo-inc{
+        bottom: 8rem;
+        left: -1vw;
+    }
+}

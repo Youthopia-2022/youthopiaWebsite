@@ -47,6 +47,27 @@ function Signup() {
 		return res;
 	};
 
+	//validate college
+	const validateCollege = (data) => {
+		var res = data.user_college.length > 1;
+		!res && toast.error("Please Enter College!");
+		return res;
+	};
+
+	//validate gender
+	const validateGender = (data) => {
+		var res = data.user_gender.length > 1;
+		!res && toast.error("Please select Gender!");
+		return res;
+	};
+
+	//validate year
+	const validateYear = (data) => {
+		var res = data.user_year.length > 1;
+		!res && toast.error("Please select Year!");
+		return res;
+	};
+
 	//storing values of inputs in useState
 	const handleChange = (e) => {
 		setFormData({ ...formData, [e.target.name]: e.target.value });

@@ -1,0 +1,38 @@
+.starNight {
+	width: 100vw;
+	height: 100vh;
+	background: url("../../images/djReple.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+}
+
+.starNightImage {
+	width: 32vw;
+}
+
+.starNightImage2 {
+	position: absolute;
+	bottom: 10rem;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.starNightImage2 > img {
+	width: 30rem;
+	padding: 0 0.5rem;
+}
+
+@media only screen and (max-width: 1216px) {
+	.starNightImage {
+		width: 25rem;
+		padding: 0 0.5rem;
+	}
+}

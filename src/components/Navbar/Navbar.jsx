@@ -23,7 +23,7 @@ const Navbar = () => {
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					<i className="fa-brands fa-xl fa-linkedin-in"></i>
+					<i className=" socialmediaicon fa-brands fa-xl fa-linkedin-in"></i>
 				</a>
 				<a
 					className="px-4"
@@ -31,7 +31,7 @@ const Navbar = () => {
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					<i className="fa-brands fa-xl fa-instagram"></i>
+					<i className="socialmediaicon fa-brands fa-xl fa-instagram"></i>
 				</a>
 				<a
 					className="px-4"
@@ -39,7 +39,7 @@ const Navbar = () => {
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					<i className="fa-brands fa-xl fa-facebook"></i>
+					<i className="socialmediaicon fa-brands fa-xl fa-facebook"></i>
 				</a>
 				<a
 					className="px-4"
@@ -47,7 +47,7 @@ const Navbar = () => {
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					<i className="fa-brands fa-xl fa-youtube"></i>
+					<i className="socialmediaicon fa-brands fa-xl fa-youtube"></i>
 				</a>
 			</div>
 			<div className=" lap-navbar mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -122,7 +122,7 @@ const Navbar = () => {
 							<div className="nav-item flex space-x-4">
 								<Link
 									to="/"
-									className={` text-white px-9 py-2 rounded-md text-sm font-medium ${
+									className={` text-white mx-9 py-2	 text-sm  ${
 										pathname === "/" ? "active" : ""
 									}`}
 									aria-current="page"
@@ -132,7 +132,7 @@ const Navbar = () => {
 
 								<Link
 									to="/events"
-									className={` text-white px-9 py-2 rounded-md text-sm font-medium ${
+									className={` text-white mx-9 py-2  text-sm  ${
 										pathname.includes("/events") ? "active" : ""
 									}`}
 								>
@@ -141,7 +141,7 @@ const Navbar = () => {
 
 								<Link
 									to="/gallery"
-									className={` text-white px-9 py-2 rounded-md text-sm font-medium ${
+									className={` text-white mx-9 py-2  text-sm  ${
 										pathname === "/gallery" ? "active" : ""
 									}`}
 								>
@@ -150,7 +150,7 @@ const Navbar = () => {
 
 								<Link
 									to="/aboutus"
-									className={` text-white px-9 py-2 rounded-md text-sm font-medium ${
+									className={` text-white mx-9 py-2  text-sm  ${
 										pathname === "/aboutus" ? "active" : ""
 									}`}
 								>
@@ -170,7 +170,7 @@ const Navbar = () => {
 						<>
 							<div
 								onClick={() => navi("/")}
-								className={` text-white block px-3 py-2 rounded-md text-sm font-medium ${
+								className={` text-white block px-3 py-2  text-sm  ${
 									pathname === "/" ? "active" : ""
 								}`}
 								aria-current="page"
@@ -180,7 +180,7 @@ const Navbar = () => {
 
 							<div
 								onClick={() => navi("/events")}
-								className={` text-white block px-3 py-2 rounded-md text-sm font-medium ${
+								className={` text-white block px-3 py-2  text-sm  ${
 									pathname.includes("/events") ? "active" : ""
 								}`}
 							>
@@ -189,7 +189,7 @@ const Navbar = () => {
 
 							<div
 								onClick={() => navi("/gallery")}
-								className={` text-white block px-3 py-2 rounded-md text-sm font-medium ${
+								className={` text-white block px-3 py-2  text-sm  ${
 									pathname === "/gallery" ? "active" : ""
 								}`}
 							>
@@ -198,7 +198,7 @@ const Navbar = () => {
 
 							<div
 								onClick={() => navi("/aboutus")}
-								className={` text-white block px-3 py-2 rounded-md text-sm font-medium ${
+								className={` text-white block px-3 py-2 text-sm  ${
 									pathname === "/aboutus" ? "active" : ""
 								}`}
 							>

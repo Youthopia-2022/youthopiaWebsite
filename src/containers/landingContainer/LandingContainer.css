@@ -31,8 +31,14 @@
 
 .LandingContainer > .ditLogo {
   position: absolute;
-  top: 4rem;
+  top: 2rem;
   z-index: 10;
+  height: 32px;
+}
+
+.LandingContainer>.ditLogo>img{
+  height: 32px;
+  
 }
 
 .youthopiaLogo {
@@ -61,14 +67,14 @@
 }
 
 .registerLiveButton {
-  color: white;
+color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 3rem;
-  background: #2c0022;
+  background: #fc0160;
   border: 1px solid #fc0160;
-  padding: 0 1rem;
+  padding: 2px 1.5rem;
   animation: zoom-in-zoom-out 1s ease infinite;
 }
 
@@ -86,10 +92,11 @@
 
 .youthopiaDetails {
   font-style: normal;
+  
   font-weight: 900;
-  font-size: 2.5rem;
-  color: #59196c;
-  -webkit-text-stroke: 1px #ffffff;
+  font-size: 2rem;
+  color: #ffff;
+  
   text-align: center;
   padding: 0 15px;
 }

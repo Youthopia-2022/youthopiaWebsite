@@ -20,14 +20,22 @@
     right: 1rem;
 }
 
+.nav-item>.social-icons>a>i{
+    color:#fff !important;
+}
+
+.mx-9 {
+    margin-left: 2.25rem !important;
+    margin-right: 2.25rem !important;
+}
 
 .nav-item>.active {
     color: #FC0160 !important;
-    font-weight: 500 !important;
+    font-weight: 700 !important;
 }
 .mob-nav-item>.active {
     color: #FC0160 !important;
-    font-weight: 500 !important;
+    font-weight: 700 !important;
 }
 
 @media only screen and (max-width: 640px)
@@ -57,4 +65,7 @@
     .inner-nav{
         margin-left: 0;
     }
+}
+.socialmediaicon{
+    color: #fff;
 }

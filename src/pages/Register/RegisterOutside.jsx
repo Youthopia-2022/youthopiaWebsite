@@ -14,6 +14,19 @@ const RegisterOutside = () => {
   const [data, setData] = useState("");
   const [loading, setLoading] = useState(false);
 
+  	// fetching image data from supabase
+	const [dimage, setdimage] = useState("");
+	const getImageData = async () => {
+		const { data } = supabase.storage
+			.from("event-posters")
+			.getPublicUrl(`${id}.webp`);
+		setdimage(data.publicUrl);
+	};
+
+	useEffect(() => {
+		getImageData();
+	}, []);
+
   // fetching event data from supabase through event id
   const getData = async () => {
     try {
@@ -71,8 +84,8 @@ const RegisterOutside = () => {
                     <div className="ResigterImage">
                       <img
                         src={
-                          items.event_image
-                            ? items.event_image
+                          dimage
+                            ? dimage
                             : "https://propertywiselaunceston.com.au/wp-content/themes/property-wise/images/no-image@2x.png"
                         }
                         alt="event"

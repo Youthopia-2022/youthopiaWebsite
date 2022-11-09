@@ -57,9 +57,6 @@ const EventRegisterForm = (props) => {
   const validateName = (data) => {
     var res =
       data.participant_name &&
-      /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/.test(
-        data.participant_name
-      ) &&
       data.participant_name.length > 2 &&
       data.participant_name.length < 50;
     !res && toast.error("Please Enter a valid Name!");

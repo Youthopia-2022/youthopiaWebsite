@@ -32,9 +32,7 @@ function Signup() {
   //validate name
   const validateName = (data) => {
     var res =
-      data.participant_name &&
-      data.participant_name.length > 2 &&
-      data.participant_name.length < 50;
+      data.user_name && data.user_name.length > 2 && data.user_name.length < 50;
     !res && toast.error("Please Enter a valid Name!");
     return res;
   };
@@ -116,13 +114,16 @@ function Signup() {
       console.log(error);
     } else {
       toast.success("SignUp Successful!");
-      navigate(location.state.url, {
-        state: {
-          formData: location.state.formData,
-          submit: location.state.submit,
-          handleChange: location.state.handleChange,
-        },
-      });
+      toast.success("Check your email for verification link!");
+      setTimeout(() => {
+        navigate(location.state.url, {
+          state: {
+            formData: location.state.formData,
+            submit: location.state.submit,
+            handleChange: location.state.handleChange,
+          },
+        });
+      }, 2000);
     }
   };
 
@@ -144,7 +145,7 @@ function Signup() {
                 name="user_name"
                 id="user_name"
                 className="signUpForm h-[2.5rem] px-2 py-1 block w-[100%] rounded-[5px] bg-transparent"
-                placeholder="&#xf007;&nbsp;&nbsp;&nbsp;Enter your Name"
+                placeholder="Enter your Name"
                 required
                 onChange={(e) => handleChange(e)}
               />
@@ -163,7 +164,7 @@ function Signup() {
                 name="user_email"
                 id="user_email"
                 className="signUpForm h-[2.5rem] px-2 py-1 block w-[100%] rounded-[5px] bg-transparent"
-                placeholder="&#xf0e0;&nbsp;&nbsp;&nbsp;Enter your Email"
+                placeholder="Enter your Email"
                 required
                 onChange={(e) => handleChange(e)}
               />
@@ -182,7 +183,7 @@ function Signup() {
                 name="user_phone"
                 id="user_phone"
                 className="signUpForm h-[2.5rem] px-2 py-1 block w-[100%] rounded-[5px] bg-transparent"
-                placeholder="&#xf095;&nbsp;&nbsp;&nbsp;Enter your Phone Number"
+                placeholder="Enter your Phone Number"
                 required
                 onChange={(e) => handleChange(e)}
               />
@@ -256,7 +257,7 @@ function Signup() {
                       name="user_college"
                       id="user_college"
                       className="signUpForm h-[2.5rem] px-2 py-1 block w-[100%] rounded-[5px] bg-transparent"
-                      placeholder="&#xf19d;&nbsp;&nbsp;&nbsp;Enter your University Name"
+                      placeholder="Enter your University Name"
                       required
                       onChange={(e) => handleChange(e)}
                     />
@@ -328,7 +329,7 @@ function Signup() {
                 name="password"
                 id="password"
                 className="signUpForm h-[2.5rem] px-2 py-1 block w-[100%] rounded-[5px] bg-transparent"
-                placeholder="&#xf023;&nbsp;&nbsp;&nbsp;Enter password"
+                placeholder="Enter password"
                 required
                 onChange={(e) => handleChange(e)}
               />
@@ -347,7 +348,7 @@ function Signup() {
                 name="cpassoword"
                 id="cpassoword"
                 className="signUpForm h-[2.5rem] px-2 py-1 block w-[100%] rounded-[5px] bg-transparent"
-                placeholder="&#xf023;&nbsp;&nbsp;&nbsp;Re-Enter password"
+                placeholder="Re-Enter password"
                 required
                 onChange={(e) => handleChange(e)}
               />

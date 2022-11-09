@@ -120,7 +120,9 @@ i{
     .footer>.footer-content-left>.call-content{
         font-size: 1.3rem;
     }
-    
+    .socialmediaicon{
+        color: #fff;
+    }
     .footer-content-left>.call-content>.call-icon{
         
         margin-left: 5%;

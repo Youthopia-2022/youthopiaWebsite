@@ -42,7 +42,7 @@ const Footer = () => {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<i className="fa-brands fa-xl fa-linkedin-in"></i>
+							<i className="socialmediaicon fa-brands fa-xl fa-linkedin-in"></i>
 						</a>
 						<a
 							className="px-4"
@@ -50,7 +50,7 @@ const Footer = () => {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<i className="fa-brands fa-xl fa-instagram"></i>
+							<i className="socialmediaicon fa-brands fa-xl fa-instagram"></i>
 						</a>
 					</div>
 					<div className="next-two-icons">
@@ -60,7 +60,7 @@ const Footer = () => {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<i className="fa-brands fa-xl fa-facebook"></i>
+							<i className="socialmediaicon fa-brands fa-xl fa-facebook"></i>
 						</a>
 						<a
 							className="px-4"
@@ -68,7 +68,7 @@ const Footer = () => {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<i className="fa-brands fa-xl fa-youtube"></i>
+							<i className="socialmediaicon fa-brands fa-xl fa-youtube"></i>
 						</a>
 					</div>
 				</div>

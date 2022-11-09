@@ -47,12 +47,12 @@ const LandingContainer = () => {
         </Fade>
 
         <div className="youthopiaDetails mb-[1rem]">
-          <p>17th-19th NOVEMBER</p>
-          <p>2022</p>
+          <p>17th-19th</p>
+          <p>NOVEMBER 2022</p>
         </div>
         <Link to="/events" style={{ zIndex: 1 }}>
           <div className="registerLiveButton mb-5 z-10 rounded-xl">
-            REGISTRATION LIVE
+            Registration Live
           </div>
         </Link>
       </div>

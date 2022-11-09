@@ -7,13 +7,13 @@ const Events = () => {
     <div className="container px-10 py-10 mx-auto">
       <div className="flex flex-wrap w-full">
         <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
-          <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-[#1BBEE9]">
+          <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 ml-5 text-[#1BBEE9]">
             Upcoming Bonanzas !!
           </h1>
         </div>
         <Link
           to="/events"
-          className="flex ml-auto text-white bgu bd py-3 px-6 focus:outline-none rounded-xl"
+          className="flex ml-auto text-white bgu bd py-3 px-6 focus:outline-none mr-4 rounded-xl"
         >
           REGISTER NOW
         </Link>

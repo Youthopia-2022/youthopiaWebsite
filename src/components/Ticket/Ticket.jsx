@@ -109,6 +109,9 @@ function Ticket() {
             >
               Download Ticket
             </button>
+            <p className="font-bold text-base text-red-500">
+              NOTE: Event time and venue are subject to change.
+            </p>
           </div>
         )}
       </div>

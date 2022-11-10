@@ -189,7 +189,7 @@ function Registerteam(props) {
 						<button
 							type="submit"
 							className="registerbtn inline-flex justify-center  border border-[#FC0160] bg-[#2C0022] py-2 px-4 text-lg font-medium text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-							onClick={() => data.submit()}
+							onClick={() => data.submitOutside()}
 						>
 							REGISTER NOW
 						</button>

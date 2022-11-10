@@ -49,7 +49,7 @@ const LiteraryEvent = () => {
     sr.reveal(`.eventDescription`, { origin: "bottom" });
     // sr.reveal(`.eventResgisterButton`, { origin: "bottom" });
 
-    getData();      //eslint-disable-next-line
+    getData(); //eslint-disable-next-line
   }, []);
 
   return (
@@ -154,14 +154,17 @@ const LiteraryEvent = () => {
                         {items.event_isTeam && (
                           <div>
                             <p className="text-red-500 text-base">
-                              *Minimum member {items.event_min_members} and maximum members{" "}
-                              {items.event_max_members}
+                              *Minimum member {items.event_min_members} and
+                              maximum members {items.event_max_members}
                             </p>
                           </div>
                         )}
                       </div>
                     </div>
-                    <Link className="linkToRegister" to={`/register/${items.event_id}`}>
+                    <Link
+                      className="linkToRegister"
+                      to={`/register/${items.event_id}`}
+                    >
                       <button className="eventResgisterButton uppercase rounded-xl">
                         Register Now
                       </button>

@@ -129,27 +129,25 @@ const EventsPage = () => {
                 <EventCard
                   key={id}
                   name={event.event_name}
-                  image={
-                    event.event_image
-                      ? event.event_image
-                      : "https://propertywiselaunceston.com.au/wp-content/themes/property-wise/images/no-image@2x.png"
-                  }
+                  event_id={event.event_id}
                   location={event.event_venue}
                   startTime={event.event_startTime}
                   endTime={event.event_endTime}
                   fees_dit={event.event_fees_dit}
                   fees_outsiders={event.event_fees_outsiders}
                   date={event.event_date}
-                  link={`${event.event_category === "Technical"
+                  link={`${
+                    event.event_category === "Technical"
                       ? "evt"
                       : event.event_category === "Literary"
-                        ? "evd"
-                        : event.event_category === "Informal"
-                          ? "evi"
-                          : event.event_category === "Fine arts"
-                            ? "evfa"
-                            : "evc"
-                    }/${event.event_id}`}
+                      ? "evd"
+                      : event.event_category === "Informal"
+                      ? "evi"
+                      : event.event_category === "Fine arts"
+                      ? "evfa"
+                      : "evc"
+                  }/${event.event_id}`}
+                  event_image={event.event_image}
                 />
               );
             })}

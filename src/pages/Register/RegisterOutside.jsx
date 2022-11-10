@@ -50,7 +50,7 @@ const RegisterOutside = () => {
     sr.reveal(`.eventInfo`, { origin: "bottom" });
     // sr.reveal(`.RegisterFormQuestionButtons`, { origin: "bottom" });
     // sr.reveal(`.eventResgisterButton`, { origin: "bottom" });
-    getData();      //eslint-disable-next-line
+    getData(); //eslint-disable-next-line
   }, []);
   return (
     <>
@@ -97,14 +97,14 @@ const RegisterOutside = () => {
                           <div>
                             <div></div>
                             <p>
-															{moment(items.event_startTime, "hh:mm a").format(
-																"hh:mm a"
-															)}
-															{" - "}
-															{moment(items.event_endTime, "hh:mm a").format(
-																"hh:mm a"
-															)}
-														</p>
+                              {moment(items.event_startTime, "hh:mm a").format(
+                                "hh:mm a"
+                              )}
+                              {" - "}
+                              {moment(items.event_endTime, "hh:mm a").format(
+                                "hh:mm a"
+                              )}
+                            </p>
                           </div>
                         </div>
                       </div>

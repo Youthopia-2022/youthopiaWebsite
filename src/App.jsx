@@ -35,6 +35,7 @@ const App = () => {
     <>
       <Navbar />
       <Routes>
+        <Route path="*" element={<Error />} />;
         <Route path="/" element={<HomePage />} />;
         <Route path="/events" element={<EventsPage />} />;
         <Route path="/events/evc/:id" element={<CulturalEvent />} />
@@ -47,7 +48,6 @@ const App = () => {
         <Route path="/emailverify/:id" element={<EmialVerify />} />;
         <Route path="/ticket/:id" element={<Ticket />} />;
         <Route path="/aboutus" element={<Aboutus />} />;
-        <Route path="/notfound" element={<Error/>} />;
         <Route path="/register/:id" element={<Register />} />;
         <Route path="/registerdit/:id" element={<RegisterDit />} />;
         <Route path="/registeroutside/:id" element={<RegisterOutside />} />;

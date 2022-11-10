@@ -5,7 +5,7 @@ import moment from "moment/moment";
 
 const EventCard = (props) => {
   const {
-    image,
+    event_image,
     location,
     date,
     fees_dit,
@@ -19,7 +19,14 @@ const EventCard = (props) => {
   return (
     <div className="EventCardd">
       <div className="imagee">
-        <img src={image} alt="" />
+        <img
+          src={
+            event_image
+              ? event_image
+              : "https://propertywiselaunceston.com.au/wp-content/themes/property-wise/images/no-image@2x.png"
+          }
+          alt={name}
+        />
       </div>
       <div className="r1">
         <div className="namee capitalize">{name}</div>

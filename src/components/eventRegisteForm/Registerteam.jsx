@@ -15,7 +15,7 @@ function Registerteam(props) {
 		data.setFormData({ ...data.formData, team_members_name: x });
 	}
 
-	const [count, setCount] = useState(1);
+	const [count, setCount] = useState(data.formData.team_members_name.length);
 	const decrease = () => {
 		if (data.formData.team_members_name.length > props.min_num) {
 			let x = data.formData.team_members_name;

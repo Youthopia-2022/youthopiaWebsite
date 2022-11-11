@@ -7,9 +7,15 @@ function Registerteamdit(props) {
 	const temp = location.state;
 	let data;
 	temp ? (data = temp) : (data = props);
+
+	for (let i = 0; data.formData.team_members_name.length < props.min_num; i++) {
+		let x = data.formData.team_members_name;
+		x.push("member" + (data.formData.team_members_name.length + 1));
+		data.setFormData({ ...data.formData, team_members_name: x });
+	}
 	const [count, setCount] = useState(1);
 	const decrease = () => {
-		if (data.formData.team_members_name.length > props.max_num) {
+		if (data.formData.team_members_name.length > props.min_num) {
 			let x = data.formData.team_members_name;
 			x.pop();
 			data.setFormData({ ...data.formData, team_members_name: x });
@@ -17,7 +23,7 @@ function Registerteamdit(props) {
 		}
 	};
 	const increase = () => {
-		if (data.formData.team_members_name.length < 4) {
+		if (data.formData.team_members_name.length < props.max_num) {
 			let x = data.formData.team_members_name;
 			x.push("member" + (data.formData.team_members_name.length + 1));
 			data.setFormData({ ...data.formData, team_members_name: x });

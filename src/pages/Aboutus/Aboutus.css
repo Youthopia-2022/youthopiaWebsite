@@ -1,83 +1,85 @@
 .maincontainer {
-  width: 100vw;
+	width: 100vw;
 }
 .maincontainerAboutUs {
-  min-height: calc(100vh - 64px);
-  overflow: hidden;
-  position: relative;
-  background: radial-gradient(
-        80.21% 80.21% at 33.31% 95.58%,
-        #3a3a5c 0%,
-        #0a0a1b 100%
-      )
-      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
-    #0b0a1b;
+	min-height: calc(100vh - 64px);
+	overflow: hidden;
+	position: relative;
+	background: radial-gradient(
+				80.21% 80.21% at 33.31% 95.58%,
+				#3a3a5c 0%,
+				#0a0a1b 100%
+			)
+			/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+		#0b0a1b;
 }
 .aboutUsContent {
-  height: 100%;
-  width: 100%;
-  background: none;
-  overflow-x: hidden;
-  z-index: 10;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 2rem;
+	height: 100%;
+	width: 100%;
+	background: none;
+	overflow-x: hidden;
+	z-index: 10;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 2rem;
 }
 
 .absimage {
-  position: absolute;
-  bottom: 0;
-  right: 1rem;
-  width: 20rem;
+	position: absolute;
+	bottom: 0;
+	right: 1rem;
+	width: 20rem;
 }
 .logo {
-  position: absolute;
-  transform: rotate(358deg);
-  bottom: -8rem;
-  left: 0;
-  width: 25rem;
+	position: absolute;
+	transform: rotate(358deg);
+	bottom: -8rem;
+	left: 0;
+	width: 25rem;
+	z-index: 0;
 }
 
 .teamsHolder {
-  width: 100%;
-  display: grid;
-  row-gap: 3rem;
-  grid-template-columns: repeat(4, calc(24vw - 2rem));
-  grid-template-rows: auto;
+	width: 100%;
+	display: grid;
+	row-gap: 3rem;
+	grid-template-columns: repeat(4, calc(24vw - 2rem));
+	grid-template-rows: auto;
+	z-index: 1;
 }
 
 .teamsHolder > div {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
 }
 
 @media only screen and (max-width: 871px) {
-  .teamsHolder {
-    grid-template-columns: repeat(3, calc(33.3vw - 4rem));
-  }
+	.teamsHolder {
+		grid-template-columns: repeat(3, calc(33.3vw - 4rem));
+	}
 }
 
 @media only screen and (max-width: 771px) {
-  .teamsHolder {
-    grid-template-columns: repeat(2, 15rem);
-  }
+	.teamsHolder {
+		grid-template-columns: repeat(2, 15rem);
+	}
 }
 @media only screen and (max-width: 517px) {
-  .teamsHolder {
-    grid-template-columns: repeat(1, auto);
-  }
-  .teamsHolder > div {
-    width: max-content;
-  }
+	.teamsHolder {
+		grid-template-columns: repeat(1, auto);
+	}
+	.teamsHolder > div {
+		width: max-content;
+	}
 }
 @media only screen and (max-width: 672px) {
-  .logo {
-    bottom: 20rem;
-    width: 15rem;
-  }
-  .absimage {
-    width: 15rem;
-  }
+	.logo {
+		bottom: 20rem;
+		width: 15rem;
+	}
+	.absimage {
+		width: 15rem;
+	}
 }

@@ -106,6 +106,11 @@ const Gallery = () => {
 						src={gimage9}
 						alt="galleryImage"
 					/>
+					<img
+						className="w-full h-auto object-contain px-5 md:px-10 mt-10"
+						src={gimage23}
+						alt="galleryImage"
+					/>
 
 					<div className="flex flex-col md:flex-row w-full items-center">
 						<img
@@ -126,15 +131,11 @@ const Gallery = () => {
 					</div>
 					<img
 						className="w-full h-auto object-contain px-5 md:px-10 mt-10"
-						src={gimage14}
+						src={gimage37}
 						alt="galleryImage"
 					/>
 
-					<img
-						className="w-full h-auto object-contain px-5 md:px-10 mt-10"
-						src={gimage15}
-						alt="galleryImage"
-					/>
+					
 					<div className="flex flex-col md:flex-row w-full items-center">
 						<img
 							className="py-5 px-5 md:px-10 md:w-1/3 h-30"
@@ -152,24 +153,10 @@ const Gallery = () => {
 							alt="galleryImage"
 						/>
 					</div>
-					<img
-						className="w-full h-auto object-contain px-5 md:px-10 mt-10"
-						src={gimage19}
-						alt="galleryImage"
-					/>
+					
+					
 
-					<img
-						className="w-full h-auto object-contain px-5 md:px-10 mt-10"
-						src={gimage20}
-						alt="galleryImage"
-					/>
-
-					<img
-						className="w-full h-auto object-contain px-5 md:px-10 mt-10"
-						src={gimage24}
-						alt="galleryImage"
-					/>
-
+					
 					<img
 						className="w-full h-auto object-contain px-5 md:px-10 mt-10"
 						src={gimage25}
@@ -215,7 +202,7 @@ const Gallery = () => {
 						/>
 						<img
 							className="py-5 px-5 md:px-10 md:w-1/3 h-30"
-							src={gimage37}
+							src={gimage20}
 							alt="galleryImage"
 						/>
 					</div>
@@ -241,23 +228,7 @@ const Gallery = () => {
 							alt="galleryImage"
 						/>
 					</div>
-					<div className="flex flex-col md:flex-row w-full items-center">
-						<img
-							className="py-5 px-5 md:px-10 md:w-1/3 h-30"
-							src={gimage21}
-							alt="galleryImage"
-						/>
-						<img
-							className="py-5 px-5 md:px-10 md:w-1/3 h-30"
-							src={gimage22}
-							alt="galleryImage"
-						/>
-						<img
-							className="py-5 px-5 md:px-10 md:w-1/3 h-30"
-							src={gimage23}
-							alt="galleryImage"
-						/>
-					</div>
+					
 				</div>
 			</div>
 		</div>

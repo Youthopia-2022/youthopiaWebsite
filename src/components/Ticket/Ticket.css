@@ -1,6 +1,6 @@
 .ticket {
 	display: flex;
-	background-image: url("../../images/tkt-background.png");
+	background-image: url("../../images/Ticket.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -27,6 +27,7 @@
 	margin-left: 7%;
 	margin-top: 6%;
 	padding-bottom: 5%;
+	padding-top: 4vw;
 	font-weight: 500;
 }
 
@@ -38,6 +39,7 @@
 
 .ticket > .ticket-right {
 	margin-left: 3vw;
+	padding-right: 3.5vw;
 }
 .ticket > .ticket-right > .heading-tkt {
 	font-size: 1.8vw;

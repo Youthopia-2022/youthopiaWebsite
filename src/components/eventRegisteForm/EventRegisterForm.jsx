@@ -256,6 +256,7 @@ const EventRegisterForm = (props) => {
 						formData={formData}
 						setFormData={setFormData}
 						max_num={evendData[0].event_max_members}
+						min_num={evendData[0].event_min_members}
 					/>
 				) : (
 					<Registerteam
@@ -267,6 +268,7 @@ const EventRegisterForm = (props) => {
 						selectedImage={selectedImage}
 						setSelectedImage={setSelectedImage}
 						max_num={evendData[0].event_max_members}
+						min_num={evendData[0].event_min_members}
 					/>
 				)
 			) : isDit ? (

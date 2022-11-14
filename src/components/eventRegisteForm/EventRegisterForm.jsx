@@ -196,6 +196,12 @@ const EventRegisterForm = (props) => {
 			validatePhone(formData)
 		) {
 			if (isTeam) {
+				for (let i = 1; i < formData.team_members_name.length; i++) {
+					if (!formData.team_members_name[i]) {
+						toast.error("Please enter names of all the team members");
+						return;
+					}
+				}
 				let x = formData;
 				x.team_members_name[0] = formData.participant_name;
 				setFormData(x);
@@ -218,6 +224,12 @@ const EventRegisterForm = (props) => {
 			validatePhone(formData)
 		) {
 			if (isTeam) {
+				for (let i = 1; i < formData.team_members_name.length; i++) {
+					if (!formData.team_members_name[i]) {
+						toast.error("Please enter names of all the team members");
+						return;
+					}
+				}
 				let x = formData;
 				x.team_members_name[0] = formData.participant_name;
 				setFormData(x);

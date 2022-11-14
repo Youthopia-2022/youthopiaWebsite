@@ -11,7 +11,7 @@ function Registerteam(props) {
 
 	for (let i = 0; data.formData.team_members_name.length < props.min_num; i++) {
 		let x = data.formData.team_members_name;
-		x.push("member" + (data.formData.team_members_name.length + 1));
+		x.push("");
 		data.setFormData({ ...data.formData, team_members_name: x });
 	}
 

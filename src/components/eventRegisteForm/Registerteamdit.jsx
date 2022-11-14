@@ -10,7 +10,7 @@ function Registerteamdit(props) {
 
 	for (let i = 0; data.formData.team_members_name.length < props.min_num; i++) {
 		let x = data.formData.team_members_name;
-		x.push("member" + (data.formData.team_members_name.length + 1));
+		x.push("");
 		data.setFormData({ ...data.formData, team_members_name: x });
 	}
 	const [count, setCount] = useState(data.formData.team_members_name.length);
@@ -35,6 +35,7 @@ function Registerteamdit(props) {
 		x[e.target.name] = e.target.value;
 		data.setFormData({ ...data.formData, team_members_name: x });
 	};
+
 	return (
 		<>
 			<div className="flex justify-center w-[100vw] items-center my-[2rem]">
